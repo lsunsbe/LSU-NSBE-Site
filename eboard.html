@@ -3,7 +3,9 @@
 <!--Begin Code-->
 <head>
 	<title>GEAUXNSBE</title>
-	<link rel="stylesheet" type="text/css" href="eboardstyle.css">
+	<link rel="stylesheet" type="text/css" href="styles/eboard.css">
+	<link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
+    <script src="eboard.js" type="text/javascript"></script>
 </head>
 <body>
 <!--This is how you link photos-->
@@ -11,35 +13,73 @@
 
 <h3>Welcome to the official website of the National Society of Black Engineers - Louisiana State University Chapter </h3>
 
-<div id="menu">
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li>|</li>
-		<li>Calendar</li>
-		<li>|</li>
-		<li>E-Board</li>
-		<li>|</li>
-		<li>Contact Us</li>
-		<li>|</li>
-		<li><a href="purpose.html">Purpose</a></li>
-		<li>|</li>
-		<li>Photos</li>
-	</ul>
+<div id="container">
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>|</li>
+            <li>Calendar</li>
+            <li>|</li>
+            <li>E-Board</li>
+            <li>|</li>
+            <li>Contact Us</li>
+            <li>|</li>
+            <li><a href="purpose.html">Purpose</a></li>
+            <li>|</li>
+            <li>Photos</li>
+        </ul>
+    </div>
+
+    <!-- Break to break -->
+
+    <div id="names">
+        <ul>
+        	<li>Click a name for more info.</li>
+            <li onclick="setUnhidden('president');">Vonzell W.</li>
+            <li onclick="setUnhidden('vpresident');">Ron Forbes</li>
+            <li onclick="setUnhidden('telecom');">Dexter Hartman</li>
+            <li onclick="setUnhidden('hist');">Joseph Bates</li>
+        </ul>
+    </div>
+
+    <div id="biography">
+        <div id="president" class="hidden">
+            <h2>Vonzell Williams</h2>
+            <h3>President</h3>
+            <img alt="Picture here.">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor eros sed sagittis suscipit. Vestibulum eleifend lacus odio, ut porttitor dui scelerisque a. Sed consequat, mauris ut varius varius, massa est cursus est, nec consequat sem magna vitae odio. Aenean massa libero, ultricies in condimentum ac, consequat sed ipsum. Sed.
+         </p>
+        </div>
+
+        <div id="vpresident" class="hidden">
+            <h2>Ron Forbes</h2>
+            <h3>Vice President</h3>
+            <img alt="Picture here.">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor ac nisl quis semper. Morbi at viverra elit, quis vulputate velit. Nunc auctor ante vel purus porttitor, vel feugiat lectus pellentesque. Proin varius arcu ut orci consequat, sit amet tempus neque porttitor. Suspendisse at urna sapien. Sed sed luctus lectus.
+         </p>
+        </div>
+
+        <div id="telecom" class="hidden">
+            <h2>Dexter Hartman</h2>
+            <h3>Telecommunications Chair</h3>
+            <img alt="Picture here.">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum ligula non venenatis porttitor. Mauris cursus, neque vel egestas tincidunt, urna eros suscipit sapien, eu semper justo nunc a leo. Aliquam et iaculis justo. Nulla quis ipsum varius, sollicitudin ligula at, posuere dui. Duis eget dolor mollis sem euismod iaculis.
+         </p>
+        </div>
+
+        <div id="hist" class="hidden">
+            <h2>Joseph Bates</h2>
+            <h3>Historian</h3>
+            <img alt="Picture here.">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus elit quis metus pharetra imperdiet. Vestibulum blandit nec mauris vitae mollis. Nulla quis euismod mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis sit amet nisl arcu. Morbi eu dui non tortor feugiat accumsan.
+         </p>
+        </div>
+    </div>
 </div>
-
-<!-- Break to break -->
-
-<div id="names">
-	<ul>
-		<li>Vonzell W.</li>
-		<li>Ron Forbes</li>
-		<li>Dexter Hartman</li>
-		<li>Joseph Bates</li>
-	</ul>
-</div>
-
 </body>
+<!--
 <footer>
 	<p>Created by Dexter Hartman and Joseph Bates</p>
-</footer>
+</footer> -->
+    
 </html>
