@@ -4,30 +4,33 @@
 	<title>GEAUXNSBE</title>
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
 	<link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
-    <script src="eboard.js"></script>
+    <script src="scripts/index.js"></script>
 </head>
 <body>
 
 <!--By using container, we can center all the site content easily-->
 <div id="container">
-<!--This is how you link photos-->
-	<img src="images/NSBElogo.jpg" alt="NSBElogo" width="375" height="375">
+    <div id="titlebar">
+        <!--This is how you link photos-->
+        <img src="images/NSBElogo.jpg" alt="NSBElogo" width="375" height="375">
 
-	<h3>Welcome to the official website of the National Society of Black Engineers - Louisiana State University Chapter </h3>
+        <h3>Welcome to the official website of the National Society of Black Engineers - Louisiana State University Chapter </h3>
+    </div>
 
+    
 	<div id="menu">
 		<ul>
-			<li ><a href="index.html">Home</a></li>
+			<li class="item" id="home" onmouseout="leave('home')" onmouseover="hover('home')"><a href="index.html">Home</a></li>
 			<li>|</li>
-			<li>Calendar</li>
+			<li class="item" id="calendar" onmouseout="leave('calendar')" onmouseover="hover('calendar')">Calendar </li>
 			<li>|</li>
-			<li><a href="eboard.html">E-Board</a></li>
+			<li class="item" id="eboard" onmouseout="leave('eboard')" onmouseover="hover('eboard')"><a href="eboard.html">E-Board</a></li>
 			<li>|</li>
-			<li>Contact Us</li>
+			<li class="item" id="contact" onmouseout="leave('contact')" onmouseover="hover('contact')">Contact Us</li>
 			<li>|</li>
-			<li><a href="purpose.html">Purpose</a></li>
+			<li class="item" id="purpose" onmouseout="leave('purpose')" onmouseover="hover('purpose')"><a href="purpose.html">Purpose</a></li>
 			<li>|</li>
-			<li>Photos</li>
+			<li class="item" id="photos" onmouseout="leave('photos')" onmouseover="hover('photos')">Photos</li>
 		</ul>
 	</div>
 
