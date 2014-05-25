@@ -1,14 +1,16 @@
 #menu{
 	margin: 0 auto;
 	text-align: center;
-    height: 80px;
+    height: 40px;
     background-color: #4a3636;
+    
 }
 
 
 #menu li {
     list-style: none;
     float: left;
+    
 }
 
 
@@ -19,7 +21,15 @@
 	padding-right: 10px;
 	text-align: center;
     line-height: 40px;
+        color: white;
+    
+
 } 
+
+ul {
+    border-radius: 10px;
+    padding-left: 0px;
+}
 
 #menu a.item:hover{
     background-color: red;
@@ -28,6 +38,7 @@
 a {
     text-decoration: none;
     color: black;
+    font-size: 20px;
 }
 
 a:visited {
@@ -37,9 +48,8 @@ a:visited {
 
 .item {
     height: 40px;
-    width: 150px;
-    border: 1px solid black;
-    background-color: green;
+    width: 155px;
+    background-color: #890b0b;
     border-width: 1px;
     display: inline;
     text-align: center;
@@ -49,8 +59,8 @@ a:visited {
 
 .SELitem{
 height: 40px;
-    width: 100px;
-    border: 1px solid black;
+    width: 155px;
+    
     background-color: purple;
     border-width: 1px;
     display: inline;

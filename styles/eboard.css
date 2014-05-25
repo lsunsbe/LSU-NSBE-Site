@@ -14,19 +14,18 @@ body {
     display: inline-block;
 }
 
-ul{
-	display: inline-block;
-}
 
 #names ul {
 	list-style: none;
-
+    
 } 
+
 
 #names li.name:hover{
     font-size: 150%;
     color: #860404;
-}
+} 
+
     
 
 .hidden{
@@ -38,11 +37,15 @@ ul{
     float: right;
     display: inline;
     width: 50%;
-    background-color: blue;
+    background-color: #8d1717;
+    margin-right: 80px;
 }
 
 #names {
     float: left;
-    display: inline-block;
+    display: inline;
+    font-size: relative;
+    margin: 4px;
+    margin-left: 80px;
 }
 

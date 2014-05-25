@@ -18,3 +18,14 @@ function setUnhidden(position) {
         }
     }
 }
+
+
+
+$(document).ready(function(){
+    $(".name").mouseenter(function(){
+            $("#" + event.target.id).animate({fontSize: "+=6px"}, "fast");
+    });
+    $(".name").mouseleave(function(){
+            $("#" + event.target.id).animate({fontSize: "-=6px"}, "fast");
+    });
+});
