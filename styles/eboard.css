@@ -39,6 +39,7 @@ body {
     width: 50%;
     background-color: #8d1717;
     margin-right: 80px;
+    margin-bottom: 10px;
 }
 
 #names {
@@ -47,5 +48,7 @@ body {
     font-size: relative;
     margin: 4px;
     margin-left: 80px;
+    border: 2px solid;
+    padding-bottom: 50px;
 }
 

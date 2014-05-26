@@ -35,9 +35,9 @@ ul {
     background-color: red;
 }
 
-a {
+#menu a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 20px;
 }
 
@@ -48,18 +48,19 @@ a:visited {
 
 .item {
     height: 40px;
-    width: 155px;
+    width: 125px;
     background-color: #890b0b;
     border-width: 1px;
     display: inline;
     text-align: center;
     font-family: "Helvetica", sans-serif;
     margin: auto;
+    text-decoration: none;
 }
 
 .SELitem{
 height: 40px;
-    width: 155px;
+    width: 125px;
     
     background-color: purple;
     border-width: 1px;
