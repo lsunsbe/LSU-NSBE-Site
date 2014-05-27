@@ -2,15 +2,13 @@
 	margin: 0 auto;
 	text-align: center;
     height: 40px;
-    background-color: #4a3636;
-    
+    background-color: #993300;
 }
 
 
 #menu li {
     list-style: none;
     float: left;
-    
 }
 
 
@@ -48,9 +46,10 @@ a:visited {
 
 .item {
     height: 40px;
-    width: 125px;
-    background-color: #890b0b;
-    border-width: 1px;
+    width: 130px;
+    background-color: #660000;
+    border: 1px solid black;
+    border-radius: 10px;
     display: inline;
     text-align: center;
     font-family: "Helvetica", sans-serif;
@@ -60,9 +59,10 @@ a:visited {
 
 .SELitem{
 height: 40px;
-    width: 125px;
-    
-    background-color: purple;
+    width: 130px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #CC6633;
     border-width: 1px;
     display: inline;
     text-align: center;

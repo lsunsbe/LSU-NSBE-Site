@@ -1,20 +1,4 @@
 
-body {
-	font:Arial;
-	background-color: #5e675e;
-	text-align: center; 
-}
-
-#container{
-	width:75%;
-	margin:20px auto;
-    margin-top: 0px;
-    align-content: center;
-    background: rgba(224, 57, 57, 0.9);
-}
-
-
-
 #video{
 	background-color: red;
 }
