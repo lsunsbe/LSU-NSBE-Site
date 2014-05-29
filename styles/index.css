@@ -7,7 +7,7 @@
     float: left;
 	border: 3px solid #000;
 	height: 225px;
-	width: 450px; 
+	width: 45%; 
 	margin-left: 5px;
 	margin-right: auto;
     border-radius: 10px; 
@@ -24,7 +24,7 @@ a:link {
 #recentnews {
     border: 3px solid;
     border-radius: 20px;
-    width: 550px;
+    width: 45%;
     float: right;
     height: 225px;
     margin-right: 20px;

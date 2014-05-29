@@ -1,25 +1,27 @@
 #menu{
 	margin: 0 auto;
+    margin-top: 1px;
 	text-align: center;
     height: 40px;
     background-color: #993300;
+    padding: 0;
 }
 
 
 #menu li {
     list-style: none;
     float: left;
+    width: 14.26%;
 }
 
 
 #menu a {
 	list-style: none;
 	float: left;
-	padding-left: 10px;
-	padding-right: 10px;
 	text-align: center;
     line-height: 40px;
-        color: white;
+    color: white;
+	width: 100%;
     
 
 } 
@@ -36,7 +38,8 @@ ul {
 #menu a {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 100%;
+    
 }
 
 a:visited {
@@ -46,15 +49,12 @@ a:visited {
 
 .item {
     height: 40px;
-    width: 130px;
     background-color: #660000;
     border: 1px solid black;
     border-radius: 10px;
     display: inline;
-    text-align: center;
     font-family: "Helvetica", sans-serif;
     margin: auto;
-    text-decoration: none;
 }
 
 .SELitem{

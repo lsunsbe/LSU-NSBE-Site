@@ -10,12 +10,13 @@ function setUnhidden(position) {
     var i = 0;
     for (; i < positions.length; i++){ 
         var currentPosition = document.getElementById(positions[i]);
-        console.log(currentPosition);
         if (positions[i] == position){
             currentPosition.className = "visible";
         } else{
             currentPosition.className = "hidden";
         }
+        
+        console.log(currentPosition);
     }
 }
 
