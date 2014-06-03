@@ -2,7 +2,5 @@
 /*global $, jQuery*/
 
 $(document).ready(function(){
-  $("button").click(function(){
-    window.alert("Hello");
-  });
+  //add code
 });
