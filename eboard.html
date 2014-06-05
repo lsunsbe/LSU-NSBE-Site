@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/eboard.css">
     <link rel="stylesheet" type="text/css" href="styles/navmenu.css">
 	<link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="scripts/eboard.js" type="text/javascript"></script>
 </head>
@@ -18,67 +19,339 @@
     
     <div id="titlebar">
         <!--This is how you link photos-->
-        <img src="images/NSBElogo.jpg" alt="NSBElogo" width="200" height="200">
 
-        <h3>Welcome to the official website of the National Society of Black Engineers - Louisiana State University Chapter </h3>
+        <img src="images/NSBElogo.png" alt="NSBElogo" width="140" height="160">
+        <h2>Welcome to the Official Website of the LSU National Society of Black Engineers
+ </h2>
     </div>
     
     <div id="menu">
 		<ul>
 			<li><a class="item" id="home" href="index.html">Home</a></li>
-			<li><a class="item" id="calendar" href="calendar.html">Calendar</a></li>
-            <li><a class="item" id="news" href="">News</a></li>
-			<li ><a class="SELitem" id="eboard"  href="eboard.html">E-Board</a></li>
-			<li><a class="item" id="contact" href="">Contact Us</a></li>
-			<li><a class="item" id="purpose" href="purpose.html">Purpose</a></li>
-			<li><a class="item" id="photos" href="">Photos</a></li>
+            <li><a class="item" id="calendar" href="calendar.html">Calendar</a></li>
+            <li><a class="item" id="news" href="news.html">News</a></li>
+            <li ><a class="SELitem" id="eboard"  href="eboard.html">E-Board</a></li>
+            <li><a class="item" id="purpose" href="purpose.html">Purpose</a></li>
+            <li><a class="item" id="photos" href="">Photos</a></li>
+            <li><a class="item" id="contact" href="">Contact Us</a></li>
 		</ul>
 	</div>
-
     <!-- Break to break -->
     <br />
     <div id="names">
         <ul>
-        	<li>Click a name for more info.</li>
-            <li class="name" id="npres" onclick="setUnhidden('president');">Vonzell W.</li>
-            <li class="name" id="nvp" onclick="setUnhidden('vpresident');">Ron Forbes</li>
-            <li class="name" id="ntelecom" onclick="setUnhidden('telecom');">Dexter Hartman</li>
-            <li class="name" id="nhist" onclick="setUnhidden('hist');">Joseph Bates</li>
+        	<p id="title">Click a name for more info.</p>
+            <li class="name" id="npres" onclick="setUnhidden('president');">Vonzell Williams</li>
+            <li class="name" id="nvp" onclick="setUnhidden('vpresident');">Alexis Scott</li>
+            <li class="name" id="nsec" onclick="setUnhidden('secretary');">McKenzie Brown</li>
+            <li class="name" id="nhist" onclick="setUnhidden('treasurer');">Sherrard D</li>
+         <li class="name" id="nhist" onclick="setUnhidden('progchair');">Seth Brown</li>
+    <li class="name" id="nhist" onclick="setUnhidden('commservchair');">Kailyn Gouch</li>
+    <li class="name" id="nhist" onclick="setUnhidden('conplanchair');">Darria Carter</li>
+    <li class="name" id="memchair" onclick="setUnhidden('conplanchair');">Jordan Biagas</li>
+     <li class="name" id="nhist" onclick="setUnhidden('publication');">Arcell Bodden</li>
+    <li class="name" id="nhist" onclick="setUnhidden('socialchair');">Lekan Kassim</li>
+        
+    <li class="name" id="nhist" onclick="setUnhidden('financechair');">Gary Matthews</li>
+     <li class="name" id="nhist" onclick="setUnhidden('nsbesenate');">Marvyn Muse</li>
+        
+ <li class="name" id="nhist" onclick="setUnhidden('procollinit');">Jordan Favret</li>
+        
+ <li class="name" id="nhist" onclick="setUnhidden('telecom');">Dexter Hartman</li>
+        
+ <li class="name" id="nhist" onclick="setUnhidden('hist');">Joseph Bates</li>
+ <li class="name" id="nhist" onclick="setUnhidden('senate');">Chris Reynolds</li>
+         <li class="name" id="nhist" onclick="setUnhidden('chairemer');">Jhamal Davis</li>
+ <li class="name" id="nhist" onclick="setUnhidden('parliamen');">Kojo</li>
         </ul>
     </div>
 
     <div id="biography">
         <div id="president" class="unhidden">
             <h2>Vonzell Williams</h2>
-            <h3>President</h3>
-            <img alt="Picture here.">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor eros sed sagittis suscipit. Vestibulum eleifend lacus odio, ut porttitor dui scelerisque a. Sed consequat, mauris ut varius varius, massa est cursus est, nec consequat sem magna vitae odio. Aenean massa libero, ultricies in condimentum ac, consequat sed ipsum. Sed.
+            <h3>Chairperson</h3>
+            <img id='pic' alt="Picture here.">
+            <p>Id litteris illustriora. Ubi sunt consequat illustriora. Minim a iis dolor 
+                nostrud. Fugiat possumus qui cohaerescant hic lorem nam ut labore deserunt. In 
+                amet tamen de cupidatat. Magna nescius iis reprehenderit. Mandaremus illum nisi 
+                fabulas quae, non iudicem eruditionem, nescius irure senserit aliquip ex o et 
+                quem incididunt, est ubi dolor illum aliqua, cupidatat multos pariatur aut 
+                officia quorum summis appellat lorem, legam excepteur non domesticarum.
          </p>
         </div>
 
         <div id="vpresident" class="hidden">
-            <h2>Ron Forbes</h2>
-            <h3>Vice President</h3>
-            <img alt="Picture here.">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor ac nisl quis semper. Morbi at viverra elit, quis vulputate velit. Nunc auctor ante vel purus porttitor, vel feugiat lectus pellentesque. Proin varius arcu ut orci consequat, sit amet tempus neque porttitor. Suspendisse at urna sapien. Sed sed luctus lectus.
+            <h2>Alexis Scott</h2>
+            <h3>Vice Chairperson</h3>
+            <img id='pic' alt="Picture here.">
+            <p> Noster instituendarum incididunt labore appellat, ad irure litteris cupidatat, 
+                te quorum illum malis mentitum, quorum aut ut malis appellat non ita consequat 
+                illustriora, labore quamquam a illustriora, probant eu quamquam ex quo legam 
+                concursionibus. Ullamco nam varias incididunt ab pariatur eram probant senserit 
+                de enim eiusmod ad esse nisi ut quid mentitum eu aliquip. O te nisi amet dolor 
+                quo laboris quo ipsum appellat, ne magna admodum cohaerescant, ex esse nescius 
+                arbitror eu pariatur legam quibusdam, non e consectetur, et varias proident, 
+                quibusdam est dolore. An id veniam iudicem.
          </p>
         </div>
 
+        <div id="secretary" class="hidden">
+            <h2>McKenzie Brown</h2>
+            <h3>Secretary</h3>
+            <img id="pic" alt="Picture here." src="">
+            <p> Do ea quid incididunt ut ita elit illum esse cernantur. Se e aliqua quid fore, 
+                cernantur quae ingeniis, nostrud summis te probant comprehenderit e cernantur ea 
+                quis officia e eiusmod e minim senserit si summis aut nam minim excepteur ex sed 
+                minim culpa a appellat, pariatur velit incididunt. Quo quorum deserunt a 
+                incurreret graviterque te cernantur. Legam cupidatat ubi esse fore. Quae 
+                singulis e singulis. Sed ita culpa enim nulla, elit tempor si nisi duis. Varias 
+                non mandaremus, id laborum id incididunt.
+         </p>
+        </div>
+
+        <div id="treasurer" class="hidden">
+            <h2>Sherrard D</h2>
+            <h3>Treasurer</h3>
+            <img id="pic" alt="Picture here." src="">
+            <p> Quorum probant cupidatat. Incididunt amet esse singulis irure ne in occaecat hic 
+                deserunt. Hic lorem expetendis, iis aute singulis laborum, probant distinguantur 
+                iis nostrud de ad incurreret ita mentitum. Est quem quorum ab expetendis, 
+                deserunt iis appellat iis lorem se qui amet occaecat est enim offendit ne tamen 
+                multos. De quae transferrem. Eram si litteris, litteris o magna eiusmod. 
+                Deserunt velit officia ut tempor praesentibus de officia, o esse philosophari et 
+                se legam o dolor a laboris nam mentitum, malis senserit firmissimum e o elit 
+                veniam sint deserunt, a quem aliqua nulla quamquam.
+         </p>
+        </div>
+        
+        <div id="progchair" class="hidden">
+            <h2>Seth Brown</h2>
+            <h3>Programs Chair</h3>
+            <img id="pic" alt="Picture here." src="">
+            <p> Ea expetendis et offendit iis consequat et offendit ea e possumus id eiusmod hic 
+                tempor cillum quamquam, quibusdam ab officia aut in velit nescius appellat ad 
+                nam fore elit ita offendit et a vidisse hic eiusmod. Nulla ingeniis nam nostrud. 
+                Si arbitror adipisicing, fore quo ea quis laboris. Quibusdam eram arbitror, ea 
+                quae qui labore, cernantur sed quamquam ea laborum te ullamco e ingeniis e magna 
+                consequat, te quae aut irure, quibusdam ex labore deserunt, elit et quibusdam de 
+                legam. Eu aute anim de nostrud, summis fabulas nam labore ipsum. Cillum qui 
+                eiusmod nam enim o fugiat incididunt mandaremus, si anim occaecat, malis 
+                consequat te malis sunt.
+         </p>
+        </div>
+        
+        <div id="commservchair" class="hidden">
+            <h2>Kailyn Gouch</h2>
+            <h3>Community Service Chair</h3>
+            <img id="pic" alt="Picture here." src="">
+            <p> Laborum ad esse, quibusdam est ipsum vidisse. Summis in e aute quamquam qui 
+                fugiat incididunt ita labore minim. Eu fugiat magna eu iudicem, quid ea eiusmod. 
+                Deserunt malis cernantur, illum e te lorem laborum si cillum voluptate 
+                imitarentur, irure ita sed velit cupidatat. Ex nisi ea enim est ne ut 
+                arbitrantur in te noster nostrud illustriora ut malis do possumus an lorem. Amet 
+                qui ab ipsum laborum de quo culpa incurreret. Veniam ea fabulas id esse ex iis 
+                fugiat incurreret. Ullamco ut legam officia.
+         </p>
+        </div>
+        
+        <div id="conplanchair" class="hidden">
+            <h2>Darria Carter</h2>
+            <h3>Conference Planning Chair</h3>
+            <img id="pic" alt="Picture here." src="">
+            <p> Hic velit cupidatat appellat, magna ita id fugiat singulis a est eram 
+                domesticarum iis ut malis irure noster appellat. Eiusmod anim appellat. Quo 
+                consequat ut tempor an iis ubi aliqua officia iis iis laborum ea fabulas de 
+                dolore vidisse graviterque. Minim incididunt do expetendis. Duis litteris id 
+                anim aute, do ex aute aliquip, aute ullamco ullamco e elit sed iis dolore 
+                ullamco. Aute iis sed aute singulis, a amet eram se litteris. Tamen hic offendit 
+                id labore consequat sed mentitum, cillum si ne amet occaecat et ingeniis a 
+                noster commodo, excepteur lorem offendit laboris, tamen eu nescius eu malis in 
+                ut minim quo duis, o tamen nescius.
+         </p>
+        </div>
+        
+        <div id="memchair" class="hidden">
+            <h2>Jordan Baigas</h2>
+            <h3>Membership Chair</h3>
+            <img id="pic" alt="Picture here." src="">
+            <p> Noster arbitror do sempiternum ut mandaremus dolore nostrud, iudicem et summis 
+                tempor, tempor fore consequat, an enim arbitror transferrem, do quem lorem aut 
+                vidisse, nam ab arbitrantur a eu consequat sempiternum. Id fore relinqueret. 
+                Cupidatat se dolore, te fugiat sint illum proident. Noster distinguantur nescius 
+                legam cupidatat, a se quem incididunt, dolore laborum do fidelissimae, duis ab 
+                ex nisi quamquam. Cernantur legam minim iudicem culpa ex in eu tamen illum 
+                varias de consequat concursionibus qui offendit qui ex o quae deserunt. Dolore 
+                eu laborum quo sint e consequat in dolor, te litteris et expetendis, vidisse 
+                velit se quibusdam domesticarum, nulla nostrud eiusmod, ea pariatur do eiusmod, 
+                minim vidisse se philosophari, magna officia ne aliqua sint. Cupidatat summis de 
+                incididunt cohaerescant, quibusdam dolore si excepteur illustriora.
+         </p>
+        </div>
+        
+        <div id="publication" class="hidden">
+            <h2>Arcell Bodden</h2>
+            <h3>Publications</h3>
+            <img id="pic" alt="Picture here." src="">
+            <p> Iis amet fugiat est tempor, fore eiusmod si legam ipsum, ne cernantur ut 
+                incurreret, qui cillum labore dolor incurreret, eiusmod firmissimum do 
+                expetendis, eiusmod tamen quamquam iis aliqua voluptatibus deserunt velit 
+                expetendis eu te nisi legam lorem aliquip. Veniam senserit quibusdam, dolore 
+                cupidatat quibusdam. Commodo minim laboris. Ut excepteur id deserunt, aute 
+                probant domesticarum ita eiusmod irure consequat eiusmod, ut quo quorum 
+                ingeniis, summis deserunt o despicationes do amet quamquam a transferrem te 
+                offendit ad mentitum, appellat nam aute eiusmod. Do ea elit duis magna o quis an 
+                cernantur. Minim ea pariatur nam tamen. Veniam ubi eiusmod o multos admodum hic 
+                graviterque, et ipsum minim e eiusmod, mandaremus o pariatur ad in e irure 
+                tempor ad quo commodo philosophari, malis doctrina exquisitaque, pariatur velit 
+                fore quamquam nulla.
+         </p>
+        </div>
+        
+        <div id="socialchair" class="hidden">
+            <h2>Lekan Kassim</h2>
+            <h3>Social Chair</h3>
+            <img id="pic" alt="Picture here." src="">
+            <p> Dolore admodum iudicem. Ab non varias eram fore, officia distinguantur si 
+                probant non dolor nostrud concursionibus ut duis firmissimum senserit legam 
+                possumus et se ne irure quis malis aut arbitror si deserunt hic quo litteris 
+                arbitrantur quo veniam tempor instituendarum. Sed summis nescius e quem fabulas 
+                exercitation, anim officia an firmissimum o non probant id doctrina nam ullamco 
+                quis minim arbitror quem est sed cillum excepteur proident, proident cillum 
+                legam ne veniam, est quorum eram ne senserit. Tamen excepteur de labore legam 
+                qui incurreret quae nostrud incididunt. Excepteur nisi cillum fabulas labore ubi 
+                cillum do quibusdam est fugiat. Cillum nescius quamquam ab occaecat noster 
+                mandaremus, ad a eram veniam dolor aut summis voluptate laboris. Sed cupidatat 
+                comprehenderit. Aut duis mentitum excepteur.
+         </p>
+        </div>
+        
+        <div id="financechair" class="hidden">
+            <h2>Gary Matthews</h2>
+            <h3>Financial Chair</h3>
+            <img id="pic" alt="Picture here." src="">
+            <p> Iudicem cillum cernantur, pariatur sed aute. Eram incurreret proident, aliquip 
+                dolore varias offendit tamen. Ita sint offendit imitarentur, ullamco 
+                exquisitaque e arbitror. Fabulas do cillum cupidatat ex elit possumus aut aliqua 
+                eram se mandaremus anim quo consequat distinguantur ubi cernantur lorem 
+                cernantur litteris. Nisi consequat coniunctione quo in ita voluptatibus est 
+                officia irure aut aliquip adipisicing, mentitum eram quem officia duis quo 
+                incididunt magna summis cernantur legam, elit ex se lorem quamquam ne se elit 
+                laborum occaecat, ex magna officia coniunctione. Tamen quamquam consectetur nam 
+                nulla offendit distinguantur do pariatur fidelissimae nam fabulas, se singulis 
+                concursionibus.
+         </p>
+        </div>
+        
+        <div id="nsbesenate" class="hidden">
+            <h2>Marvyn Muse</h2>
+            <h3>NSBE Senate</h3>
+            <img id="pic" alt="Picture here." src="">
+            <p> Eu vidisse ad fabulas, appellat labore laborum qui ab aute legam sed pariatur, 
+                sint arbitror senserit. Ne si tractavissent. Si offendit cohaerescant, do 
+                doctrina ex commodo. Ex enim transferrem, ex id philosophari ubi ita multos 
+                vidisse non illum si de lorem iudicem. Eu si aute culpa legam. De a quis 
+                nostrud, quo mandaremus transferrem. Anim ex appellat ubi quid. Iis eu tamen 
+                incurreret, ingeniis noster veniam se magna hic ad ullamco si nescius hic duis 
+                quo hic velit incurreret.
+         </p>
+        </div>
+        
+        <div id="procollinit" class="hidden">
+            <h2>Jordan Favret</h2>
+            <h3>Pre-College Initiative</h3>
+            <img id="pic" alt="Picture here." src="">
+            <p> Non possumus familiaritatem, pariatur ea quamquam, nulla ingeniis te cernantur, 
+                culpa laborum arbitror, incididunt id cillum qui excepteur hic iudicem, elit non 
+                singulis ne fore iudicem familiaritatem. Possumus illum nescius possumus, 
+                possumus reprehenderit ubi ingeniis eu culpa qui probant eu dolore, o admodum 
+                philosophari. Ingeniis quorum quibusdam pariatur an legam laborum ita cupidatat. 
+                Quae ne arbitror non senserit velit duis sed cillum. Minim arbitror excepteur, 
+                varias te incurreret. De magna ex quem, ullamco et nisi a ne eiusmod 
+                fidelissimae, ut nam dolor aute amet, nam malis excepteur, in quis cohaerescant, 
+                fabulas sint illum admodum irure, o aliqua probant expetendis. Aliquip 
+                familiaritatem nam doctrina.
+         </p>
+        </div>
+        
         <div id="telecom" class="hidden">
             <h2>Dexter Hartman</h2>
             <h3>Telecommunications Chair</h3>
-            <img alt="Picture here.">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum ligula non venenatis porttitor. Mauris cursus, neque vel egestas tincidunt, urna eros suscipit sapien, eu semper justo nunc a leo. Aliquam et iaculis justo. Nulla quis ipsum varius, sollicitudin ligula at, posuere dui. Duis eget dolor mollis sem euismod iaculis.
+            <img id="pic" alt="Picture here." src="">
+            <p> Ubi minim domesticarum. Quibusdam e irure mentitum e summis id aliquip aut 
+                fugiat o te fugiat nescius fidelissimae, irure id deserunt se id nulla commodo 
+                de nescius aliqua de occaecat familiaritatem, noster offendit ubi transferrem, 
+                in nostrud exercitation. An non quem voluptate est te id quem enim quem. Elit et 
+                occaecat. Excepteur si legam est litteris quid ab incurreret fidelissimae ad te 
+                esse nostrud familiaritatem, quae nostrud comprehenderit ne laboris velit fugiat 
+                excepteur magna aut non quae ipsum et ullamco ad sunt expetendis ut 
+                concursionibus se iis appellat sed vidisse. Cillum probant incurreret de 
+                consequat non dolore a fore appellat non incurreret ut qui sed dolor quibusdam. 
+                Senserit noster laboris quamquam e aliqua possumus a possumus.
          </p>
         </div>
-
+        
         <div id="hist" class="hidden">
             <h2>Joseph Bates</h2>
             <h3>Historian</h3>
-            <img alt="Picture here.">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus elit quis metus pharetra imperdiet. Vestibulum blandit nec mauris vitae mollis. Nulla quis euismod mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis sit amet nisl arcu. Morbi eu dui non tortor feugiat accumsan.
+            <img id="pic" alt="Picture here." src="">
+            <p> Appellat voluptatibus eu deserunt. Cernantur eram an pariatur comprehenderit, 
+                laboris multos pariatur. Incididunt quorum excepteur fabulas, vidisse nisi iis 
+                aliquip coniunctione, in deserunt consectetur, iis ipsum et irure. De proident 
+                ubi commodo. Nostrud tamen tamen ita illum nam duis offendit an lorem esse, 
+                appellat te occaecat, incurreret velit culpa offendit nisi, quo id coniunctione, 
+                arbitror a fabulas est quid fabulas quibusdam, id mandaremus sed vidisse. 
+                Senserit quo ipsum ullamco, malis ex se dolor possumus o do fore quorum elit 
+                nostrud non expetendis elit o incididunt imitarentur et ne e culpa admodum si 
+                pariatur duis officia, cupidatat ab legam quo voluptate est cupidatat. Tamen 
+                arbitror id esse veniam.
          </p>
         </div>
+        
+        <div id="senate" class="hidden">
+            <h2>Chris Reynolds</h2>
+            <h3>Senate</h3>
+            <img id="pic" alt="Picture here." src="">
+            <p> Nostrud summis varias aliquip veniam ea sunt officia tempor, arbitror iis quis 
+                litteris aut se cillum se noster. An incididunt si incurreret non elit nam 
+                offendit ne minim, litteris a esse qui si labore commodo tempor. Doctrina sed 
+                velit senserit. Do quorum minim sint ingeniis ab nisi an eiusmod ea nulla. Id 
+                fore nescius quibusdam, velit commodo eu sempiternum. Do ad coniunctione.
+         </p>
+        </div>
+        
+        <div id="chairemer" class="hidden">
+            <h2>Jhamal Davis</h2>
+            <h3>Chair Emeritus</h3>
+            <img id="pic" alt="Picture here." src="">
+            <p> Arbitror aliqua pariatur commodo. Officia in nulla tempor, cillum laborum 
+                despicationes. Sed esse duis qui incididunt, non multos eruditionem, incididunt 
+                domesticarum ea tempor, officia irure veniam quibusdam quorum. In duis amet 
+                aliqua aliquip nam elit imitarentur laboris illum voluptate, incurreret 
+                coniunctione ad commodo iis proident voluptatibus iis doctrina. An senserit 
+                graviterque eu aliquip ad ipsum. Doctrina reprehenderit ea arbitror, quae ad sed 
+                dolore ingeniis ne est amet mentitum, voluptate tamen legam deserunt labore.
+         </p>
+        </div>
+        
+        <div id="parliamen" class="hidden">
+            <h2>Kojo</h2>
+            <h3>Parliamentarian</h3>
+            <img id="pic" alt="Picture here." src="">
+            <p> Ne proident cohaerescant, nam duis hic aliqua hic elit proident ea proident in 
+                et aute vidisse se elit excepteur ab veniam aute, ea magna de multos de te quo 
+                varias iudicem, quo ea exquisitaque. Varias commodo imitarentur ex sed veniam 
+                eruditionem ad elit ne do fore occaecat, ita mandaremus eu consequat. Lorem 
+                quamquam ab exquisitaque ne appellat o cupidatat. E aute occaecat admodum. 
+                Ingeniis culpa appellat, qui mentitum graviterque. Ne non fore nostrud, offendit 
+                qui dolor expetendis si ut ab relinqueret, velit consequat commodo, malis 
+                instituendarum doctrina fore cernantur, iis iis magna deserunt e occaecat tamen 
+                elit ab sunt ad hic quid excepteur firmissimum. Qui dolor occaecat cupidatat, 
+                aut irure instituendarum, anim comprehenderit quibusdam tamen fabulas, si varias 
+                aliqua ab senserit, quo enim occaecat concursionibus a iis a legam cupidatat a 
+                excepteur cillum velit aut nulla ubi ipsum iudicem excepteur.
+         </p>
+        </div>
+        
     </div>
 </div>
 </body>

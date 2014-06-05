@@ -3,17 +3,41 @@
     
 } 
 
+li {
+    width: 300px;  
+}
+
+#title{
+    font-size: 22px;
+}
+
+#names li.name {
+    cursor:pointer;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 15px;
+    font-family: 'Philosopher', sans-serif;
+    
+}
+
 #names li.name{
-    -webkit-transition:font-size .1s; /* For Safari 3.1 to 6.0 */
-    transition:font-size .1s;
+    -webkit-transition:font-size .2s; /* For Safari 3.1 to 6.0 */
+    transition:font-size .2s;
 }
 
 #names li.name:hover{
-    font-size: 25px;
+    font-size: 27px;
+    color: #231132;
 }
 
 .hidden{
     display: none;
+}
+
+
+
+#biography img {
+    content: url("http://lorempixel.com/200/250");
 }
 
 #biography {
@@ -31,7 +55,9 @@
     font-size: relative;
     margin: 4px;
     margin-left: 80px;
-    border: 2px solid;
+    /*border: 2px solid;*/
     padding-bottom: 50px;
 }
+
+
 

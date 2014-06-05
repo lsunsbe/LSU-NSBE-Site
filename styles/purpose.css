@@ -6,7 +6,7 @@
 
 #purposemenu {
     list-style: none;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 20%;
     float: left;
     margin: 5%;
@@ -15,7 +15,7 @@
 
 #purposemenu li {
     height: 55px;
-    border: 1px solid;
+    border: 1px solid; 
 }
 
 #purposemenu a{

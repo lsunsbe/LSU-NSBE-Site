@@ -1,5 +1,5 @@
 #menu{
-	margin: 0 auto;
+	margin: 0;
     margin-top: 1px;
 	text-align: center;
     height: 40px;
@@ -32,12 +32,12 @@ ul {
 }
 
 #menu a.item:hover{
-    background-color: red;
+    color: rgb(0,166,80);
 }
 
 #menu a {
     text-decoration: none;
-    color: white;
+    color: #fdd;
     font-size: 100%;
     
 }
@@ -49,21 +49,23 @@ a:visited {
 
 .item {
     height: 40px;
-    background-color: #660000;
-    border: 1px solid black;
-    border-radius: 10px;
+    background-color: #5d0000;
+    border: 0x solid black;
+    border-radius: 0px;
     display: inline;
     font-family: "Helvetica", sans-serif;
+    font-weight: 900;
+    
     margin: auto;
 }
 
 .SELitem{
-height: 40px;
+    height: 40px;
     width: 130px;
-    border: 1px solid black;
-    border-radius: 10px;
+    border: 0px solid black;
+    border-radius: 0px;
     background-color: #CC6633;
-    border-width: 1px;
+    border-width: 0px;
     display: inline;
     text-align: center;
     font-family: "Helvetica", sans-serif;

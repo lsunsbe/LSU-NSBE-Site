@@ -1,0 +1,48 @@
+
+table {
+    /*border: 1px solid black;*/
+}
+
+tr {
+    /*border: 1px solid black;*/
+}
+
+td {
+    /*border: 1px solid black; */
+    height: 90px;
+    margin: 30px;
+    padding: 5px;
+}
+
+.newsstyle1 {
+    background: #bf2e2e;
+}
+
+.newsstyle2 {
+    background: #6f2020;
+}
+
+#newstable {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+
+
+.date {
+    width: 120px;
+    
+}
+
+.story {
+    width: 640px;
+}
+
+#news3item {
+    display: inline-block;
+}
+
+#newstable h2 {
+    color: black;
+}
