@@ -3,6 +3,18 @@
 	background-color: red;
 }
 
+#floatingsocial{
+    border: 0px solid #b28484;
+    width: 4.0%;
+    height: auto;
+    margin-left: 8.7%;
+    margin-top: 20%;
+    position: fixed;
+    float: left;
+    vertical-align:middle;
+    
+}
+
 #announements, #recentnews{
     float: left;
 	border: 0px solid #000;
@@ -13,12 +25,25 @@
 }
 
 #announements{
-    margin-left: 25px;
+    margin-left: 114px;
+    height: 145px;
+    margin-top: 20px;
+    width: 30%;
 }
 
 #recentnews{
-    margin-right: 25px;
+    margin-right: 15px;
     margin-left: 25px;
+    margin-top: 30px;
+}
+
+#frontimage{
+    float: left;
+    width: 45%;
+    height: 400px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border: 5px outset green;
 }
 
 h4 {

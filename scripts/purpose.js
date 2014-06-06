@@ -7,10 +7,8 @@ function setUnhidden(position) {
         var currentElement = document.getElementById(positions[i]);
         if (positions[i] == position){
             currentPosition.className = "unhidden";
-            currentElement.style.background = "green"
         } else{
             currentPosition.className = "hidden";
-            currentElement.style.background = "purple"
         }
     }
-}
+} 

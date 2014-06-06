@@ -22,7 +22,7 @@
     display: block; /*THIS IS IMPORTANT TO LIFE */
     height: 100%;
     width: 100%;
-    background-color: purple;
+    background-color: #5d0000;
     text-decoration: none;
     color: white;
     line-height: 50px;
@@ -31,16 +31,24 @@
 
 
 #purposemenu a:hover{
-    background-color: red;
+    background-color: rgb(193, 72, 50);
 }
 
 #description{
-    display: block;
-    margin-top: 10%;
-    margin-left: 20%;
+    display: inline-block;
+    margin: 5%;
     width: 60%;
+    min-height: 175px;
+    background: rgba(185, 72, 51, 0.78);
+    border-radius: 10px;
 }
 
 .hidden{
     display: none;
+}
+
+h3{
+    color: #5d0000;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
