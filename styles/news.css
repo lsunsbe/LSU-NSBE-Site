@@ -32,17 +32,41 @@ td {
 
 .date {
     width: 120px;
-    
+    background: rgb(234, 227, 186);
+    font-size: 25px;
+    color: rgba(155, 155, 101, 0.56);
+    font-family: sans-serif, "Helvetica";
+    font-weight: 800;
 }
+
 
 .story {
     width: 640px;
+    padding: 35px;
 }
+
+.story p{
+    color: rgba(181, 181, 94, 0.99);
+}
+
 
 #news3item {
     display: inline-block;
 }
 
-#newstable h2 {
-    color: black;
+#newstable h3{
+    margin: 10px;
+    font-family: serif, "Helvetica";
+    font-size: 25px;
 }
+
+.newsstyle2 h3 {
+    color: #317b27;
+}
+
+.newsstyle1 h3{
+    color: #5a1919;
+}
+
+
+
