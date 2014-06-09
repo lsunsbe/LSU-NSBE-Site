@@ -1,15 +1,15 @@
 /*jslint browser: true*/
 /*global $, jQuery*/
-"use strict";
 
+function slideSwitch() {
+    var $current = $('#frontimage img.active');
+    console.log($current);
+    var $next = $current.next();
+    console.log($next);
+    $current.removeClass('active');
+    $next.addClass('active');
+}
 
-!function(d,s,id)
-{
-    
-    var js,fjs=d.getElementsByTagName(s[0],p=/^http:/.test(d.location)?'http':'https';
-    if(!d.getElementById(id))                    
-        {js=d.createElement(s);
-         js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
-         fjs.parentNode.insertBefore(js,fjs);
-        }
-}(document, 'script', 'twitter-wjs');
+    $(function() {
+        setInterval( "slideSwitch()", 5000 );
+    });

@@ -29,6 +29,7 @@
     height: 145px;
     margin-top: 20px;
     width: 30%;
+    background: rgba(155, 155, 101, 0.9);
 }
 
 #recentnews{
@@ -79,3 +80,70 @@ span {
 }
 
 
+
+#interestedheading {
+    clear:both;
+    font-family: sans-serif, "Helvetica";
+    font-size: 50px;
+  padding-top: 10px;
+}
+
+
+#interestedsection {
+    clear: both;
+    background: rgb(124, 35, 35);
+    padding-top: 30px;
+    
+    
+}
+
+#email, #national {
+    width: 45%;
+    background: rgb(234, 227, 186);
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    
+    
+}
+
+#national{
+    float: right;
+}
+
+#email{
+    float: left;
+}
+h3 {
+    font-size: 25px;
+    font-family: monospace;
+}
+
+#emailbox {
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    width: 90%;
+    align-content: center;
+}
+
+#gobutton {
+    display: block;
+    margin-left: 35%;
+    margin-top: 10px;
+    font-size: 40px;
+    font: "Helvetica";
+    font-weight: 600;
+    width: 35%;
+    height: 50px;
+    border-radius: 10px;
+    background: rgba(132, 32, 32, 0.94);
+}
+
+#frontimage img{
+    display: none;
+}
+
+#frontimage img.active{
+    display: block;
+}

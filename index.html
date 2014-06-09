@@ -8,32 +8,32 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css"> 
 	<link rel="stylesheet" type="text/css" href="styles/index.css">
     <link rel="stylesheet" type="text/css" href="styles/navmenu.css"> 
-    
+   
 	<link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="scripts/index.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="scripts/index.js"></script>
 
 </head>
 <body>
 <!--By using container, we can center all the site content easily-->
     <div id=floatingsocial>
-    <a href="https://www.facebook.com/GeauxNSBE">
-	<img src="images\Facebook_Logo.jpeg" 
-	alt="NSBE on Facebook" 
-	width="50" height="50">
-	</a>
+        <a href="https://www.facebook.com/GeauxNSBE">
+            <img src="images\Facebook_Logo.jpeg" 
+            alt="NSBE on Facebook" 
+            width="50" height="50">
+        </a>
 
-	<a href="https://www.instagram.com/nsbe_lsu">
-	<img src="images\Insta_logo.jpg" 
-	alt="NSBE on Instagram" 
-	width="50" height="50">
-	</a>
+        <a href="https://www.instagram.com/nsbe_lsu">
+            <img src="images\Insta_logo.jpg" 
+            alt="NSBE on Instagram" 
+            width="50" height="50">
+        </a>
 
-	<a href="https://www.twitter.com/NSBELSU">
-	<img src="images\Twitter_logo_blue.jpg" 
-	alt="NSBE on Twitter" 
-	width="50" height="50">
-	</a>
+        <a href="https://www.twitter.com/NSBELSU">
+            <img src="images\Twitter_logo_blue.jpg" 
+            alt="NSBE on Twitter" 
+            width="50" height="50">
+        </a>
     </div>
 
 <div id="container">
@@ -65,7 +65,13 @@
 
 	<!-- Break to break -->
     
-    <img id="frontimage" src="images/fontpage1.png">
+    <div id="frontimage">
+        <img class="active" src="images/fontpage1.png">
+        <img src="images/frontpage2.png">
+        <img src="images/NSBElogo.jpg">
+    </div>
+    
+    
 	<div id="announements">
 		<h4 >Upcoming Events</h4>
 		<p>Next Gen. Body Meeting: <b>August 28, 2014</b></p>
@@ -83,9 +89,30 @@
             <p><span>May 03, 2014: </span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.              Proin ultricies sagittis convallis. Duis elementum, mauris eu mattis rhoncus, dui dui                  sodales lectus, sit amet ullamcorper... <a href="news.html#news2">Read More...</a> </p> </div>
             <a href="news.html">More News...</a>
     </div>
-    
+<div id="my-slideshow">
 
-
+    <div id="interestedsection">
+        <h2 id="interestedheading">Want To Get Involved With NSBE?</h2>
+        <div id="email">
+            <h3>Add your email to the NSBE mailing list:</h3>
+            <form>
+                <input id="emailbox" type="text" name="email" >
+                <input id="gobutton" type="button" name="Geaux" value="Submit">
+                
+          
+                
+            </form> 
+            <br/>
+            <br/>
+            <br/>
+            <p>Or <a href="">Contact Us</a> directly for more info.</p>
+        </div>
+        
+        <div id="national"></div>
+        <p style="clear: both"></p>
+        <br />
+        <br />
+    </div>
 	<!--This is how you link, with link aption preceding address-->
 	<p style="clear: both"><a href="http://www.youtube.com/watch?v=guMFKBXp544">Youtube Link</a></p>
 
