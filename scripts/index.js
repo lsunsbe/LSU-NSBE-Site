@@ -1,13 +1,22 @@
 /*jslint browser: true*/
 /*global $, jQuery*/
 
+
+var i = 0;
+
 function slideSwitch() {
-    var $current = $('#frontimage img.active');
-    console.log($current);
-    var $next = $current.next();
-    console.log($next);
-    $current.removeClass('active');
-    $next.addClass('active');
+    var $currentPhoto = $('#frontimage img.active');
+    $currentPhoto.fadeOut("fast");
+    $currentPhoto.removeClass('active');
+    
+    i = i + 1;
+    if (i == $('#frontimage img').length){
+        i = 0;
+        
+    }
+    
+    $($('#frontimage img').get(i)).addClass("active");
+    $($('#frontimage img').get(i)).fadeIn("fast");
 }
 
     $(function() {
