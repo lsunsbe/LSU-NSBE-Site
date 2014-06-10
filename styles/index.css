@@ -18,7 +18,7 @@
 #announements, #recentnews{
     float: left;
 	border: 0px solid #000;
-	height: 225px;
+	height: 300px;
 	width: 45%; 
     border-radius: 10px; 
     background: rgba(185, 72, 51, 0.78);
@@ -39,7 +39,11 @@
 }
 
 #recentnews p{
-    font-family: "Open-Sans"
+    font-family: "Open Sans", sans-serif;
+}
+
+#announements p{
+    font-family: "Open Sans", sans-serif;
 }
 
 #frontimage{
@@ -94,7 +98,7 @@ span {
 
 #interestedheading {
     clear:both;
-    font-family: sans-serif, "Helvetica";
+    font-family: "Bevan";
     font-size: 50px;
   padding-top: 10px;
 }
