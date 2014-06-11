@@ -25,12 +25,14 @@
 }
 
 #announements{
-    margin-left: 114px;
-    height: 145px;
+    margin-left: 25px;
+    height: auto;
     margin-top: 20px;
-    width: 30%;
+    width: 45%;
+    padding-bottom: 10px;
     background: rgba(155, 155, 101, 0.9);
 }
+
 
 #recentnews{
     margin-right: 15px;
@@ -67,14 +69,7 @@ h4 {
     font-family: "Bevan";
 }
 
-#titlebar img{
-    display: inline;
-    width: 19%;
-}
 
-#titlebar .pic{
-    width: 40%;
-}
 
 a:link {
     text-decoration: underline;
@@ -156,8 +151,14 @@ h3 {
     background: rgba(132, 32, 32, 0.94);
 }
 
+#frontimage{
+    
+   
+}
+
 #frontimage img{
     display: none;
+    border-radius: 10px;
 }
 
 #frontimage img.active{

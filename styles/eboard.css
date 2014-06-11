@@ -37,14 +37,14 @@ li {
 
 
 #biography img {
-    content: url("http://lorempixel.com/200/250");
+    content: url("http://lorempixel.com/people/200/250");
 }
 
 #biography {
     float: right;
-    display: inline;
+    display: inline-block;
     width: 50%;
-    background-color: #8d1717;
+    background-color: rgba(185, 72, 51, 0.78);;
     margin-right: 80px;
     margin-bottom: 10px;
     border-radius: 10px;

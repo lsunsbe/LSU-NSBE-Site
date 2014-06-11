@@ -12,7 +12,7 @@ h2{
     margin-top: 10px;
     margin-bottom: 10px;
     color: rgb(193, 72, 50);
-    font-family: "Bevan";
+    font-family: "Bevan"; 
 }
 
 body {
@@ -25,9 +25,8 @@ body {
 	width:80%;
 	margin:20px auto;
     margin-top: 0px;
-    
     background: rgb(234, 227, 186);
-
+    overflow: auto;
 }
 
 #titlebar {
@@ -35,6 +34,11 @@ body {
     margin: -1px;
     padding-bottom: 7px;
     padding-top: 8px;
+}
+
+#titlebar img{
+    width: 140px;
+    height: 160px;
 }
 
 p {
