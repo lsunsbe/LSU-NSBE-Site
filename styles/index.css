@@ -16,32 +16,36 @@
 }
 
 #announements, #recentnews{
-    float: left;
+    float: right;
 	border: 0px solid #000;
 	height: 300px;
-	width: 45%; 
+	width: 50%; 
     border-radius: 10px; 
     background: rgba(185, 72, 51, 0.78);
+    display: block;
+    margin-right: 1%;
 }
 
 #announements{
-    margin-left: 25px;
+    
     height: auto;
     margin-top: 20px;
-    width: 45%;
     padding-bottom: 10px;
-    background: rgba(155, 155, 101, 0.9);
+    background: rgba(155, 155, 101, 0.74);
+        margin-right: 15px;
+
 }
 
 
 #recentnews{
-    margin-right: 15px;
-    margin-left: 25px;
+    
+    
     margin-top: 30px;
 }
 
 #recentnews p{
     font-family: "Open Sans", sans-serif;
+    font-size: 15px;
 }
 
 #announements p{
@@ -56,6 +60,7 @@
     margin-top: 20px;
     margin-bottom: 15px;
     border: 0px solid rgba(185, 72, 51, 0.78);
+    display: block;
 }
 
 #frontimage img{
@@ -91,38 +96,30 @@ span {
 
 
 
-#interestedheading {
-    clear:both;
-    font-family: "Bevan";
-    font-size: 50px;
-  padding-top: 10px;
-}
-
-
-#interestedsection {
-    clear: both;
-    background: rgb(124, 35, 35);
-    padding-top: 30px;
-    
-    
-}
-
-#email, #national {
+#email, #links {
     width: 45%;
-    background: rgb(234, 227, 186);
-    height: 300px;
-    margin: 20px;
+    margin-top: 20px;
+    height: 553px;
     border-radius: 10px;
-    
+    display: block;
     
 }
 
-#national{
-    float: right;
+#links{
+    border-radius: 10px;
+    float: left;
+    height: 375px;
+    background: rgba(145, 58, 45, 0.91);
+    margin-left: 10px;;
 }
 
 #email{
-    float: left;
+    border-radius: 10px;
+    float: right;
+    background: rgba(155, 155, 101, 0.74);
+    
+    margin-right: 1%;
+    width: 50%
 }
 
 h3 {
@@ -149,6 +146,16 @@ h3 {
     height: 50px;
     border-radius: 10px;
     background: rgba(132, 32, 32, 0.94);
+}
+
+#interestedheading, #linksheading{
+ font-size: 27px;
+    width: 95%;
+    color: black;
+}
+
+#gobutton:hover{
+    background: rgba(132, 32, 32, 0.74);
 }
 
 #frontimage{
