@@ -9,11 +9,17 @@ html{
 
 h2{
     font-size: 23px;
-    margin-top: 10px;
-    margin-bottom: 10px;
     color: rgb(193, 72, 50);
     font-family: "Bevan"; 
+    font-weight: 800;
+    
 }
+
+h3{
+    font-family: "Bevan";
+    color: rgb(177, 85, 85);
+}
+
 
 body {
 	
@@ -37,8 +43,8 @@ body {
 }
 
 #titlebar img{
-    width: 140px;
-    height: 160px;
+    width: 90px;
+    height: 70px;
 }
 
 p {

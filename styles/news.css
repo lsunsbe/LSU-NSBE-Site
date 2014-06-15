@@ -47,7 +47,9 @@ td {
 }
 
 .story p{
-    color: rgba(181, 181, 94, 0.99);
+    font-size: 15px;
+    color: rgba(38, 15, 15, 0.99);
+    font-weight: bolder;
 }
 
 
@@ -62,7 +64,7 @@ td {
 }
 
 .newsstyle2 h3 {
-    color: #317b27;
+    color: #b52828;
 }
 
 .newsstyle1 h3{
