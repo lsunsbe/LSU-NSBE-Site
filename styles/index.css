@@ -12,6 +12,9 @@
     position: fixed;
     float: left;
     vertical-align:middle; 
+    border-radius: 10px;
+    box-shadow: -3px 2px 13px #888888;
+    background: rgba(222, 185, 122, 0.62);
 }
 
 .button{
@@ -37,7 +40,7 @@
 }
 
 .button:hover{
-    border: 7px solid rgba(255, 255, 255, 0);
+    background: rgba(195, 153, 80, 0.62);
 }
 
 

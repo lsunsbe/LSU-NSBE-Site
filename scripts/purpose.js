@@ -7,8 +7,13 @@ function setUnhidden(position) {
         var currentElement = document.getElementById(positions[i]);
         if (positions[i] == position){
             currentPosition.className = "unhidden";
+            var button = document.getElementById(position);
+            button.style.background = "rgb(193, 72, 50)"
         } else{
             currentPosition.className = "hidden";
+            var button = document.getElementById(positions[i]);
+            button.style.background = "rgb(175,3,3)"
+            
         }
     }
 } 
