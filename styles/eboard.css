@@ -44,11 +44,19 @@ li {
     float: right;
     display: inline-block;
     width: 50%;
-    background-color: rgba(185, 72, 51, 0.78);;
+    background-color: rgba(185, 72, 51, 0.88);;
     margin-right: 80px;
     margin-bottom: 10px;
     border-radius: 10px;
     padding: 10px;
+}
+
+#biography h2{
+    color: #810000;
+}
+
+#biography h3{
+    color: #b71c1c;
 }
 
 #names {

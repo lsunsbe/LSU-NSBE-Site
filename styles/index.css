@@ -53,7 +53,6 @@
 }
 
 #announements{
-    
     height: auto;
     margin-top: 20px;
     padding-bottom: 10px;
@@ -64,8 +63,6 @@
 
 
 #recentnews{
-    
-    
     margin-top: 30px;
 }
 
@@ -97,6 +94,8 @@
 h4 {
     font-size: 25px;
     margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: "Bevan";
 }
 
@@ -120,12 +119,14 @@ span {
     color: #1c641c;
 }
 
-
+hr{
+    margin: 10px;
+}
 
 #email, #links {
     width: 45%;
     margin-top: 20px;
-    height: 553px;
+    height: 410px;
     border-radius: 10px;
     display: block;
     
@@ -179,10 +180,21 @@ span {
     background: rgba(132, 32, 32, 0.74);
 }
 
-#frontimage{
-    
-   
+.event{
+    text-align: right;
 }
+
+
+.date{
+    text-align: left;
+    font-weight: bolder;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 #frontimage img{
     display: none;

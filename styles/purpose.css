@@ -11,6 +11,7 @@
     float: left;
     margin: 5%;
     clear: none;
+    
 }
 
 #purposemenu li {
@@ -36,11 +37,11 @@
 
 #description{
     display: inline-block;
-    margin: 5%;
+    float: right;
     width: 60%;
-    min-height: 175px;
-    background: rgba(185, 72, 51, 0.78);
-    border-radius: 10px;
+    min-height: 400px;
+    margin: 20px;
+    margin-right: 95px;
 }
 
 .hidden{
@@ -51,4 +52,30 @@
     color: #5d0000;
     font-size: 30px;
     margin-bottom: 10px;
+}
+
+#menucol {
+    background: rgb(175, 3, 3);
+    float: left;
+    position: absolute;
+    width: 15%;
+    height: 60%;
+
+}
+
+.purposebutton {
+    background-color: transparent;
+    /*border-bottom: 1px solid black;    */
+}
+
+.purposebutton:hover{
+    background-color: #9a4d4d;
+    cursor: pointer;
+}
+
+.purposebutton p{
+    font-size: 24px;
+    color: tan;
+    font-family: "Bevan";
+    padding: 10px;
 }
