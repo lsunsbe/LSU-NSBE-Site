@@ -5,6 +5,8 @@
     height: 40px;
     background-color: #993300;
     padding: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 
@@ -71,4 +73,14 @@ a:visited {
     text-align: center;
     font-family: "Helvetica", sans-serif;
     margin: auto;
+}
+
+#contact {
+    border-bottom-right-radius: 10px;
+    padding-right: 1px;
+}
+
+#home {
+    border-bottom-left-radius: 10px;
+    padding-left: 1px;
 }

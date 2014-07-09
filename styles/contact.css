@@ -1,0 +1,70 @@
+
+#divider {
+    display: block;
+    border-left: 3px solid #8d8d8d;
+    height: 600px;
+    margin-top: 40px;
+    float: left;
+    margin-bottom: 40px;
+}
+
+#contactinfo, #contactform{
+    width: 45%;
+    padding-top: 60px;
+}
+
+#contactinfo {
+    display: block;
+    float: left;
+}
+
+form{
+    text-align: left;
+}
+
+label {
+    font-size: 20px;    
+    display: block;
+    margin-top: 9px;
+}
+
+form input, form textarea{
+    font-size: 20px;
+    margin-left: 30px;
+    width: 85%;
+    border-radius: 10px;
+    padding: 3px;
+    background: rgb(242,230,176);
+    border: solid rgb(163, 151, 101) 3px;
+    color: rgb(128, 20, 20);
+    font-weight: 600;
+}
+
+form textarea{
+    font-weight: 100;
+    font-size: 100%;
+}
+
+#contactform {
+    display: block;
+    float: right;
+}
+
+.submitbutton {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#socialmediabuttons img {
+    width: 100px;
+    height: 100px;
+    margin: 3px;
+    border-radius: 50%;
+}
+
+#socialmediabuttons {
+    margin: 40px;
+    
+}

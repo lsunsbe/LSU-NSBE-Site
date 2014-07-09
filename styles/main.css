@@ -33,7 +33,7 @@ body {
 }
 
 #container{
-	width:75%;
+	width:77%;
 	margin:20px auto;
     margin-top: 0px;
     background: rgb(234, 227, 186);
@@ -48,10 +48,51 @@ body {
 }
 
 #titlebar img{
-    width: 90px;
+    width: 64px;
     height: 70px;
 }
 
 p {
     font-family: "Open Sans", sans-serif;
 }
+
+#floatingsocial{
+    border: 0px solid #b28484;
+    width: 3.5%;
+    height: auto;
+    margin-left: 7.7%;
+    margin-top: 20%;
+    position: fixed;
+    float: left;
+    vertical-align:middle; 
+    border-radius: 10px;
+    box-shadow: -3px 2px 13px #888888;
+    background: rgba(222, 185, 122, 0.62);
+}
+
+.button{
+    background: rgba(222, 185, 122, 0.62);
+}
+
+.button a img{
+    margin: auto;
+    border-radius: 5px;
+    width: 60%;
+    height: 60%;
+    margin: 15%;
+}
+
+#facebookbutton{
+    border-top-left-radius: 30%;
+    border-top-right-radius: 10px;
+}
+
+#nsbebutton{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.button:hover{
+    background: rgba(195, 153, 80, 0.62);
+}
+

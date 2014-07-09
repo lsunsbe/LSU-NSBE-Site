@@ -12,11 +12,15 @@
     
 	<link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
-<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <script src="scripts/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+<script type="text/javascript" src="slick/slick.min.js"></script>
+				
 
 </head>
 <body>
@@ -59,8 +63,6 @@
 
 <div id="container">
     
-
-    
     <div id="titlebar">
         <!--This is how you link photos-->
         
@@ -81,17 +83,17 @@
             <li><a class="item" id="news" href="news.html">News</a></li>
             <li><a class="item" id="calendar" href="calendar.html">Calendar</a></li>
             <li><a class="item" id="photos" href="">Photos</a></li>
-            <li><a class="item" id="contact" href="">Contact Us</a></li>
+            <li><a class="item" id="contact" href="contact.html">Contact Us</a></li>
 		</ul>
 	</div>
 
 
 	<!-- Break to break -->
     
-    <div id="frontimage">
-        <img class="active" src="images/fontpage1.png">
-        <img src="images/frontpage2.png">
-        <img src="images/sampleflyer.jpg">
+    <div class="frontimage" id="frontimage">
+        <div><img class="active" src="images/fontpage1.png"></div>
+        <div><img src="images/frontpage2.png"></div>
+        <div><img src="images/sampleflyer.jpg"></div>
     </div>
     
     
@@ -122,10 +124,10 @@
     <div id="recentnews">
         <h4> Recent News</h4>
         <div class=story>
-            <p><span>May 21, 2014: </span> Lorem Proin ultricies   sodales lectus sagittis sagittis ipsum dolor sit amet, Duis elementum, mauris consectetur adipiscing elit.              Proin  elitconvallis. Duis elementum, mauris eu Duis elementum, mauris, dui dui                  sodales lectus, sit amet ullamcorper... <a href="news.html#news1">Read More...</a> </p> </div> <br />
+            <p><span id="date">May 21, 2014: </span> <span id="heading">Appellat non voluptate, hic Duis elementum  tamen  </span> Eu mattis rhoncus Lorem Proin ultricies   sodales lectus sagittis sagittis ipsum dolor sit amet, Duis elementum, mauris consectetur adipiscing elit.              Proin  elitconvallis. Duis elementum, mauris eu Duis elementum, mauris, dui dui                  sodales lectus, sit amet ullamcorper... <a href="news.html#news1">Read More...</a> </p> </div> <br />
             <div class=story>
-            <p><span>May 03, 2014: </span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.              Eu mattis rhoncus Proin ultricies sagittis convallis. Duis elementum mauris consectetur adipiscing elit, mauris eu mattis rhoncus, dui dui                  sodales lectus, sit amet ullamcorper... <a href="news.html#news2">Read More...</a> </p> </div>
-        <br />
+                <p><span id="date">May 21, 2014: </span> <span id="heading">Fabulas a anim excepteur, varias excepteur de noster culpa, ita  </span>  Lorem ipsum dolor sit amet, consectetur adipiscing elit.              Eu mattis rhoncus Proin ultricies sagittis convallis. Duis elementum mauris consectetur adipiscing elit, mauris eu mattis rhoncus, dui dui                  sodales lectus, sit amet ullamcorper... <a href="news.html#news2">Read More...</a> </p> </div>
+
             <a href="news.html">More News...</a>
     </div>
 
@@ -133,12 +135,9 @@
         <div id="email">
             <h2 id="interestedheading">Want To Get Involved With NSBE?</h2>   
             <h3>Add your email to the NSBE mailing list:</h3>
-            <form>
-                <input id="emailbox" type="text" name="email" >
-                <input id="gobutton" type="button" name="Geaux" value="Submit">
-                
-          
-                
+            <form action="localhost/email.php" method="post">
+                <input id="emailbox" type="text" name="email" placeholder="Enter email here...">
+                <input id="gobutton" type="submit" name="Geaux" value="Send">
             </form> 
             <br/>
             <p>Or <a href="">Contact Us</a> directly for more info.</p>
