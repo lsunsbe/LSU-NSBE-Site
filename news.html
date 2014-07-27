@@ -40,8 +40,24 @@
 	</div>
             
             
-            <table id=newstable cellspacing="50">
+            <!--  News Stories: 
+                    All stories and dates contained within the table. Each row has 2 cells. 
+                    First cell contains date. Second cell has the story content.
+                    First cell class is named date and contains a <p> element with the date.
+                    Second cell class is named story and can hold and elements, followed by:
+                        The Facebook iframe, customized appropriatly, with a class tag "sharebutton"
+                        the Twitter a, customized apropriatly with a class tag "sharebutton"
+                    
+                    Finally, each row should:
+                        1) Alternate class labels between "newsstyle1" and "newsstyle2"
+                        2) Be given ascending id tags (news1, news2, news3...) for URL purposes 
+
+
+            -->
             
+            
+            <!-- NEWS STORY 4--> 
+            <table id=newstable cellspacing="50">
                 <tr id="news4" class="newsstyle1" name="story4">
                     <td class="date"><p>05/30/2014</p></td>
                     <td class="story">
@@ -51,10 +67,15 @@
         At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Sanctus sea sed takimata ut vero voluptua.
 
         Stet clita kasd gubergren, no sea takimata sanctus est. At vero eos et accusam et justo duo dolores et ea rebum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                        <img class="sharebutton" src="fcebookshare.png">
-                     <img class="sharebutton" src="twittershare.png"> 
+                      <iframe class="sharebutton" src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2FNSBE.com&amp;layout=button&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp" ></iframe>
+                     <a href="https://twitter.com/share" class="twitter-share-button sharebutton" data-url="http://nsbelsu.org/news#news4" data-text="News Spaces Can Hold Basic Stories" data-via="NSBE_LSU" data-count="false" >Tweet Out</a>
                     </td>
                 </tr>
+                
+                
+                
+         <!-- NEWS STORY 3-->        
+                
             <tr id="news3" class="newsstyle2" name="news1">
                 <td class="date"><p>05/15/2014</p></td>
                 <td class="story">
@@ -69,20 +90,29 @@
                     </ul>
                     <br />
                     <p>For more info and dates, visit the <a href="">NSBE Main Site </a></p>
-                    <img class="sharebutton" src="fcebookshare.png">
-                     <img class="sharebutton" src="twittershare.png"> 
+
+                                          <iframe class="sharebutton" src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2FNSBE.com&amp;layout=button&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp" ></iframe>
+                     <a href="https://twitter.com/share" class="twitter-share-button sharebutton" data-url="http://nsbelsu.org/news#news4" data-text="News Spaces Can Hold Basic Stories" data-via="NSBE_LSU" data-count="false" >Tweet Out</a>
                 </td>
             </tr>
+                
+                
+                
+                <!-- NEWS STORY 2-->
+                
             <tr id="news2" class="newsstyle1">
                 <td class="date"><p>04/29/2014</p></td>
                 <td class="story">
                     <h3>Flyers Welcome Too!</h3>
                     <img src="images/sampleflyer.jpg" width="65%" height="600px" alt="Sample Flyer">
-                    <img class="sharebutton" src="fcebookshare.png">
-                     <img class="sharebutton" src="twittershare.png"> 
+
+                                          <iframe class="sharebutton" src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2FNSBE.com&amp;layout=button&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp" ></iframe>
+                     <a href="https://twitter.com/share" class="twitter-share-button sharebutton" data-url="http://nsbelsu.org/news#news4" data-text="News Spaces Can Hold Basic Stories" data-via="NSBE_LSU" data-count="false" >Tweet Out</a>
                 </td>
-                 
             </tr>
+                
+                <!-- NEWS STORY 1--> 
+                
             <tr id="news1" class="newsstyle2">
                 <td class="date"><p>04/13/2014</p></td>
                 <td class="story">
@@ -92,13 +122,24 @@
 <p>Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Stet clita kasd gubergren, no sea takimata sanctus est.
 
  </p>
-                  <img class="sharebutton" src="fcebookshare.png">
-                     <img class="sharebutton" src="twittershare.png">    
+
+                                          <iframe class="sharebutton" src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2FNSBE.com&amp;layout=button&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp" ></iframe>
+                     <a href="https://twitter.com/share" class="twitter-share-button sharebutton" data-url="http://nsbelsu.org/news#news4" data-text="News Spaces Can Hold Basic Stories" data-via="NSBE_LSU" data-count="false" >Tweet Out</a>
                     
+      
                 </td>
             </tr>
         </table>
         </div>
-        
+
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
+                        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     </body>
 </html>

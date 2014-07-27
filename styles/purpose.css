@@ -1,8 +1,3 @@
-/*
-.purposeitem {
-    border: 1px solid black;
-    padding: 20px;
-} */
 
 #purposemenu {
     list-style: none;
@@ -55,7 +50,7 @@
 }
 
 #menucol {
-    background: rgb(175, 3, 3);
+    background: rgb(131, 27, 27);
     float: left;
     position: absolute;
     width: 15%;

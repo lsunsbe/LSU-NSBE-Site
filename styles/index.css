@@ -8,7 +8,7 @@
 #announements, #recentnews{
     float: right;
 	border: 0px solid #000;
-	height: 300px;
+	height: 320px;
 	width: 50%; 
     border-radius: 10px; 
     background: rgba(185, 72, 51, 0.78);
@@ -26,22 +26,26 @@
 }
 
 td{
-    font-family: "Open Sans", sans-serif;
+    font-family: "Droid Sans", sans-serif;
     font-size: 95%;
 }
 
 
 #recentnews{
-    margin-top: 30px;
+    margin-top:8px;
 }
 
 #recentnews p{
-    font-family: "Optima", serif;
-    font-size: 15px;
+    font-family: "Droid Sans", sans-serif;
+    font-size: 16px;
 }
 
-#announements p{
-    font-family: "Open Sans", sans-serif;
+#recentnews a{
+    text-decoration: none;
+}
+
+#recentnews a:hover{
+    color: #913a3a;
 }
 
 #frontimage{
@@ -66,9 +70,46 @@ h4 {
     margin-left: auto;
     margin-right: auto;
     font-family: "Bevan";
+    
+}
+
+.morenews{
+    margin-top: 6px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    
+}
+
+.morenews a{
+    text-decoration: none;
+}
+
+.morenews a:link{
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 15px;
+    background: #7c1a1a;
+}
+
+.morenews a:hover{
+    background: rgba(69, 14, 14, 0.71);
+}
+
+.morenews a:visited{
+    color: rgba(123, 121, 64, 0.9);
+    text-decoration: none;
 }
 
 
+#announements h4{
+    color: rgb(78, 33, 30);
+}
+
+#recentnews h4{
+    color: rgb(65, 27, 26);
+}
 
 a:link {
     text-decoration: underline;
@@ -141,8 +182,9 @@ hr{
     font-weight: 600;
     width: 35%;
     height: 50px;
-    border-radius: 10px;
-    background: rgba(132, 32, 32, 0.94);
+    border: none;
+    border-radius: 50px;
+    background: rgba(85, 85, 36, 0.94);
 }
 
 #interestedheading, #linksheading{
@@ -151,8 +193,13 @@ hr{
     color: black;
 }
 
+
 #gobutton:hover{
-    background: rgba(132, 32, 32, 0.74);
+    background: rgba(85, 85, 36, 0.64);
+} 
+
+#gobutton:active{
+    padding: 4px 9px 2px;
 }
 
 .event{
@@ -170,26 +217,19 @@ table{
     margin-right: auto;
 }
 
-/*
-#frontimage img{
-    display: none;
-    border-radius: 10px;
+.content{
+    margin-top: 5px;
 }
 
-#frontimage img.active{
-    display: block;
-} */
-
 #date {
-    color: #983131;
+    color: #7b0a0a;
     font-family: sans-serif, "Helvetica";
     font-weight: bolder;
     font-size: 105%;
 }
 
 #heading {
-    color: #5f0c0c;
     font-weight: bolder;
     font-size: 19px;
-    font-family: serif, "Helvetica"; 
+    color: rgb(80, 33, 32);
 }

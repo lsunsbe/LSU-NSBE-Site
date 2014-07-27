@@ -11,12 +11,16 @@
         <link rel="stylesheet" type="text/css" href="styles/contact.css"> 
 
         <link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
+                <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="scripts/contact.js"></script>
+
 
 
 
     </head>
 <body>
-    <div id="container">
+    <div id="container"> 
         <div id="titlebar">
             <!--This is how you link photos-->
 
@@ -56,16 +60,17 @@
         <div id="divider"></div>
         <div id="contactform">
             <h2>Contact NSBE Directly</h2>
-            <form>
+            <form action="" method="post">
                 <label>Your name:</label>
-                <input type="text" placeholder="John ">
+                <input id="name" type="text" placeholder="John ">
                 <label>E-mail:</label>
-                <input type="text" placeholder="example@example.com">
+                <input id="email" type="text" placeholder="example@example.com">
                 <label>Subject:</label>
-                <input type="text" placeholder="Subject ">
+                <input id="subject" type="text" placeholder="Subject ">
                 <label>Message:</label>
-                <textarea type="text" placeholder="Message" rows="10" cols="40"></textarea>
-                <input type="button" value="Submit" class="submitbutton">
+                <textarea id="message" type="text" placeholder="Message" rows="10" cols="40"></textarea>
+                
+                <input type="button" value="submit" id="submitbutton">
             </form>
         </div>
             

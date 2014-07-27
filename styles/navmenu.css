@@ -34,8 +34,11 @@ ul {
 }
 
 #menu a.item:hover{
-    color: rgb(0,166,80);
-    
+    color: rgb(0,166,80);  
+}
+
+#menu a.item:active{
+    color: rgb(0,166,80);  
 }
 
 #menu a {
