@@ -58,8 +58,7 @@ form textarea{
 }
 
 #socialmediabuttons img {
-    width: 100px;
-    height: 100px;
+    width: 15%;
     margin: 3px;
     border-radius: 50%;
 }

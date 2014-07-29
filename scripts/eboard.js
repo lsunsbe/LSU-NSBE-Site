@@ -1,9 +1,3 @@
-function myFunction() {
-    "use strict";
-    document.write("<p>Hello</p>"); 
-    
-}
-
 function setUnhidden(position) {
     "use strict"; 
     var positions = ["president","vpresident","secretary","treasurer","progchair","commservchair","conplanchair","memchair","publication","socialchair","financechair","nsbesenate","procollinit","telecom","hist","senate","chairemer","parliamen"];
@@ -14,20 +8,11 @@ function setUnhidden(position) {
             currentPosition.className = "visible";
         } else{
             currentPosition.className = "hidden";
+            if (positions[i] == "memchair"){
+            }
         }
         
         
     }
 
 }
-
-
-/*
-$(document).ready(function(){
-    $(".name").mouseenter(function(){
-            $("#" + event.target.id).animate({fontSize: "+=6px"}, "fast");
-    });
-    $(".name").mouseleave(function(){
-            $("#" + event.target.id).animate({fontSize: "-=6px"}, "fast");
-    });
-}); */

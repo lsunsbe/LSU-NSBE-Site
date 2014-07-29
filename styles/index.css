@@ -57,11 +57,13 @@ td{
     margin-bottom: 15px;
     border: 0px solid rgba(185, 72, 51, 0.78);
     display: block;
+    
 }
 
 #frontimage img{
     height: 500px;
     width: 100%;
+    border-radius: 10px;
 }
 
 h4 {

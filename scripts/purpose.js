@@ -12,7 +12,7 @@ function setUnhidden(position) {
         } else{
             currentPosition.className = "hidden";
             var button = document.getElementById(positions[i]);
-            button.style.background = "rgb(175,3,3)"
+            button.style.background = "rgb(131, 27, 27)"
             
         }
     }
