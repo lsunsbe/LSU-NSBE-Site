@@ -46,8 +46,6 @@ td:hover .sharebutton{
 }
 
 
- 
-
 .date {
     width: 120px;
     background: rgb(234, 227, 186);
@@ -62,6 +60,8 @@ td:hover .sharebutton{
     width: 640px;
     padding: 35px;
     border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
 }
 
 .story p{

@@ -8,6 +8,10 @@
     margin-bottom: 40px;
 }
 
+label{
+    font-family: "Droid Sans", sans-serif;
+}
+
 #contactinfo, #contactform{
     width: 45%;
     padding-top: 60px;
