@@ -1,0 +1,25 @@
+.story{
+    display: block;
+    text-align: center;
+    width: auto;
+}
+
+.date {
+    width: auto;
+    font-family: "Helvetica", sans-serif, grey;
+    font-size: 17px;
+    margin: 10px;
+    
+}
+
+.title{
+    font-size: 27px;
+    margin-top: 30px;
+}
+
+.content{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}

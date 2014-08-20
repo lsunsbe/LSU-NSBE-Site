@@ -11,7 +11,7 @@
 	height: 320px;
 	width: 50%; 
     border-radius: 10px; 
-    background: rgba(185, 72, 51, 0.78);
+    background: rgba(159, 65, 46, 0.89);
     display: block;
     margin-right: 1%;
 }
@@ -182,11 +182,12 @@ hr{
     font-size: 40px;
     font: "Helvetica";
     font-weight: 600;
+    color: rgba(70, 70, 30, 0.94);
     width: 35%;
     height: 50px;
     border: none;
     border-radius: 50px;
-    background: rgba(85, 85, 36, 0.94);
+    background: rgba(85, 85, 36, 0.64);
 }
 
 #interestedheading, #linksheading{
@@ -197,7 +198,9 @@ hr{
 
 
 #gobutton:hover{
-    background: rgba(85, 85, 36, 0.64);
+    background: rgba(126, 126, 52, 0.64);
+    color: rgba(85, 85, 36, 0.64);
+    cursor: pointer;
 } 
 
 #gobutton:active{

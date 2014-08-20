@@ -10,6 +10,7 @@
 
 label{
     font-family: "Droid Sans", sans-serif;
+    margin: 3px;
 }
 
 #contactinfo, #contactform{
@@ -54,11 +55,18 @@ form textarea{
     float: right;
 }
 
-.submitbutton {
+#submitbutton {
     width: 20%;
-    margin-left: 25%;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-left: 40%
+   
+}
+#submitbutton:hover{
+    color: rgb(242,230,176);
+    background: rgb(128, 20, 20);
+}
+
+#submitbutton:active{
+    padding: 4px 9px 2px;
 }
 
 #socialmediabuttons img {

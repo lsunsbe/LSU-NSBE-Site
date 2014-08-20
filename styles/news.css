@@ -37,12 +37,14 @@ td {
     border: none;
 }
 
+.fb-share-button{
+    display: none;
+}
+
 
 td:hover .sharebutton{
-    display: inline;
+    display: block;
     border: none;
-    margin-bottom: -10px;
-    margin-right: -10px;
 }
 
 
