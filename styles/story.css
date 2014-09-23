@@ -23,3 +23,9 @@
     margin-top: 15px;
     margin-bottom: 20px;
 }
+
+.content img{
+    display: block;
+    text-align: center;
+    
+}

@@ -3,11 +3,13 @@
     border-radius: 10px;
     padding: 15px;
     background: rgba(170, 154, 104, 0.74);
-
+    width: auto;
+        
 } 
 
 li {
-    width: 300px;  
+   
+    text-align: center; 
 }
 
 ul{
@@ -65,7 +67,7 @@ ul{
 }
 
 #biography h2{
-    color: #810000;
+    color: rgb(129, 0, 0);
     font-size: 30px;
 }
 
@@ -79,12 +81,12 @@ ul{
     display: inline;
     font-size: relative;
     margin: 4px;
-    margin-left: 80px;
+    margin-left: 4%;
     /*border: 2px solid;*/
     padding-bottom: 50px;
+    width: 30%;
+    text-align: center;
 }
-
-
 
 
 .emailpic {

@@ -6,6 +6,7 @@
 
 $(document).ready(function(){    
     $('#submitbutton').click(function( e ){
+        console.log("Test");
         $.ajax({
             type: "post",
             url: "contactsubmit.php",

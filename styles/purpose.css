@@ -2,7 +2,10 @@
 p{
     text-align: left;
     margin-bottom: 5px;
-    
+}
+
+footer p{
+    text-align: center;
 }
 
 li {
@@ -81,4 +84,8 @@ li {
     color: tan;
     font-family: "Bevan";
     padding: 10px;
+}
+
+#home{
+    border-bottom-left-radius: 0px;
 }

@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css"> 
 	<link rel="stylesheet" type="text/css" href="styles/index.css">
     <link rel="stylesheet" type="text/css" href="styles/navmenu.css"> 
-    
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
 
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -80,9 +80,9 @@
         
 
         <!---<h2>Welcome to the official website of the National Society of Black Engineers - Louisiana State University  </h2> -->
-        <h2>Welcome to the Official Website </h2> 
-        <h3>of the</h3> 
-        <h2>LSU National Society of Black Engineers  </h2>
+        <!--<h2>Welcome to the Official Website </h2> 
+        <h3>of the</h3> -->
+        <h2>Louisiana State University National Society of Black Engineers  </h2>
     </div>
     
 	<div id="menu">
@@ -111,18 +111,43 @@
 	<div id="announements">
 		<h4 >Upcoming Events</h4>
         <table>
-            <tr>
-                <td class="event">Engineering Networking Reception:</td>
-                <td class="date">September 08, 2014</td>
-            </tr>
-            <tr>
-                <td class="event">LSU Career Expo:</td>
-                <td class="date">September 09, 2014</td>
-            </tr>
+            <!--
             <tr>
                 <td class="event">Next General Body Meeting:</td>
                 <td class="date">September 10, 2014</td>
             </tr>
+            <tr >
+                <td  class="event">Next E-Board Meeting:</td>
+                <td class="date">September 9, 2014</td>
+            </tr>
+                <td  class="event">Labor Day Holiday:</td>
+                <td class="date">September 01, 2014</td>
+            </tr> 
+            <tr>
+                <td class="event">Student Involvement Fair:</td>
+                <td class="date">September 03, 2014</td>
+            </tr>  
+            <tr >
+            <tr>
+                <td class="event">Engineering Networking Reception:</td>
+                <td class="date">September 08, 2014</td>
+            </tr> -->
+            
+            <?php
+                $eventnum = 4;
+                $index = 0;
+                $file = fopen("emails.txt", "r") or die("ERROR!");
+                while ($index < $eventnum){
+                    $event = fgets($file);
+                    $date = fgets($file);
+                    echo 
+                        "<tr>
+                            <td class='event'>$event</td>
+                            <td class='date'>$date</td>
+                        </tr>";
+                    $index++;
+                }
+            ?>
         </table>
 		<a href="calendar.html">More upcoming events...</a>
 	</div>
@@ -132,7 +157,7 @@
         <h4> Recent News</h4>
         <div class="story">
                 <p><span id="date">August 23, 2014: </span> <span id="heading">Kick-Off General Body Meeting  </span></p>
-                <p class="content">NSBE will be having their first General Body Meeting of the year on September 10, 2014 at 8PM in Patrick F. Taylor, Rm. 1109. The meeting will offer an Alumni Panel, Regional and National conference updates, study group... <a href="news.html#genbodykickoff">Read More...</a> </p> </div>
+                <p class="content">NSBE will be having their first General Body Meeting of the year on September 10, 2014 at 8PM in Patrick F. Taylor, Rm. 2222. The meeting will offer an Alumni Panel, Regional and National conference updates, study group... <a href="news.html#genbodykickoff">Read More...</a> </p> </div>
         <br />
         <div class="story">
             <p><span id="date">August 23, 2014: </span> <span id="heading">Welcome to GeauxNSBE.org  </span></p>
@@ -149,7 +174,6 @@
             <form action="" method="post">
                 <input id="emailbox" type="text" name="email" placeholder="Enter email here..." value="">
                 <input id="gobutton" type="submit" name="submitbutton" value="SEND" autocomplete="off">
-                
             </form> 
             <br/>
             <p>Or <a href="contact.html">Contact Us</a> directly for more info.</p>
@@ -160,49 +184,14 @@
             <p>And don't forget to check out the <a href="http://www.nsbe.org/Regions/Region5/default.aspx" target="_blank">Region 5 Mainpage</a> </p>
         </div>
     
-    
-        
         <div id="links">
          <h2 id="linksheading">Links</h2>
-           
-        <ul>
-    
-        </ul>
     </div>
         <p style="clear: both"></p>
         <br />
         <br />
-        
-    <div id="welcome">
-        <img id="image" src="images/vonzell-williams.jpg" width="200" height="200">    
-        <h3 id="welcometitle">President's Welcome</h3>
-        <h4 id="nameplate">Vonzell Williams</h4>
-        <p id="address">A si minim nostrud. Commodo aute laborum. Ingeniis quis aliquip. Ut malis quis o 
-            vidisse, ita amet velit velit pariatur. Fabulas eu cillum, sunt singulis 
-            sempiternum qui pariatur an aute, non o relinqueret, qui te dolor duis velit e 
-            iis multos familiaritatem, ad iis elit incididunt, mentitum an fugiat offendit. 
-            Ea quorum veniam sint excepteur non amet laboris coniunctione, ea quid labore in 
-            quibusdam ut ut malis cupidatat quamquam, elit cernantur qui legam esse de 
-            aliqua proident est voluptatibus, te sint illum qui appellat, magna eruditionem 
-            mentitum enim incididunt. Enim consequat id comprehenderit e quae voluptatibus 
-            proident minim quibusdam quo eram nam incurreret, quae fidelissimae doctrina 
-            magna cernantur. 
-            
-            </p>
-        
-        <p>Sint cernantur excepteur. Enim eiusmod non laboris, tempor ita probant, labore 
-            nostrud quamquam hic arbitror nisi incididunt. Nostrud nisi lorem officia duis 
-            quo sint incididunt sed aliqua velit, quid ex aliquip o quid, qui legam nulla et 
-            iudicem. Est ab multos doctrina in dolore doctrina qui malis summis, dolore ex 
-            ullamco aut aute o occaecat hic labore e multos firmissimum consequat magna 
-            incurreret, ita sint ingeniis sed ea noster fabulas relinqueret iis malis 
-            probant ita nulla cillum. Fabulas firmissimum id quibusdam. Quis e pariatur in 
-            quorum se quorum mentitum litteris, consequat quis commodo, tempor fore varias 
-            de tamen, se veniam distinguantur nam ne labore nisi legam mandaremus in elit 
-            iudicem transferrem, qui non minim tamen duis. Hic nulla hic anim sed fugiat 
-            consequat non laborum. Ita veniam quem nisi eiusmod, ita elit adipisicing est 
-            amet ut doctrina et quo laboris ne tempor.</p>
-    </div>
+
+    	
 </div> 
     
     

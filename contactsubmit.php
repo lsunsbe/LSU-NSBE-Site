@@ -1,24 +1,24 @@
 <?php
 require('PHPMailerAutoload.php');
-require_once('/etc/php-console-master/src/PhpConsole/__autoload.php');
-ini_set("display_errors", 1);
+//ini_set("display_errors", 1);
 
-//if (preg_match("/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/" ,$emailaddress)){
-    
     $mail = new PHPMailer();
     //$mail->SMTPDebug  = 2;
     $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = 'in-v3.mailjet.com';  // Specify main and backup SMTP servers
+    $mail->Host = 'p3plcpnl0340.prod.phx3.secureserver.net';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true; 
     $mail->SMTPSecure = "ssl";                              // Enable SMTP authentication
-    $mail->Username = '94a7ef967e88e580ae0583f45189ce95';                 // SMTP username
-    $mail->Password = '6ff861e3a986d0c9de19cc03b0e7279e';  
+    $mail->Username = 'webmaster@geauxnsbe.org';                 // SMTP username
+    $mail->Password = 'nsbelsu2014';  
     $mail->Port = 587;                         // SMTP password
     $mail->SMTPSecure = 'tls';
 
-    $mail->AddAddress('jayjaychrome93@gmail.com');                            // Enable encryption, 'ssl' also accepted
+    $mail->AddAddress('josephbates25@gmail.com');  
+    $mail->AddAddress('lsunsbetelecomchair@gmail.com');
+    $mail->AddAddress('lsunsbesecretary@gmail.com');
 
-    $mail->From = 'josephbates25@gmail.com';
+
+    $mail->From = 'webmaster@geauxnsbe.org';
     $mail->FromName = 'NSBE Mail Server';
 
     date_default_timezone_set('America/Chicago');
@@ -51,8 +51,4 @@ ini_set("display_errors", 1);
     else
         echo "Erorr in submission. The webmaster has been notified.";
 
-//} else
-//{
-//    echo "Invalid email address. Please check your entry.";
-//}
-
+?>
