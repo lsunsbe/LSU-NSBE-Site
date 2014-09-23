@@ -1,0 +1,92 @@
+#eventstable{
+    display: inline-block;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.past{
+	background-color: grey;
+}
+
+
+
+tbody{
+	border-bottom: 15px solid white;
+
+}
+
+.head{
+	border-color: white;
+	border-bottom: 20px;
+	cursor: pointer;
+}
+
+.content{
+	height: 100px;
+background: rgba(72, 36, 126, 0.58);
+}
+
+table{
+	width: 90%;
+	margin: 5%;
+    border-collapse: collapse;
+}
+
+
+.name{
+	text-align: left;
+	display: inline-block;
+	float: left;
+	margin-left: 5%;
+	color: white;
+	font-weight: bolder;
+	font-size: 15px;
+}
+
+.date{
+	text-align: right;
+	display: inline-block;
+	float: right;
+	margin-right: 5%;
+	color: white;
+	font-weight: bolder;
+	font-size: 15px;
+}
+
+.titlerow{
+	border-radius: 60px;
+	margin: 10px;
+	border-color: white;
+	height: 50px;
+}
+
+.title{
+	border-bottom-left-radius: 10px;
+	width: 25%;
+}
+
+.description{
+	border-bottom-right-radius: 10px;
+	width: 25%;
+}
+
+.time{
+	width: 25%;
+}
+
+.place{
+	width: 25%;
+}
+
+
+.headstyle1{
+    background: rgba(72, 36, 126, 0.82);
+}
+
+.headstyle2{
+    background:  rgba(199, 199, 35, 0.77);
+}
+
+.headstylepast{
+	background: grey;
+}

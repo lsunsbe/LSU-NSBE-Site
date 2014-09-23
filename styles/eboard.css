@@ -1,19 +1,21 @@
 #names ul {
 	list-style: none;
-    border-radius: 10px;
-    padding: 15px;
-    background: rgba(170, 154, 104, 0.74);
-    width: auto;
-        
+    width: 75%;
 } 
 
 li {
    
-    text-align: center; 
+    text-align: right; 
+    color: #40034b;
+}
+
+#names li{
+    border-bottom: 1px solid black;
 }
 
 ul{
-    height: 400px;
+    height: 460px;
+    
 }
 
 #title{
@@ -22,10 +24,10 @@ ul{
 
 #names li.name {
     cursor:pointer;
-    margin-top: 3px;
+    margin-top: 8px;
     margin-bottom: 3px;
-    font-size: 15px;
-    font-family: 'Philosopher', sans-serif;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
     
 }
 
@@ -35,8 +37,7 @@ ul{
 }
 
 #names li.name:hover{
-    font-size: 27px;
-    color: #231132;
+    font-size: 170%;
 }
 
 .hidden{
@@ -48,7 +49,7 @@ ul{
     float: right;
     display: inline-block;
     width: 50%;
-    background-color: rgba(185, 72, 51, 0.88);;
+    background-color: transparent;
     margin-right: 80px;
     margin-bottom: 50px;
     border-radius: 10px;
@@ -67,12 +68,12 @@ ul{
 }
 
 #biography h2{
-    color: rgb(129, 0, 0);
+    color: #470353;
     font-size: 30px;
 }
 
 #biography h3{
-    color: #9a0b0b;
+    color: #8a259b;
     font-size: 19px;
 }
 
@@ -80,12 +81,11 @@ ul{
     float: left;
     display: inline;
     font-size: relative;
-    margin: 4px;
-    margin-left: 4%;
     /*border: 2px solid;*/
     padding-bottom: 50px;
     width: 30%;
-    text-align: center;
+    text-align: left;
+
 }
 
 
@@ -94,4 +94,5 @@ ul{
     margin: auto;
     width: 25px;
     height: 17px;
+    border: 1px solid black;
 }

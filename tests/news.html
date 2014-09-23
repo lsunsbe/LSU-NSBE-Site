@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<!--Begin Code-->
+    <head>
+        <title>LSU NSBE News</title>
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/news.css">
+        <link rel="stylesheet" type="text/css" href="styles/navmenu.css">
+        <link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="scripts/eboard.js" type="text/javascript"></script>
+        <script src="scripts/news.js"></script>
+            <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+
+
+        <div id="floatingsocial">
+        <div class="button" id="facebookbutton">
+            <a href="https://www.facebook.com/GeauxNSBE" target="_blank">
+                <img src="images/Facebook_Logo.jpeg" 
+                alt="" 
+                >
+            </a>
+        </div>
+        
+        <div class="button" id="twitterbutton">
+            <a href="https://www.twitter.com/NSBELSU" target="_blank">
+                <img src="images/Twitter_logo_blue.jpg" 
+                alt="" 
+                >
+            </a>
+        </div>
+        
+        <div class="button" id="instagrambutton">
+            <a href="https://www.instagram.com/nsbe_lsu" target="_blank">
+                <img src="images/instagram.ico" 
+                alt="" 
+                >
+            </a>
+        </div>
+        
+        <div class="button" id="r5button">
+            <a href="http://www.nsbe.org/Regions/Region5/default.aspx" target="_blank">
+                <img src="images/roman.png" 
+                alt="NSBE Region 5" 
+                >
+            </a>
+        </div>
+        
+        <div class="button" id="nsbebutton">
+            <a href="http://nsbe.org" target="_blank">
+                <img src="images/NSBElogo.png" 
+                alt="NSBE Official" 
+                >
+            </a>
+        </div>
+        
+    </div>
+        
+        <div id="container">
+
+            <div id="titlebar">
+        <!--This is how you link photos-->
+
+        <img src="images/NSBElogo.png" alt="NSBElogo" width="140" height="160">
+        <h2>Welcome to the Official Website </h2> 
+        <h3>of the</h3> 
+        <h2>LSU National Society of Black Engineers  </h2>
+    </div>
+
+	<div id="menu">
+		<ul>
+			<li><a class="item" id="home" href="index">Home</a></li>
+            <li><a class="item" id="purpose" href="purpose">About NSBE</a></li>
+            <li ><a class="item" id="eboard"  href="eboard">E-Board</a></li>
+            <li><a class="SELitem" id="news" href="news">News</a></li>
+            <li><a class="item" id="calendar" href="calendar">Calendar</a></li>
+            <li><a class="item" id="photos" href="photos">Photos</a></li>
+            <li><a class="item" id="contact" href="contact">Contact Us</a></li>
+		</ul>
+	</div>
+            
+            
+            <!--  News Stories: 
+                    All stories and dates contained within the table. Each row has 2 cells. 
+                    First cell contains date. Second cell has the story content.
+                    First cell class is named date and contains a <p> element with the date.
+                    Second cell class is named story and can hold and elements, followed by:
+                        The Facebook iframe, customized appropriatly, with a class tag "sharebutton"
+                        the Twitter a, customized apropriatly with a class tag "sharebutton"
+                    
+                    Finally, each row should:
+                        1) Alternate class labels between "newsstyle1" and "newsstyle2"
+                        2) Be given id tags for URL purposes (no longer need to be ascending. use keyword)
+
+
+            -->
+            
+            
+            
+            <table id=newstable>
+                <!-- NEWS STORY 4
+                <tr id="news4" class="newsstyle1" name="story4">
+                    <td class="date"><p>05/30/2014</p></td>
+                    <td class="story">
+                        <h3>News Spaces Can Hold Basic Stories</h3>
+                        <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        <br /> <br />                    
+        At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Sanctus sea sed takimata ut vero voluptua.
+
+        Stet clita kasd gubergren, no sea takimata sanctus est. At vero eos et accusam et justo duo dolores et ea rebum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                      <div class="fb-share-button sharebutton" data-href="https://geauxnsbe.org/news.html#news4" data-width="200"></div>
+                     <a href="https://twitter.com/share" class="twitter-share-button sharebutton" data-url="http://nsbelsu.org/news#news4" data-text="News Spaces Can Hold Basic Stories" data-via="NSBE_LSU" data-count="false" >Tweet Out</a>
+                    </td>
+                </tr>
+                
+                
+                
+         <!-- NEWS STORY 3        
+                
+            <tr id="news3" class="newsstyle2" name="news1">
+                <td class="date"><p>05/15/2014</p></td>
+                <td class="story">
+                    <h3>They can also Contain Links and Formatting</h3>
+                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at                          vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Stet                             clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh                                  euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p> <br />
+                    <p>The following items will be permitted and recommended to bring to the convention. Please remember the following:</p>
+                    <ul id=news3item>
+                        <li>Camera</li>
+                        <li>Water</li>
+                        <li>Copies of resume</li>
+                        <li>NSBE supplies</li>
+                    </ul>
+                    <br />
+                    <p>For more info and dates, visit the <a href="">NSBE Main Site </a></p>
+
+                                          <div class="fb-share-button sharebutton" data-href="https://geauxnsbe.org/news.html#news3" data-width="200"></div>
+                     <a href="https://twitter.com/share" class="twitter-share-button sharebutton" data-url="http://nsbelsu.org/news#news3" data-text="They can also Contain Links and Formatting" data-via="NSBE_LSU" data-count="false" >Tweet Out</a>
+                </td>
+            </tr>
+                
+                
+                
+                <!-- NEWS STORY 2 -->
+                
+            <tr id="genbodykickoff" class="newsstyle1">
+                <td class="date"><p>08/23/2014</p></td>
+                <td>
+                    <div class="story">
+                        <h3>Kick-Off General Body Meeting</h3>
+                        <img src="images/genbodyflyer.png" width="65%" height="600px" alt="Sample Flyer">
+
+                        <p>NSBE will be having their first General Body Meeting of the year on September 10, 2014 at 8PM in Patrick F. Taylor, Rm. 2222. The meeting will offer an Alumni Panel, Regional and National conference updates, study group sign-ups, and much more important information. Come out and bring a friend!</p>
+                        <br />
+
+                         <a href="https://twitter.com/share" class="twitter-share-button sharebutton" data-url="http://geauxnsbe.org/stories/genbodykickoff.html" data-text="NSBE Kickoff General Body Meeting!" data-via="NSBE_LSU" data-count="false" >Tweet Out</a> 
+
+                       <a href="javascript:popup('http://geauxnsbe.org/stories/genbodykickoff.html')"> <img class="sharebutton" src="images/facebookshare.png"></a>
+                    <br/>
+                    </div>
+
+                </td>
+            </tr>
+                
+                <!-- NEWS STORY 1--> 
+                
+            <tr id="welcome" class="newsstyle2">
+                <td class="date"><p>08/23/2014</p></td>
+                <td>
+                    <div class="story">
+                        <h3>Welcome to GeauxNSBE.org: LSU NSBE's New Website</h3>
+                        <p>Welcome to LSU NSBE's first, hand-coded, fully customized and designed from scratch website: geauxnsbe.org. This site will be your up to date source for all of NSBE's events, news, and information relevant to your NSBE life. The website features a highly informative front page so you can get the most information you need the most quickly </p>
+                        <img class="conimg" src="images/screen1.png">
+                        <p>
+                            A news and announcements section where you can read about all of NSBE's events and most recent happenings
+                        </p>
+                        <img class="conimg" src="images/screen2.png">
+                        <p>
+                            A contact area where you can reach out to NSBE with any questions, comments, or ideas
+                        </p>
+                        <img class="conimg" src="images/screen3.png">
+                        <p>
+                            And much, much more. Be sure to check it all out! 
+                        </p>
+
+                         <a href="https://twitter.com/share" class="twitter-share-button sharebutton" data-url="http://geauxnsbe.org/stories/stwelcome.html" data-text="NSBE Welcome to the Official LSU NSBE Homepage" data-via="NSBE_LSU" data-count="false" >Tweet Out</a> 
+
+                       <a href="javascript:popup('http://geauxnsbe.org/stories/stwelcome.html')"> <img class="sharebutton" src="images/facebookshare.png"></a>
+
+                    </div>
+                </td>
+            </tr>
+        </table>
+        </div>
+
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
+                        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+        <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    </body>
+</html>

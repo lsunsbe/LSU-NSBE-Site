@@ -22,4 +22,8 @@ $(document).ready(function(){
         e.preventDefault(); 
        
     });
+    $('h4').click(function (e)
+    {
+        $(this).toggle(function(){$(this).fadeOut('slow');});
+    });
 });

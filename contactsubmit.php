@@ -14,9 +14,7 @@ require('PHPMailerAutoload.php');
     $mail->SMTPSecure = 'tls';
 
     $mail->AddAddress('josephbates25@gmail.com');  
-    $mail->AddAddress('lsunsbetelecomchair@gmail.com');
-    $mail->AddAddress('lsunsbesecretary@gmail.com');
-
+    $mail->AddAddress('lsunsbetelecomchair@gmail.com');  // Enable encryption, 'ssl' also accepted
 
     $mail->From = 'webmaster@geauxnsbe.org';
     $mail->FromName = 'NSBE Mail Server';

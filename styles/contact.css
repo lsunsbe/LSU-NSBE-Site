@@ -8,6 +8,10 @@
     margin-bottom: 40px;
 }
 
+h2{
+    color: #bfa100;
+}
+
 label{
     font-family: "Droid Sans", sans-serif;
     margin: 3px;
@@ -34,13 +38,13 @@ label {
 }
 
 form input, form textarea{
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 30px;
     width: 85%;
     border-radius: 10px;
     padding: 3px;
-    background: rgb(242,230,176);
-    border: solid rgb(163, 151, 101) 3px;
+    background: rgba(85, 8, 85, 0);
+    border: solid #390139 3px;
     color: rgb(128, 20, 20);
     font-weight: 600;
 }
@@ -57,7 +61,8 @@ form textarea{
 
 #submitbutton {
     width: 20%;
-    margin-left: 40%
+    margin-left: 40%;
+    color: #390039;
    
 }
 #submitbutton:hover{

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<!--Begin Code-->
+<head>
+	<title>LSU NSBE E-Board</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/eboard.css">
+    <link rel="stylesheet" type="text/css" href="styles/navmenu.css">
+	<link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="scripts/eboard.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="floatingsocial">
+        <div class="button" id="facebookbutton">
+            <a href="https://www.facebook.com/GeauxNSBE" target="_blank">
+                <img src="images/Facebook_Logo.jpeg" 
+                alt="" 
+                >
+            </a>
+        </div>
+        
+        <div class="button" id="twitterbutton">
+            <a href="https://www.twitter.com/NSBELSU" target="_blank">
+                <img src="images/Twitter_logo_blue.jpg" 
+                alt="" 
+                >
+            </a>
+        </div>
+        
+        <div class="button" id="instagrambutton">
+            <a href="https://www.instagram.com/nsbe_lsu" target="_blank">
+                <img src="images/instagram.ico" 
+                alt="" 
+                >
+            </a>
+        </div>
+        
+        <div class="button" id="r5button">
+            <a href="http://www.nsbe.org/Regions/Region5/default.aspx" target="_blank">
+                <img src="images/roman.png" 
+                alt="NSBE Region 5" 
+                >
+            </a>
+        </div>
+        
+        <div class="button" id="nsbebutton">
+            <a href="http://nsbe.org" target="_blank">
+                <img src="images/NSBElogo.png" 
+                alt="NSBE Official" 
+                >
+            </a>
+        </div>
+        
+    </div>
+
+<div id="container">
+    
+    <div id="titlebar">
+        <!--This is how you link photos-->
+
+        <img src="images/NSBElogo.png" alt="NSBElogo" >
+        <h2>Welcome to the Official Website </h2> 
+        <h3>of the</h3> 
+        <h2>LSU National Society of Black Engineers  </h2>
+    </div>
+    
+	<div id="menu">
+		<ul>
+			<li><a class="item" id="home" href="index">Home</a></li>
+            <li><a class="item" id="purpose" href="purpose">About NSBE</a></li>
+            <li ><a class="SELitem" id="eboard"  href="eboard">E-Board</a></li>
+            <li><a class="item" id="news" href="news">News</a></li>
+            <li><a class="item" id="calendar" href="calendar">Calendar</a></li>
+            <li><a class="item" id="photos" href="photos">Photos</a></li>
+            <li><a class="item" id="contact" href="contact">Contact Us</a></li>
+		</ul>
+	</div>
+    <!-- Break to break -->
+    <br />
+    <div id="names">
+        <ul>
+        	<!--<p id="title">Click a name for more info.</p>-->
+            <li class="name" id="npres" onclick="setUnhidden('president');">Vonzell Williams</li>
+            <li class="name" id="nvp" onclick="setUnhidden('vpresident');">Alexander Canton</li>
+            <li class="name" id="nsec" onclick="setUnhidden('secretary');">McKenzie Brown</li>
+            <li class="name" id="nhist" onclick="setUnhidden('treasurer');">Darria Carter</li>
+            <li class="name" id="nhist" onclick="setUnhidden('telecom');">Joseph Bates</li>
+         <!--<li class="name" id="nhist" onclick="setUnhidden('progchair');">Seth Brown</li> -->
+    <li class="name" id="nhist" onclick="setUnhidden('commservchair');">Kailyn Gouch</li>
+    <!--<li class="name" id="nhist" onclick="setUnhidden('conplanchair');">Darria Carter</li>-->
+    <!---<li class="name" id="nmem" onclick="setUnhidden('memchair');">Jordan Biagas</li> -->
+     <li class="name" id="nhist" onclick="setUnhidden('publication');">Arcell Bodden</li>
+    <!--<li class="name" id="nhist" onclick="setUnhidden('socialchair');">Lekan Kassim</li> -->
+        
+    <li class="name" id="nhist" onclick="setUnhidden('financechair');">Gary Matthews</li>
+     <li class="name" id="nhist" onclick="setUnhidden('nsbesenate');">Marvyn Muse</li>
+      <li class="name" id="ngrad" onclick="setUnhidden('grad');">Steve Canton</li>  
+ <li class="name" id="nhist" onclick="setUnhidden('procollinit');">Jordan Favret</li>
+        
+ <!--<li class="name" id="nhist" onclick="setUnhidden('telecom');">Dexter Hartman</li>-->
+        
+  <!--
+ <li class="name" id="nhist" onclick="setUnhidden('senate');">Chris Reynolds</li>
+         <li class="name" id="nhist" onclick="setUnhidden('chairemer');">Jhamal Davis</li> -->
+ <li class="name" id="nhist" onclick="setUnhidden('parliamen');">Kojo Orgle</li>
+        </ul>
+    </div>
+
+    <div id="biography">
+        <div id="president" class="unhidden">
+            <h2>Vonzell Williams</h2>
+            <h3>Chairperson</h3>
+            <img id='biography_img' alt="Picture here." src="images/eboardimages/president.jpg">
+            <p>Vonzell Williams is the Chairperson of the NSBE E-Board. He is an Electrical Engineering student from Erwinville, LA. Vonzell joined the NSBE E-Board to share his knowledge he gained from his military career and college experiences to help others become better. He is a former NSBE Programs Chair (2013-2014). During his free time, Vonzell enjoys challenging himself with anything that can take him to the next level in his life. Be it working out, making the best grade on a test, or even thumb wars, Vonzell does anything he can to push himself to the next level.
+         </p>
+            
+            <a  href="http://www.linkedin.com/pub/vonzell-williams/76/b41/45">
+          <img class="linkedin" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Joseph Bates's profile on LinkedIn">
+    </a>
+            <a href="mailto:lsunsbechair@gmail.com"><img class="emailpic" src="images/mail2.ico"> </a>
+        </div>
+
+        
+        
+        <div id="vpresident" class="hidden">
+            <h2>Alexander Canton</h2>
+            <h3>Vice Chairperson</h3>
+            <img id='biography_img' alt="Picture here." src="images/eboardimages/vpresident.jpg">
+            <p> Alex Canton is an Electrical Engineering student from Pittsburgh, Pennsylvania and the NSBE Vice Chairperson. Alex joined the NSBE E-Board because he believed that he could help revamp the mission of NSBE.  He maintains that the current chapter executive board members all share a vision that he wants to heavily contribute to. He considers the success of the students within the minority peer groups is very important , particularly in the rigorous fields of engineering.  He also hopes to share his experience as well as gain experience with and from the general body to enhance the reputation of the LSU NSBE chapter. In his free time, Alex likes to make iPhone apps, go to the gym, play video games, and watch and play sports. 
+         </p>
+            <a  href="http://www.linkedin.com/pub/alexander-canton/5a/819/50">
+          <img class="linkedin" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Joseph Bates's profile on LinkedIn">
+    </a>
+            <a href="mailto:lsunsbevicechair@gmail.com"><img class="emailpic" src="images/mail2.ico"> </a>
+        </div>
+
+        <div id="secretary" class="hidden">
+            <h2>McKenzie Brown</h2>
+            <h3>Secretary</h3>
+            <img id='biography_img' alt="Picture here." src="images/eboardimages/secretary.jpg">
+            <p>McKenzie Brown is the Secretary of the NSBE E-Board. She is a student majoring in Electrical Engineering and minoring in Communication Studies. She is from Opelousas, Louisiana. McKenzie joined the E-Board after seeing where leadership lacked with the intent of making NSBE a better organization. She maintains that as a dedicated and hard-working engineering major, she doesn't have time for hobbies, but she still finds time for NSBE.
+
+         </p>
+            <a  href="http://www.linkedin.com/pub/mckenzie-brown/84/69/64b">
+          <img class="linkedin" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Joseph Bates's profile on LinkedIn">
+    </a>
+            <a href="mailto:lsunsbesecretary@gmail.com"><img class="emailpic" src="images/mail2.ico"> </a>
+        </div>
+
+        <div id="treasurer" class="hidden">
+            <h2>Darria Carter</h2>
+            <h3>Treasurer/Conference Planning Chair</h3>
+            <img id="biography_img" alt="Picture here." src="images/eboardimages/treasurer.jpg">
+            <p> Darria Carter of Zachary, Louisiana, is a Mechanical Engineering student, and the Treasurer, as well as Conference Planning Chair of NSBE. She originally joined the NSBE E-Board as the Conference Planning Chair with a desire to get involved with a student organization and felt that NSBE was the most welcoming. She felt that she could use her strengths, organizing and planning, to help NSBE. She loves taking care of business and having fun while doing so while surrounding herself with people who have a common goal as herself. On her off time, she enjoys playing tennis, watching movies, making jewelry, cooking, and reading car magazines. 
+         </p>
+            <a  href="http://www.linkedin.com/pub/darria-carter/55/a52/570">
+          <img class="linkedin" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Joseph Bates's profile on LinkedIn">
+    </a>
+            <a href="mailto:lsunsbetreasurer@gmail.com"><img class="emailpic" src="images/mail2.ico"> </a>
+        </div>
+        
+        <div id="progchair" class="hidden">
+            <h2>Seth Brown</h2>
+            <h3>Programs Chair</h3>
+            <img id="biography_img" alt="Picture here." src="images/eboardimages/progchair.jpg">
+            <p> Insert BIO Here
+         </p>
+            <a  href="http://google.com">
+          <img class="linkedin" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Joseph Bates's profile on LinkedIn">
+    </a>
+            <a href="mailto:lsunsbeprogramschair@gmail.com"><img class="emailpic" src="images/mail2.ico"> </a>
+        </div>
+        
+        <div id="commservchair" class="hidden">
+            <h2>Kailyn Nicole Gouch</h2>
+            <h3>Community Service Chair</h3>
+            <img id="biography_img" alt="Picture here." src="images/eboardimages/commservchair.jpg">
+            <p> Kailyn Nicole Gouch is the Community Service Chair of NSBE. She is an Environmental Engineering student minoring in Business Administration from Ft. Lauderdale, Florida. One of Kailyn's goals was to become more involved on her campus with community service. Upon finding out that NSBE had such a position she jumped at the opportunity. She also felt that fulfilling a leadership position would help her come out of her shell and become more social. She looks forward to being a part of the NSBE E-Board and forming strong bonds with other, well-rounded future engineers. In her free time, she enjoys reading about historical African American figures, yoga, and relaxing in the park.
+
+         </p>
+            <a  href="http://www.linkedin.com/pub/kailyn-gouch/66/b41/257">
+          <img class="linkedin" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Joseph Bates's profile on LinkedIn">
+    </a>
+            <a href="mailto:Kgouch1@lsu.edu"><img class="emailpic" src="images/mail2.ico"> </a>
+        </div>
+        
+        <div id="conplanchair" class="hidden">
+            <h2>Darria Carter</h2>
+            <h3>Conference Planning Chair</h3>
+            <img id="biography_img" alt="Picture here." src="images/eboardimages/conplanchair.jpg">
+            <p> Darria Carter of Zachary, Louisiana, is a Mechanical Engineering student, and the Conference Planning Chair of NSBE. She joined the NSBE E-Board with a desire to get involved with a student organization and felt that NSBE was the most welcoming. She felt that she could use her strengths, organizing and planning, to help NSBE. She loves taking care of business and having fun while doing so while surrounding herself with people who have a common goal as herself. On her off time, she enjoys playing tennis, watching movies, making jewelery, cooking, and reading car magazines. 
+
+         </p>
+            <a  href="http://www.linkedin.com/pub/darria-carter/55/a52/570">
+          <img class="linkedin" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Joseph Bates's profile on LinkedIn">
+    </a>
+            <a href="mailto:Dcart24@tigers.lsu.edu"><img class="emailpic" src="images/mail2.ico"> </a>
+        </div>
+        
+        <div id="memchair" class="hidden">
+            <h2>Jordan Baigas</h2>
+            <h3>Membership Chair</h3>
+            <img id="biography_img" alt="Picture here." src="images/eboardimages/memchair.jpg">
+            <p> Insert BIO Here
+         </p>
+            <a  href="http://www.linkedin.com/pub/jordan-alicia-favret/68/853/81b">
+          <img class="linkedin" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Joseph Bates's profile on LinkedIn">
+    </a>
+            <a href="mailto:jbiaga1@lsu.edu"><img class="emailpic" src="images/mail2.ico"> </a>
+        </div>
+        
+        <div id="publication" class="hidden">
+            <h2>Arcell Bodden</h2>
+            <h3>Publications</h3>
+            <img id="biography_img" alt="Picture here." src="images/eboardimages/publication.jpg">
+            <p> Arcell Bodden is a Chemical Engineering student from new Orleans, LA and the Publications Chair of NSBE. He joined the NSBE E-Board in an effort to broaden his horizons as a student in the field of engineering. He states that his position has afforded him the opportunity to work with diverse groups of people and help further the advancement of black people. In his free time, he enjoys spending time with family and friends.
+
+         </p>
+            <a  href="http://google.com">
+          <img class="linkedin" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Joseph Bates's profile on LinkedIn">
+    </a>
+            <a href="mailto:lsunsbepubchair@gmail.com"><img class="emailpic" src="images/mail2.ico"> </a>
+        </div>
+        
+        
+        <div id="grad" class="hidden">
+            <h2>Stephen Canton</h2>
+            <h3>Graduate Advisor</h3>
+            <img id="biography_img" alt="Picture here." src="images/eboardimages/grad.jpg">
+            <p> 
+Stephen Canton holds the Graduate Advisor chair of NSBE and a Bioengineering student minoring in Engineering. A Pittsburgh, Pennsylvania native, Stephen's NSBE E-Board Membership experience includes Membership Chair, Pre-College Initiative Chair, and Freshman Representative. Stephen says that NSBE has provided him essential support and opportunities to progress as an aspiring engineer from the very beginning. He joined the NSBE E-Board to give back. He hopes to utilize his experiences- both ups and downs - to fuel the growth of others. Ultimately, Stephen hopes to contribute to NSBE's perpetual learning-to-teaching cycle that has allowed students to flourish in harsh STEM fields. In his free time, watching movies he enjoys hanging out with friends, playing basketball and soccer, and generally doing anything competitive.
+         </p>
+            <a  href="http://www.linkedin.com/pub/stephen-canton/5a/828/b20">
+          <img class="linkedin" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Joseph Bates's profile on LinkedIn">
+    </a>
+            <a href="mailto:lsunsbegradadvisor@gmail.com"><img class="emailpic" src="images/mail2.ico"> </a>
+        </div>
+        
+        
+        <div id="socialchair" class="hidden">
+            <h2>Lekan Kassim</h2>
+            <h3>Social Chair</h3>
+            <img id="biography_img" alt="Picture here." src="images/eboardimages/socialchair.jpg">
+            <p> Insert BIO Here
+         </p>
+            <a  href="http://www.linkedin.com/pub/lekan-kassim/21/60/263">
+          <img class="linkedin" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Joseph Bates's profile on LinkedIn">
+    </a>
+            <a href="mailto:tkassi1@tigers.lsu.edu"><img class="emailpic" src="images/mail2.ico"> </a>
+        </div>
+        
+        <div id="financechair" class="hidden">
+            <h2>Gary Matthews</h2>
+            <h3>Financial Chair</h3>
+            <img id="biography_img" alt="Picture here." src="images/eboardimages/financechair.jpg">
+            <p> Gary Matthews, a Petroleum Engineering student from New Orleans, LA, is NSBE's Financial Chair. He joined the NSBE E-Board with the intention of helping to make a difference for minority engineering students. His hobbies include fishing, snowboarding, and traveling. 
+
+         </p>
+            <a  href="http://google.com">
+          <img class="linkedin" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Joseph Bates's profile on LinkedIn">
+    </a>
+            <a href="mailto:Gmatth@lsu.edu"><img class="emailpic" src="images/mail2.ico"> </a>
+        </div>
+        
+        <div id="nsbesenate" class="hidden">
+            <h2>Marvyn Muse</h2>
+            <h3>NSBE Senate</h3>
+            <img id="biography_img" alt="Picture here." src="images/eboardimages/nsbesenate.jpg">
+            <p>Marvyn Muse is a Petroleum Engineering student from New Orleans, LA and holds the NSBE Senate seat on the NSBE E-Board. Marvyn joined the NSBE E-Board to help contribute to the advancement of blacks in the sciences. He felt compelled to take on a leadership role, a role he doesn't normally take, to have more influence on the organization, as well as to build his own leadership skills. Marvyn's past NSBE leadership roles include NSBE Senator.  In his off time, he enjoys playing pool with friends, as well as taking part in the diversity ambassadors program. He also tried to stay active by working out, and playing sports, like basketball and intramural flag football.
+
+         </p>
+            <a  href="http://www.linkedin.com/pub/marvyn-muse/97/542/67a">
+          <img class="linkedin" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Joseph Bates's profile on LinkedIn">
+    </a>
+            <a href="mailto:mmuse3@tigers.lsu.edu"><img class="emailpic" src="images/mail2.ico"> </a>
+        </div>
+        
+        <div id="procollinit" class="hidden">
+            <h2>Jordan Favret</h2>
+            <h3>Pre-College Initiative</h3>
+            <img id="biography_img" alt="Picture here." src="images/eboardimages/procollinit.jpg">
+            <p> Jordan Favret is a Mechanical Engineering student from Kemah, Texas, and the Pre-College Initiative of the NSBE E-Board. Jordan joined the E-Board after being inspird by fellow NSBE members at the National Conference. She also admired how NSBE trained its memebrs for success, and how helpful, welcoming, and inclusive NSBE was. In her free time, she enjoys reading, running, power lifting, studying igbo culture, playing and watching soccer, golfing, and driving.
+
+
+         </p>
+            <a  href="www.linkedin.com/pub/jordan-alicia-favret/68/853/81b">
+          <img class="linkedin" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Joseph Bates's profile on LinkedIn">
+                
+    </a>
+            <a href="mailto:lsunsbepcichair@gmail.com"><img class="emailpic" src="images/mail2.ico"> </a>
+        </div>
+        
+        <div id="telecom" class="hidden">
+            <h2>Joseph Bates</h2>
+            <h3>Telecommunications Chair</h3>
+            <img id="biography_img" alt="Picture here." src="images/eboardimages/telecom.jpg">
+            <p> Joseph Bates is a New Orleans, LA native, a Computer Science student with a minor in Mathematics, and serves as the NSBE Telecommunications Chair. He joined NSBE's E-Board as Historian with the intention of helping contribute to the widening of NSBE's internet presence and outreach potential, in part by building NSBE's own custom website form scratch. In his free time, he enjoys working his own personal coding projects, trying and learning to cook new and interesting foods, and going for jogs. 
+         </p>
+            <a  href="http://www.linkedin.com/pub/joseph-bates/54/b10/593">
+          <img class="linkedin" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Joseph Bates's profile on LinkedIn">
+    </a>
+            <a href="mailto:lsunsbetelecomchair@gmail.com"><img class="emailpic" src="images/mail2.ico"> </a>
+        </div>
+        
+        <div id="hist" class="hidden">
+            <h2>Joseph Bates</h2>
+            <h3></h3>
+            <img id="biography_img" alt="Picture here." src="images/eboardimages/hist.jpg">
+            <p> Joseph Bates is a New Orleans, LA native, a Computer Science student with a minor in Mathematics, and serves as the NSBE Historian. He joined NSBE's E-Board with the intention of helping contribute to the widening of NSBE's internet presence and outreach potential, in part by building NSBE's own custom website form scratch. In his free time, he enjoys working his own personal coding projects, trying and learning to cook new and interesting foods, and going for jogs. 
+
+         </p>
+            <a  href="http://google.com">
+          <img class="linkedin" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Joseph Bates's profile on LinkedIn">
+    </a>
+            <a href="mailto:jbate14@lsu.edu"><img class="emailpic" src="images/mail2.ico"> </a>
+        </div>
+        
+        <div id="senate" class="hidden">
+            <h2>Chris Reynolds</h2>
+            <h3>Senate</h3>
+            <img id="biography_img" alt="Picture here." src="images/eboardimages/senate.jpg">
+            <p> Insert BIO Here
+         </p>
+            <a  href="http://www.linkedin.com/pub/christopher-reynolds/14/28/603">
+          <img class="linkedin" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Joseph Bates's profile on LinkedIn">
+    </a>
+            <a href="mailto:Creyno7@tigers.lsu.edu"><img class="emailpic" src="images/mail2.ico"> </a>
+        </div>
+        
+        <div id="chairemer" class="hidden">
+            <h2>Jhamal Davis</h2>
+            <h3>Chair Emeritus</h3>
+            <img id="biography_img" alt="Picture here." src="images/eboardimages/chairemer.jpg">
+            <p> Insert BIO Here
+         </p>
+            <a  href="http://google.com">
+          <img class="linkedin" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Joseph Bates's profile on LinkedIn">
+    </a>
+            <a href="mailto:jhamal.davis26@gmail.com"><img class="emailpic" src="images/mail2.ico"> </a>
+        </div>
+        
+        <div id="parliamen" class="hidden">
+            <h2>Kojo Orgle</h2>
+            <h3>Parliamentarian</h3>
+            <img id="biography_img" alt="Picture here." src="images/eboardimages/parliamen.jpg">
+            <p> Kojo Orgle is a Petroleum Engineering student from Accra, Ghana. He serves as the Parliamentarian of NSBE. Kojo believes that NSBE puts its members a step above their peers by providing them with job opportunities, scholarships, and other awards, as well as the care of a loving family and learning opportunities. Since joining NSBE at lSU, Kojo has been at the receiving end of all these rewards, allowing him to better himself as an engineer, as well as an individual. He feels that it is coherent for him to continue the hard work of officers before him and do his best to contribute to the development of NSBE. He believes that as Parliamentarian, he can accomplish these goals. Kojo spends his free time getting involved with his organizations. He has recently contributed a lot of his time to Engineers without Borders, where he had the opportunity to design a sustainable borehole for a group of people in a village in Gambia to access clean water. 
+
+         </p>
+            <a  href="http://google.com">
+          <img class="linkedin" src="https://static.licdn.com/scds/common/u/img/webpromo/btn_liprofile_blue_80x15.png" width="80" height="15" border="0" alt="View Joseph Bates's profile on LinkedIn">
+    </a>
+            <a href="mailto:kojoorgle@gmail.com"><img class="emailpic" src="images/mail2.ico"> </a>
+        </div>
+        
+    </div>
+</div>
+</body>
+<footer>
+	<p>© 2014 National Society of Black Engineers, All Rights Reserved.</p>
+</footer>
+    
+</html>

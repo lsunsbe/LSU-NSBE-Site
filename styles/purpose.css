@@ -4,6 +4,10 @@ p{
     margin-bottom: 5px;
 }
 
+#home{
+    border-bottom-left-radius: 0px;
+}
+
 footer p{
     text-align: center;
 }
@@ -29,7 +33,6 @@ li {
     display: block; /*THIS IS IMPORTANT TO LIFE */
     height: 100%;
     width: 100%;
-    background-color: #5d0000;
     text-decoration: none;
     color: white;
     line-height: 50px;
@@ -38,7 +41,7 @@ li {
 
 
 #purposemenu a:hover{
-    background-color: rgb(193, 72, 50);
+    background-color: rgba(80, 4, 83, 0.74);
 }
 
 #description{
@@ -61,7 +64,7 @@ li {
 }
 
 #menucol {
-    background: rgb(131, 27, 27);
+    background: #500453;
     float: left;
     position: absolute;
     width: 15%;
@@ -75,7 +78,7 @@ li {
 }
 
 .purposebutton:hover{
-    background-color: #9a4d4d;
+    background-color: rgba(80, 4, 83, 0.53);
     cursor: pointer;
 }
 
@@ -84,8 +87,4 @@ li {
     color: tan;
     font-family: "Bevan";
     padding: 10px;
-}
-
-#home{
-    border-bottom-left-radius: 0px;
 }

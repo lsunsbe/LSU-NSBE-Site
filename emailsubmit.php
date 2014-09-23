@@ -27,7 +27,6 @@ if (preg_match("/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/" ,$emailaddre
 
         $mail->AddAddress('josephbates25@gmail.com');  
         $mail->AddAddress('lsunsbetelecomchair@gmail.com');
-        $mail->AddAddress('lsunsbesecretary@gmail.com');
 
 
         $mail->From = 'webmaster@geauxnsbe.org';

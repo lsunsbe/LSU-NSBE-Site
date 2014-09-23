@@ -1,7 +1,10 @@
 .story{
     display: block;
     text-align: center;
-    width: auto;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .date {
@@ -28,4 +31,10 @@
     display: block;
     text-align: center;
     
+}
+
+
+.conimg{
+   height: 23%;
+    width: 50%;
 }

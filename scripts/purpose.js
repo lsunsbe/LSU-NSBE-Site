@@ -8,11 +8,11 @@ function setUnhidden(position) {
         if (positions[i] == position){
             currentPosition.className = "unhidden";
             var button = document.getElementById(position);
-            button.style.background = "rgb(193, 72, 50)"
+            button.style.background = "#b747b7"
         } else{
             currentPosition.className = "hidden";
             var button = document.getElementById(positions[i]);
-            button.style.background = "rgb(131, 27, 27)"
+            button.style.background = "#500453;"
             
         }
     }

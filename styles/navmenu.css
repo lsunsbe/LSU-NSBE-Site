@@ -3,7 +3,7 @@
     margin-top: 1px;
 	text-align: center;
     height: 40px;
-    background-color: #993300;
+    background-color: #270CS2;
     padding: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -34,18 +34,22 @@ ul {
 }
 
 #menu a.item:hover{
-    color: rgb(0,166,80);  
+    color: gold;
 }
 
 #menu a.item:active{
-    color: rgb(0,166,80);  
+    color: gold;
 }
 
 #menu a {
     text-decoration: none;
-    color: #fdd;
+    color: #fdfded;
     font-size: 100%;
     
+}
+
+#menu a.SELitem{
+    color: gold;
 }
 
 a:visited {
@@ -55,7 +59,7 @@ a:visited {
 
 .item {
     height: 40px;
-    background-color: rgba(93, 0, 0, 0.97);
+    background-color: #270C52;
     border: 0x solid black;
     border-radius: 0px;
     display: inline;
@@ -70,12 +74,13 @@ a:visited {
     width: 130px;
     border: 0px solid black;
     border-radius: 0px;
-    background-color: rgba(93, 0, 0, 0.17);
+    background-color: rgba(39, 12, 82, 0.35);
     border-width: 0px;
     display: inline;
     text-align: center;
     font-family: "Helvetica", sans-serif;
     margin: auto;
+    
 }
 
 #contact {
