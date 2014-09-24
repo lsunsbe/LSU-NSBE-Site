@@ -43,7 +43,7 @@
             
             <div id="socialmediabuttons">
                 <a href="https://www.facebook.com/GeauxNSBE" target="_blank"><img src="images/facebook.png"></a>
-                <a href="https://www.twitter.com/NSBELSU" target="_blank"><img src="images/twitter.png"></a>
+                <a href="https://www.twitter.com/GeauxNSBE" target="_blank"><img src="images/twitter.png"></a>
                 <a href="https://www.instagram.com/nsbe_lsu" target="_blank"><img src="images/instagram.png"></a>
                 <a href="http://www.nsbe.org/Regions/Region5/default.aspx" target="_blank"><img src="images/roman.png"></a>
                 <a href="http://nsbe.org" target="_blank"><img src="images/NSBElogo.png"></a>
