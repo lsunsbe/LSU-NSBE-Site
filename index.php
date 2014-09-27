@@ -174,7 +174,17 @@
     </div>
         <br />
         <br />
+    <div id="welcome">
+        
+        <h4 id="welcometitle">President's Welcome</h4>
+        <h5 id="nameplate">Vonzell Williams</h5>
+        <img id="image" src="images/jj.jpg">
+        <p id="welcomecontent">Hello everyone and welcome to the NSBE family. I am Vonzell Williams, the President of the National Society of Black Engineers.
+I am overjoyed to serve as the president this year and am looking forward to getting to know all the new members of our NSBE family. 
 
+We have a lot of great plans for NSBE this semester, including the new Freshman Action Team (F.A.T.). 
+While you are here, feel free to browse around our site. As you can see, our home page is full of the latest news on NSBE and even a link to get involved! If you aren't very familiar with our organization, then you can browse to the "About NSBE" page and learn a little bit more about us. There is so much NSBE has to offer and it doesn't stop here. Before you close your web browser be sure to view our regional and national web pages to learn more about what is going on in NSBE outside of LSU! </p>
+    </div>
     	
 </div> 
     

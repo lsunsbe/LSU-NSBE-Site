@@ -253,29 +253,39 @@ table{
     float: left;
     margin: 12px;
     border-radius: 10px;
+    width: 15%;
+    margin-top: -6%;
+    margin-right: 3%;
 }
 
 #welcome{
-    background: rgba(223, 168, 51, 0.28);
+    background: rgba(223, 168, 51, 0.45);
     margin-left: 15px;
     margin-right: 15px;
-    margin-bottom: 7%;
+    margin-bottom: 4%;
     border-radius: 10px;
     padding: 10px;
     margin-top: -15px;
+    display: inline-block;
+    width: 95%;
 }
 
 #welcometitle {
     display: inline-block;
     margin: 10px;
-    font-size: 27px;
-    color: rgb(78, 33, 30);
+    font-size: 33px;
+    color: #450045;
+}
+
+#welcomecontent{
+    text-align: left;
 }
 
 #nameplate {
     font-size: 16px;
     margin-top: -11px;
     margin-bottom: 6px;
+    color: black;
 }
 
 #featured {

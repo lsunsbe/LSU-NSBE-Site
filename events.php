@@ -46,7 +46,7 @@
                 <td class="description">NSBE's Joint Meeting with SWHE</td>
             </tr>
         </tbody>
-        -->
+        
         <?php
             ini_set('auto_detect_line_endings', true);
                 date_default_timezone_set('America/Chicago');
@@ -95,7 +95,7 @@
         ?>
         
     </table>
-    
+    -->
     
     <iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=f38b27sght4m73mcml7isiq0t0%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FChicago" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe> 
     
