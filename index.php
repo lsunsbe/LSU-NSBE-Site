@@ -169,7 +169,7 @@ While you are here, feel free to browse around our site. As you can see, our hom
                 
             </form> 
             <br/>
-            <p>Or <a href="contact.html">Contact Us</a> directly for more info.</p>
+            <p> <a href="contact.html">Contact Us</a> directly for more info.</p>
             <hr>
             <br>
             <p>You can also <a href="https://nsbe.networkats.com/members_online/members/newmember_quick.asp?action=" target="_blank">Register as an Official NSBE Member</a></p>
@@ -179,6 +179,7 @@ While you are here, feel free to browse around our site. As you can see, our hom
         
         <div id="links">
          <h2 id="linksheading">Links</h2>
+         <a href="http://geauxnsbe.org/negotiatingpresentation.pptx" target="_blank">Negotiating Your Career- </a>-Marathon Petroleum Presentation
          <a href="https://nsbe.networkats.com/members_online/registration/reg_chaperone.asp?mt=R5FRC14&af=NSBE" target="_blank">Resgistration Link- </a>-Region 5 Fall Regional Conference Registration
          <a href="http://geauxnsbe.org/NSBE 1st General_update.pdf" target="_blank">Kickoff Meeting Slides- </a>-NSBE General Body Kickoff Meeting Slides
           <a href="http://geauxnsbe.org/newsletter1.pdf" target="_blank">NSBE News Letter #1- </a>-NSBE's First Newsletter
