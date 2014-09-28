@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="styles/main.css"> 
-    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link rel="stylesheet" type="text/css" href="styles/rider.css">
     <link rel="stylesheet" type="text/css" href="styles/navmenu.css"> 
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
