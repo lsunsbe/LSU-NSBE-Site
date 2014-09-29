@@ -2,22 +2,30 @@
 /*global $, jQuery*/
 
 $(document).ready(function(){ 
-	$('table').find('.content').toggle();
-	$('.head').click( function (e){
-		$('table').animate({height: '-1'}, 500, 'linear');
-		if ($(this).attr('id') == 'active'){
-			$(this).parent().find('.content').slideToggle();
-			$(this).attr('id', '');
-		}
-		else {
-			console.log($('table').find('.head').filter('#active'))
-			var actives = $('table').find('.head').filter('#active')
-			$(actives).next().find('p').hide();
-			$(actives).siblings('.content').slideToggle(); //should be only one
-			$(this).attr('id', 'active');
-			$(this).parent().find('tr').eq(1).slideToggle();
-			$(actives).attr('id', '');
+	$('.arrow').rotate(90);
+	$('.start').find('.body').slideToggle();
+	$('.start').find('.arrow').rotate(0, 'slow');
+	$('.head').click( function (e) {
+
+		if (!($(this).is('#headstylepast'))){
+			if ($(this).parent().hasClass('active')){
+				$(this).next().slideToggle();
+				$(this).parent().removeClass("active");
+				$(this).find('.arrow').rotate(90, 'slow');
+			}
+			else{
+				//if row is inactive
+				//close active row if exists
+				$(this).parent().parent().find('.active').find('.body').slideToggle();
+				$(this).parent().parent().find('.active').find('.arrow').rotate(90, 'slow');
+				$(this).parent().parent().find('.active').removeClass('active');
+				
+				//open row and make acive id
+				$(this).next().slideToggle();
+				$(this).find('.arrow').rotate(0, 'slow');
+				$(this).parent().addClass("active");
+			}
+
 		}
 	});
-
 });

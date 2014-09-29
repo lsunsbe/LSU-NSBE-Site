@@ -1,0 +1,15 @@
+#button{
+	width: 100px;
+	display: block;
+	height: 100px;
+	background: black;
+	margin: 10%;
+}
+
+#panel{
+	width: 100px;
+	display: block;
+	height: 100px;
+	background: red;
+	margin: 10%;
+}

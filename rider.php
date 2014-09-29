@@ -2,114 +2,106 @@
 <html>
 <!--Begin Code-->
 <head>
-    <title>LSU National Society of Black Engineers: Home</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="styles/main.css"> 
-    <link rel="stylesheet" type="text/css" href="styles/rider.css">
+    <title>GEAUXNSBE</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/events.css">
     <link rel="stylesheet" type="text/css" href="styles/navmenu.css"> 
-    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
-    
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-<meta property="og:title" content="Welcome to GeauxNSBE.org" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="http://geauxnsbe.org" />
-        <meta property="og:image" content="http://geauxnsbe.org/images/NSBElogo.png">
-        <meta property="og:description" content="Welcome to the LSU NSBE homepage, source of all your up to date information about what's going on with NSBE." />
-
-                
-
+    <script src="scripts/events.js"></script>
+    <script type="text/javascript" src="scripts/jQueryRotateCompressed"></script>
 </head>
 <body>
-
 <!--By using container, we can center all the site content easily-->
-    <div id="floatingsocial">
-        <div class="button" id="facebookbutton">
-            <a href="https://www.facebook.com/GeauxNSBE" target="_blank">
-                <img src="images/Facebook_Logo.jpeg" 
-                alt="" 
-                >
-            </a>
-        </div>
-        
-        <div class="button" id="twitterbutton">
-            <a href="https://www.twitter.com/GeauxNSBE" target="_blank">
-                <img src="images/Twitter_logo_blue.jpg" 
-                alt="" 
-                >
-            </a>
-        </div>
-        
-        <div class="button" id="instagrambutton">
-            <a href="https://www.instagram.com/nsbe_lsu" target="_blank">
-                <img src="images/instagram.ico" 
-                alt="" 
-                >
-            </a>
-        </div>
-        
-        <div class="button" id="r5button">
-            <a href="http://www.nsbe.org/Regions/Region5/default.aspx" target="_blank">
-                <img src="images/roman.png" 
-                alt="NSBE Region 5" 
-                >
-            </a>
-        </div>
-        
-        <div class="button" id="nsbebutton">
-            <a href="http://nsbe.org" target="_blank">
-                <img src="images/NSBElogo.png" 
-                alt="NSBE Official" 
-                >
-            </a>
-        </div>
-        
-    </div>
-
 <div id="container">
-
-
-<div id="eventstable">
-    <div class="event"></div>
-    <p class="name">name</p><p class="date">date</p>
-    <div class="info">
-        <P class="tet2">tet</P>
-        <P class="tet3">tet</P>
-        <P class="tet4">tet</P>
-        <P class="tet5">tet</P>
-    </div>
-
-</div>
-
-<style type="text/css">
+<?php include("header.php") ?>
     
-    .name{
-        display: inline-block;
+    <div id="menu">
+        <ul>
+            <?php
+                include("navmenu.php");
+                writenav("calendar");
+            ?>
+        </ul>
+    </div>
+            <div id='eventlist'>
+        <?php
+            ini_set('auto_detect_line_endings', true);
+                date_default_timezone_set('America/Chicago');
+                $cont = true;
+                $today = strtotime('now') - 60000;
+                $added = 0;
+                $toAdd = 5; //SET TO DETERMINE HOW MANY EVENTS ARE SHOWN
+                $file = fopen("upcomingevents.csv", "r");
+                fgetcsv($file);
+                $headstyle = "";
+                while (!feof($file)){
+                    $data = fgetcsv($file);
+                    $eventName = $data[0];
+                    $eventDate = $data[1];
+                    $eventTime = $data[2];
+                    $eventDescription = $data[3];
+                    $eventPlace = $data[4];
+                    $startVar = "";
+                    $imageShow = "<img class='arrow' src='images/arrow.png' >";
+                    $greyStyle = "";
+                    if (strtotime($eventDate) < $today){
+                        $headstyle = "headstylepast";
+                        $imageShow = "";
+                    } else {   
+                        switch ($headstyle) {
+                            case 'headstylepast':
+                               $headstyle = "headstyle1";
+                               $startVar = "start active";
+                                break;
+                            case 'headstyle1':
+                                $headstyle = "headstyle2";
+                                break;
+                            case 'headstyle2':
+                                $headstyle = "headstyle1";
+                                break;
+                            default:
+                                # code...
+                                break;
+                        }
+                    }
+                    echo "
+                    
+                    <div class='eventrow $startVar'>
+                        <div class='head' id='$headstyle'>
+                            <p class='eventtitle'>$eventName</p>
+                            $imageShow
+                            <p class='eventdate'>$eventDate</p>
 
-    }
-    .date{
-        display: inline-block;
+                        </div>
+                        <div class='body' id='$headstyle'>
+                            <div class='time'>
+                                <p>$eventTime</p>
+                            </div>
+                            <div class='place'>
+                                <p>$eventPlace</p>
+                            </div>
+                            <div class='description'>
+                                <p>$eventDescription</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    ";
+
+
+                }
+
+                fclose($file);
+        ?>
+        </div>
         
-    }
-
-    .tet2, .tet3, .tet4, .tet5{
-        display: inline;
-    }
-</style>
-
-   </div>
-<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="rider.js"></script>
-
-
-</body>
-<footer>
-    <p>© 2014 National Society of Black Engineers, All Rights Reserved.</p>
-</footer>
-</html>
+    <iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=f38b27sght4m73mcml7isiq0t0%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FChicago" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe> 
+    
+</div>
+    </body>
+    </html>
