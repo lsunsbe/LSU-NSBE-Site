@@ -83,15 +83,19 @@
 }
 
 #headstyle1{
-	background: purple;
+	background: #633c9f;;
 }
 
 #headstyle2 p{
 	color: purple;
 }
 
+#headstyle1 p{
+	color: white;
+}
+
 #headstyle2{
-	background: yellow;
+	background: rgb(226, 221, 92);;
 }
 
 #headstylepast{
