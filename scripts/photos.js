@@ -8,6 +8,12 @@ $(document).ready(function(){
         url: "http://localhost/photopagewriter.php",
         success: function(data){
             $('#gallerycontainer').append(data);
+            
         }
     })
+
+    $('.album').click( function(){
+        
+    }
+    );
 });

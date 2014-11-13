@@ -11,9 +11,10 @@ function constructGallery(){
 		$thumb = "images/gallery/$f/" . scandir("images/gallery/$f")[$thumbIndex];
 		echo "
 		<div class='album'>
-	                <a href='photos?a=$f'> <img class='albumthumb' src='$thumb'> </a>
+	                <a href='photos?a=$f'> <img class='albumthumb' src='$thumb'> 
 	                <p class='albumtitle'>$albumName</p>
 	                <p class='albumcount'> $albumCount pictures</p>
+                    </a>
 	            </div>
 	";
 		}
@@ -27,22 +28,21 @@ function constructAlbumPage($album){
 	echo "<div class='title'>$album</div>";
 	foreach ($files as $f) {
 		if (!is_dir("images/gallery/$album/$f") and ($f != ".DS_Store")){
-		echo "
+		echo "<a href='photos?a=$album&p=$index'>
 		<div class='pic_thmb_container'>
-	                <a href='photos?a=$album&p=$index'><img class='pic_thmb' src='images/gallery/$album/$f'></a>
-	            </div>
+	                <img class='pic_thmb' src='images/gallery/$album/$f'>
+	            </div></a>
 	            ";
 	        }
 	        $index++;
 	    }
 }
 
-
 function constructPhotoPage($album, $photo){
 	$files = scandir("images/gallery/$album");
 	$image = $files[$photo];
 	echo "
-		<div class='backButton'><a href='photos?a=$album'>BACK</a> </div>
+		<a href='photos?a=$album'><div class='backButton'>Back to Album</div></a> 
             <img class='picview' src='images/gallery/$album/$image'>
             <div class='buttons'>
                 <div class='prevButton'><p>Hello</p></div>
@@ -51,7 +51,5 @@ function constructPhotoPage($album, $photo){
 	";
 
 }
-
-
 
 ?>
