@@ -1,0 +1,177 @@
+#container{
+    min-width: 745px;
+}
+
+/* unvisited link */
+a:link {
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    text-decoration: none;
+}
+
+#gallerycontainer{
+	margin-top: 30px;
+	margin-left: 1%;
+	margin-right: 1%;
+    clear: both;
+}
+
+.album{
+	
+	background: rgba(196, 167, 10, 0.33);
+	float: left;
+	margin: 1%;
+    border-radius: 10px;
+    padding: 5px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 2.5px #888888;
+}
+
+.album:hover{
+    background: rgba(165, 140, 3, 0.33);
+    cursor:pointer;
+}
+
+.albumtitle{
+	display: block;
+    text-align: left;
+    clear: right;
+	font-size: 18px;
+    font-family: "Oswald", sans-serif;
+    color: purple
+}
+
+.albumthumb{
+	display: inline;
+	width: 210px;
+	height: 210px;
+     /*padding: 9px;*/
+    border-radius: 10px;
+    
+}
+
+.albumcount{
+	display: block;
+	font-size: 12px;
+    float: right;
+    width: 100%;
+    text-align: left;
+}
+
+.albumtitle{
+	display: block;
+	font-size: 18px;
+}
+
+.pic_thmb_container{
+	
+	width: auto;
+    border-radius: 10px;
+	float: left;
+	margin: 1%;
+    
+    padding: 0px;
+    border: 0px solid black;
+}
+
+.pic_thmb{
+	display: inline;
+	width: 180px;
+	height: 180px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2.5px #888888;
+    
+    
+}
+
+.title{
+    font-size: 30px;
+    font-family: "Oswald" sans-serif;
+    color: purple;
+    width: 100%;
+    text-align: left;
+    margin-top: 14px;
+}
+
+hr{
+    margin: 10px;
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+
+.albumcount{
+	display: block;
+	font-size: 12px;
+
+}
+
+.clear{
+	clear: both;
+	line-height: 0px;
+}
+
+.picview{
+	width: 50%;
+	height: auto;
+	background-color: red;
+	clear: left;
+}
+
+
+
+.buttons{
+	margin-bottom: 100px;
+    width: 25%;
+    margin-left: 37.5%
+
+}
+
+
+#prevbutton, #nextbutton{
+    width: 10%;
+    cursor: pointer;
+}
+
+.backButton{
+    display: block;
+	width: 15%;
+	padding: 0;
+	font-size: 18px;
+    color: white;
+	text-align: center;
+	background: #8e44ad;
+	cursor: pointer;
+    border-radius: 10px;
+}
+
+.backButton:hover{
+	background: rgba(142, 68, 173, 0.61);
+}
+
+.pic-sharebuttons {
+    display: none;
+    position: fixed;
+    left: 69%;
+    width: auto;
+    top:25%;
+}
+
+#fb-pic-share-button, #twitter-pic-share-button{
+    display: block;
+    width: 200%;
+
+}
