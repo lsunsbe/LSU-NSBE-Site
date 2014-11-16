@@ -1,18 +1,34 @@
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>About LSU NSBE</title>
-        <link rel="stylesheet" type="text/css" href="styles/main.css"> 
-        <link rel="stylesheet" type="text/css" href="styles/navmenu.css"> 
-        <link rel="stylesheet" type="text/css" href="styles/purpose.css">
-            <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-        <link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
-<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-        
-        <script type="text/javascript" src="scripts/purpose.js"></script>
-    </head>
+<head>
+    <title>About LSU NSBE</title>
+    <link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
+    <!--CSS Files -->
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/navmenu.css">
+    <link rel="stylesheet" type="text/css" href="styles/purpose.css">
+    <!--Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <!--SEO Meta Tags -->
+    <META NAME="Title" CONTENT="LSU NSBE: Purpose">
+    <META NAME="Keywords" CONTENT="LSU NSBE, NSBE LSU, LSU, NSBE, Engineers, Engineering, Purpose, Mission, History, Goals, Information, GeauxNSBE">
+    <META NAME="Description" CONTENT="Learn about LSU NSBE and what it is we do.">
+    <META NAME="Subject" CONTENT="NSBE Purpose">
+    <META NAME="Language" CONTENT="English">
+    <META NAME="Robots" CONTENT="INDEX,FOLLOW">
+    <!--Facebook Meta Tags -->
+    <meta property="og:title" content="LSU NSBE: Purpose" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://geauxnsbe.org/purpose" />
+    <meta property="og:image" content="http://geauxnsbe.org/images/NSBElogo.png">
+    <meta property="og:description" content="Learn about LSU NSBE and what it is we do." />
+    <!--Twitter Meta Tags -->
+
+
+</head>
     <body>
     <!--By using container, we can center all the site content easily-->
         <div id="floatingsocial">

@@ -1,25 +1,38 @@
+
 <!DOCTYPE html>
 <html>
 <!--Begin Code-->
-    <head>
-        <title>Contact LSU NSBE</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="styles/main.css"> 
-        <link rel="stylesheet" type="text/css" href="styles/navmenu.css"> 
-        <link rel="stylesheet" type="text/css" href="styles/contact.css"> 
-        <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-        <link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
-                <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script src="scripts/contact.js"></script>
+<head>
+    <title>Contact LSU NSBE</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
+    <!--CSS Files -->
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/navmenu.css">
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">
+    <!--Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <!--SEO Meta Tags-->
+    <META NAME="Title" CONTENT="LSU NSBE: Contact LSU NSBE">
+    <META NAME="Keywords" CONTENT="LSU NSBE, NSBE LSU, LSU, NSBE, Engineers, Engineering, contact, questions, comments, suggestions, GeauxNSBE">
+    <META NAME="Description" CONTENT="Contact LSU NSBE directly with any comments, questions, or suggestions you
+                    want to share.">
+    <META NAME="Subject" CONTENT="NSBE E-Board">
+    <META NAME="Language" CONTENT="English">
+    <META NAME="Robots" CONTENT="INDEX,FOLLOW">
+    <!--Facebook Meta Tags -->
+    <meta property="og:title" content="Contact LSU NSBE" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://geauxnsbe.org/contact" />
+    <meta property="og:image" content="http://geauxnsbe.org/images/NSBElogo.png">
+    <meta property="og:description" content="Contact LSU NSBE directly with any comments, questions, or suggestions you
+                    want to share. " />
+    <!--Twitter Meta Tags -->
 
-
-
-
-    </head>
+</head>
 <body>
     <div id="container"> 
         <?php include("header.php"); ?>

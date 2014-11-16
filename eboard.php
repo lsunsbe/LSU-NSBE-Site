@@ -1,17 +1,33 @@
+
 <!DOCTYPE html>
 <html>
 <!--Begin Code-->
 <head>
-	<title>LSU NSBE E-Board</title>
+    <title>LSU NSBE E-Board</title>
+    <link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
+    <!--CSS Files -->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-	<link rel="stylesheet" type="text/css" href="styles/eboard.css">
+    <link rel="stylesheet" type="text/css" href="styles/eboard.css">
     <link rel="stylesheet" type="text/css" href="styles/navmenu.css">
+    <!--Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
     <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="scripts/eboard.js" type="text/javascript"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--SEO Meta Tags -->
+    <META NAME="Title" CONTENT="LSU NSBE: E-Board">
+    <META NAME="Keywords" CONTENT="LSU NSBE, NSBE LSU, LSU, NSBE, Engineers, Engineering, E-Board, Executive, Board, Leaders, Leader GeauxNSBE">
+    <META NAME="Description" CONTENT="Learn about the LSU NSBE Leaders: Your 2014-2015 Executive Board">
+    <META NAME="Subject" CONTENT="NSBE E-Board">
+    <META NAME="Language" CONTENT="English">
+    <META NAME="Robots" CONTENT="INDEX,FOLLOW">
+    <!--Facebook Meta Tags -->
+    <meta property="og:title" content="LSU NSBE: E-Board" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://geauxnsbe.org/eboard" />
+    <meta property="og:image" content="http://geauxnsbe.org/images/NSBElogo.png">
+    <meta property="og:description" content="Learn about your LSU NSBE Executive Board." />
+    <!--Twitter Meta Tags -->
+
 </head>
 <body>
 

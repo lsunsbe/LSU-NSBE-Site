@@ -1,19 +1,33 @@
+
 <!DOCTYPE html>
 <html>
 <!--Begin Code-->
 <head>
-	<title>GEAUXNSBE</title>
+    <title>GEAUXNSBE</title>
+    <!--CSS Files -->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-	<link rel="stylesheet" type="text/css" href="styles/events.css">
-    <link rel="stylesheet" type="text/css" href="styles/navmenu.css"> 
-	<link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
-        <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styles/events.css">
+    <link rel="stylesheet" type="text/css" href="styles/navmenu.css">
+    <!--Fonts -->
+    <link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <!--SEO Meta Tags -->
+    <META NAME="Title" CONTENT="LSU NSBE: Events">
+    <META NAME="Keywords" CONTENT="LSU NSBE, NSBE LSU, LSU, NSBE, Engineers, Engineering, Events, Calendar Information, GeauxNSBE">
+    <META NAME="Description" CONTENT="Learn what's going on and LSU NSBE and what events we'll be holding.">
+    <META NAME="Subject" CONTENT="NSBE Events">
+    <META NAME="Language" CONTENT="English">
+    <META NAME="Robots" CONTENT="INDEX,FOLLOW">
+    <!--Facebook Meta Tags -->
+    <meta property="og:title" content="LSU NSBE: Events" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://geauxnsbe.org/events" />
+    <meta property="og:image" content="http://geauxnsbe.org/images/NSBElogo.png">
+    <meta property="og:description" content="Learn what's going on and LSU NSBE and what events we'll be holding." />
+    <!--Twitter Meta Tags -->
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <script src="scripts/events.js"></script>
-    <script type="text/javascript" src="scripts/jQueryRotateCompressed.js"></script>
 </head>
 <body>
 <!--By using container, we can center all the site content easily-->
