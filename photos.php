@@ -1,17 +1,15 @@
-
 <!DOCTYPE html>
 <html>
 <!--Begin Code-->
-<<<<<<< HEAD
 <head>
-    <title>Contact LSU NSBE</title>
+    <title>LSU NSBE Photos</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
     <!--CSS Files -->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/navmenu.css">
-    <link rel="stylesheet" type="text/css" href="styles/contact.css">
+    <link rel="stylesheet" type="text/css" href="styles/photos.css">
     <!--Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -33,20 +31,6 @@
     <!--Twitter Meta Tags -->
 
 </head>
-=======
-    <head>
-       <title>LSU NSBE Photos</title>
-        <link rel="stylesheet" type="text/css" href="styles/main.css">
-        <link rel="stylesheet" type="text/css" href="styles/navmenu.css">
-        <link rel="stylesheet" type="text/css" href="styles/photos.css">
-        <link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
-        <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="scripts/photos.js" type="text/javascript"></script>
-            <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    </head>
->>>>>>> Photos
     <body>
     <div id="container">
     <?php include("header.php"); ?>
