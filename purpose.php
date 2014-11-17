@@ -128,6 +128,6 @@
             </div>
     </body>
     <footer>
-	<p>© 2014 National Society of Black Engineers, All Rights Reserved.</p>
+	<p> © 2014 National Society of Black Engineers, All Rights Reserved.</p>
 </footer>
 </html>

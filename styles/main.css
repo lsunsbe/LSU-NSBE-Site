@@ -39,6 +39,7 @@ body {
 	width:77%;
 	margin:20px auto;
     margin-top: 0px;
+    margin-bottom: 0px;
     background: white;
     overflow: hidden;
 }
@@ -102,5 +103,9 @@ p {
 }
 
 footer{
-    background: #712626;
+    width: 77%;
+    margin-left: 11.5%;
+    height: 80px;
+    background: #48247E;
+    color: white;
 }
