@@ -376,8 +376,8 @@ Marvyn Muse is a Petroleum Engineering student from New Orleans, Lousiana and ho
     </div>
 </div>
 </body>
-<footer>
-	<p>© 2014 National Society of Black Engineers, All Rights Reserved.</p>
-</footer>
+<?php
+include("footer.php");
+?>
     
 </html>

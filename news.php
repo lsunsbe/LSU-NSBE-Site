@@ -229,4 +229,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
     </body>
+<?php
+include("footer.php");
+?>
 </html>

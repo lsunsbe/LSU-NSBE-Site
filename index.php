@@ -208,7 +208,7 @@ While you are here, feel free to browse around our site. As you can see, our hom
 <script type="text/javascript" src="slick/slick.min.js"></script>
 
 </body>
-<footer>
-	<p>© 2014 National Society of Black Engineers, All Rights Reserved.</p>
-</footer>
+<?php
+include("footer.php");
+?>
 </html>
