@@ -1,21 +1,87 @@
 
+
 <!DOCTYPE html>
 <html>
 <!--Begin Code-->
-    <head>
-       <title>LSU NSBE Photos</title>
-        <link rel="stylesheet" type="text/css" href="styles/main.css">
-        <link rel="stylesheet" type="text/css" href="styles/navmenu.css">
-        <link rel="stylesheet" type="text/css" href="styles/photos.css">
-        <link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
-        <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="scripts/photos.js" type="text/javascript"></script>
-            <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    </head>
-    <body>
-    <div id="container">
+<head>
+    <title>LSU National Society of Black Engineers: Home</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" type="img/ico" href="images/favicon.ico">
+    <!--CSS Files -->
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link rel="stylesheet" type="text/css" href="styles/navmenu.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <!--Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <!--SEO Meta Tags -->
+    <META NAME="Title" CONTENT="LSU National Society of Black Engineers: Home">
+    <META NAME="Keywords" CONTENT="LSU NSBE, NSBE LSU, LSU, NSBE, Engineers, Engineering, GeauxNSBE">
+    <META NAME="Description" CONTENT="Welcome to the LSU NSBE homepage, source of all your up to date information about what's going on with NSBE.">
+    <META NAME="Subject" CONTENT="Organization Website">
+    <META NAME="Language" CONTENT="English">
+    <META NAME="Robots" CONTENT="INDEX,FOLLOW">
+    <!--Facebook Meta Tags -->
+    <meta property="og:title" content="Welcome to GeauxNSBE.org" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://geauxnsbe.org" />
+    <meta property="og:image" content="http://geauxnsbe.org/images/NSBElogo.png">
+    <meta property="og:description" content="Welcome to the LSU NSBE homepage, source of all your up to date information about what's going on with NSBE." />
+
+    <!--Twitter Meta Tags -->
+
+</head>
+<body>
+
+<!--By using container, we can center all the site content easily-->
+    <div id="floatingsocial">
+        <div class="button" id="facebookbutton">
+            <a href="https://www.facebook.com/GeauxNSBE" target="_blank">
+                <img src="images/Facebook_Logo.jpeg" 
+                alt="" 
+                >
+            </a>
+        </div>
+        
+        <div class="button" id="twitterbutton">
+            <a href="https://www.twitter.com/GeauxNSBE" target="_blank">
+                <img src="images/Twitter_logo_blue.jpg" 
+                alt="" 
+                >
+            </a>
+        </div>
+        
+        <div class="button" id="instagrambutton">
+            <a href="https://www.instagram.com/nsbe_lsu" target="_blank">
+                <img src="images/instagram.ico" 
+                alt="" 
+                >
+            </a>
+        </div>
+        
+        <div class="button" id="r5button">
+            <a href="http://www.nsbe.org/Regions/Region5/default.aspx" target="_blank">
+                <img src="images/roman.png" 
+                alt="NSBE Region 5" 
+                >
+            </a>
+        </div>
+        
+        <div class="button" id="nsbebutton">
+            <a href="http://nsbe.org" target="_blank">
+                <img src="images/NSBElogo.png" 
+                alt="NSBE Official" 
+                >
+            </a>
+        </div>
+        
+    </div>
+
+<div id="container">
     
     <div id="titlebar">
         <!--This is how you link photos-->
@@ -28,26 +94,89 @@
         <h3>of the</h3> -->
         <h2>National Society of Black Engineers-Louisiana State University</h2>
    </div>
-        <div id="menu">
-    	   <ul><li><a class="item" id="home" href="../index">Home</a></li><li><a class="item" id="purpose" href="../purpose">About NSBE</a></li><li><a class="item" id="eboard" href="../eboard">E-Board</a></li><li><a class="item" id="news" href="../news">News</a></li><li><a class="item" id="calendar" href="../events">Events</a></li><li><a class="SELitem" id="photos" href="../photos">Photos</a></li><li><a class="item" id="contact" href="../contact">Contact Us</a></li></ul>        </div>   
+    <div id="menu">
+	<ul><li><a class="SELitem" id="home" href="../index">Home</a></li><li><a class="item" id="purpose" href="../purpose">About NSBE</a></li><li><a class="item" id="eboard" href="../eboard">E-Board</a></li><li><a class="item" id="news" href="../news">News</a></li><li><a class="item" id="calendar" href="../events">Events</a></li><li><a class="item" id="photos" href="../photos">Photos</a></li><li><a class="item" id="contact" href="../contact">Contact Us</a></li></ul>    </div>
 
-        <div id="gallerycontainer">
-            
-
-            
-		<a href='photos?a=Event copy'><div class='backButton'>Back to Album</div></a>
-            <div class="pic-sharebuttons">
-                <img id="fb-pic-share-button" src="images/facebook-share.png">
-                <img id="twitter-pic-share-button"  src="images/twitter-share.png">
-            </div>
-            <img class='picview' src='images/gallery/Event copy/lorempixel-1.jpg'>
-            <div class='buttons'>
-                <img id="prevbutton" src="images/arrow_left.png">
-                <img id="nextbutton"  src="images/arrow_right.png">
-            </div>
-	
-            <br class="clear" />
-        </div>     
+	<!-- Break to break -->
+    
+    <div class="frontimage" id="frontimage">
+        <div><img src='images/frontpage/2.png'></div><div><img src='images/frontpage/3.png'></div><div><img src='images/frontpage/4.png'></div><div><img src='images/frontpage/5.png'></div><div><img src='images/frontpage/6.png'></div><div><img src='images/frontpage/7.png'></div>  
     </div>
-    </body>
+    
+    
+	<div id="announements">
+		<h4 >Upcoming Events</h4>
+        <table>
+                    </table>
+		<a href="events.php">More upcoming events...</a>
+	</div>
+
+
+    <div id="recentnews">
+        <h4> Recent News</h4>
+        <div class="story">
+            <p><span id="date">September 12, 2014: </span> <span id="heading">FRC Registration Now Open  </span></p>
+            <p class="content"> Registration for Fall Regional Conference is now open. This year, the conference will be in Baton Rouge, November 14-16, at the Crowne Plaza Executive Center. Early bird rates are as low as.... <a href="news.php#frcregister">Read More...</a> </p> 
+        </div> 
+        <div class="story">
+                <p><span id="date">August 23, 2014: </span> <span id="heading">Kick-Off General Body Meeting  </span></p>
+                <p class="content">NSBE will be having their first General Body Meeting of the year on September 10, 2014 at 8PM in Patrick F. Taylor, Rm. 2222. The meeting will offer an Alumni Panel, Regional and National conference updates, study group... <a href="news.html#genbodykickoff">Read More...</a> </p> </div>
+        
+            <div class="morenews"><a href="news.html">More News...</a></div>
+    </div>
+
+        <div id="welcome">
+        
+        <h4 id="welcometitle">President's Welcome</h4>
+        <h5 id="nameplate">Vonzell Williams</h5>
+        <img id="image" src="images/jj.jpg">
+        <p id="welcomecontent">Hello everyone and welcome to the NSBE family. I am Vonzell Williams, the President of the National Society of Black Engineers.
+I am overjoyed to serve as the president this year and am looking forward to getting to know all the new members of our NSBE family. 
+
+We have a lot of great plans for NSBE this semester, including the new Freshman Action Team (F.A.T.). 
+While you are here, feel free to browse around our site. As you can see, our home page is full of the latest news on NSBE and even a link to get involved! If you aren't very familiar with our organization, then you can browse to the "About NSBE" page and learn a little bit more about us. There is so much NSBE has to offer and it doesn't stop here. Before you close your web browser be sure to view our regional and national web pages to learn more about what is going on in NSBE outside of LSU! </p>
+    </div>
+        
+        <div id="email">
+            <h2 id="interestedheading">Want To Get Involved With NSBE?</h2>   
+            <h3>Add your email to the NSBE mailing list:</h3>
+            <form action="" method="post">
+                <input id="emailbox" type="text" name="email" placeholder="Enter email here..." value="">
+                <input id="gobutton" type="submit" name="submitbutton" value="SEND" autocomplete="off">
+                
+            </form> 
+            <br/>
+            <p> <a href="contact.html">Contact Us</a> directly for more info.</p>
+            <hr>
+            <br>
+            <p>You can also <a href="https://nsbe.networkats.com/members_online/members/newmember_quick.asp?action=" target="_blank">Register as an Official NSBE Member</a></p>
+            <br>
+            <p>And don't forget to check out the <a href="http://www.nsbe.org/Regions/Region5/default.aspx" target="_blank">Region 5 Mainpage</a> </p>
+        </div>
+        
+        <div id="links">
+         <h2 id="linksheading">Links</h2>
+         <a href="http://geauxnsbe.org/negotiatingpresentation.pptx" target="_blank">Negotiating Your Career- </a>-Marathon Petroleum Presentation
+         <a href="https://nsbe.networkats.com/members_online/registration/reg_chaperone.asp?mt=R5FRC14&af=NSBE" target="_blank">Resgistration Link- </a>-Region 5 Fall Regional Conference Registration
+         <a href="http://geauxnsbe.org/NSBE 1st General_update.pdf" target="_blank">Kickoff Meeting Slides- </a>-NSBE General Body Kickoff Meeting Slides
+          <a href="http://geauxnsbe.org/newsletter1.pdf" target="_blank">NSBE News Letter #1- </a>-NSBE's First Newsletter
+    </div>
+        <br />
+        <br />
+    
+    	
+</div> 
+    
+    
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script src="scripts/index.js"></script>
+    <script src="scripts/index2.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+</body>
+<footer>
+	<p> © 2014 National Society of Black Engineers, All Rights Reserved.</p>
+</footer>
 </html>

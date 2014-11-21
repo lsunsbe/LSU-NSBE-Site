@@ -39,6 +39,7 @@ body {
 	width:77%;
 	margin:20px auto;
     margin-top: 0px;
+    margin-bottom: 0px;
     background: white;
     overflow: hidden;
 }
@@ -102,5 +103,46 @@ p {
 }
 
 footer{
-    background: #712626;
+    width: 77%;
+    margin-left: 11.5%;
+    height: 80px;
+    background: #48247E;
+    color: white;
+}
+
+.site_footer{
+    display: block;
+    clear: right;
+    width: 50%;
+    float: right;
+}
+
+.copyright{
+    display: block;
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.site_footer h4, .site_footer p{
+    display: inline-block;
+    float: right;
+}
+
+.site_footer h4{
+    font-size: 15px;
+    margin-right: 25%;
+    width: 50%;
+}
+
+.site_footer p{
+    font-size: 12px;
+}
+
+#aboutlink, #contactlink{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 100;
+    font-family: "Helvetica", sans;
 }
