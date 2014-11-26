@@ -76,10 +76,10 @@
         
         
         <div id="container">
-            <?php include('header.php'); ?>
+            <?php include("components/header.php"); ?>
 
 	<div id="menu">
-    <?php include("navmenu.php");
+    <?php include("components/navmenu.php");
             writeNav("purpose");
              ?>
     </div>
@@ -128,7 +128,7 @@
             </div>
     </body>
 <?php
-    include("footer.php");
+    include("components/footer.php");
 ?>
 
 </html>

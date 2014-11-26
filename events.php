@@ -32,12 +32,12 @@
 <body>
 <!--By using container, we can center all the site content easily-->
 <div id="container">
-<?php include("header.php") ?>
+<?php include("components/header.php") ?>
     
 	<div id="menu">
         <ul>
             <?php
-                include("navmenu.php");
+                include("components/navmenu.php");
                 writenav("calendar");
             ?>
         </ul>
@@ -118,6 +118,6 @@
 </div>
     </body>
 <?php
-include("footer.php");
+include("components/footer.php");
 ?>
     </html>

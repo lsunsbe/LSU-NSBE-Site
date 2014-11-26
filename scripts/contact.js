@@ -9,7 +9,7 @@ $(document).ready(function(){
         console.log("Test");
         $.ajax({
             type: "post",
-            url: "contactsubmit.php",
+            url: "email/contactsubmit.php",
             data: {name: $('#name').val(), email: $('#email').val(), 
                   subject: $('#subject').val(), message: $('#message').val()},
             success: function(data){

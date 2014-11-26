@@ -35,12 +35,12 @@
 </head>
 <body>
     <div id="container"> 
-        <?php include("header.php"); ?>
+        <?php include("components/header.php"); ?>
 
 	<div id="menu">
         <ul>
             <?php
-                include("navmenu.php");
+                include("components/navmenu.php");
                 writenav("contact");
             ?>
         </ul>
@@ -86,6 +86,6 @@
     </div>
 </body>
 <?php
-include("footer.php");
+include("components/footer.php");
 ?>
 </html>

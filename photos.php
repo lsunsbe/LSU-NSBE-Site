@@ -33,17 +33,17 @@
 </head>
     <body>
     <div id="container">
-    <?php include("header.php"); ?>
+    <?php include("components/header.php"); ?>
 
         <div id="menu">
-    	   <?php include("navmenu.php"); echo writenav("photos"); ?>
+    	   <?php include("components/navmenu.php"); echo writenav("photos"); ?>
         </div>   
 
         <div id="gallerycontainer">
             
 
             <?php
-                include('photopageWriter.php'); //include statements for methods
+                include('php/photopageWriter.php'); //include statements for methods
                 $album = $_GET['a'];
                 $picture = $_GET['p'];
                 if (empty($album) and empty($picture)){
@@ -62,6 +62,6 @@
     </div>
     </body>
 <?php
-include("footer.php");
+include("components/footer.php");
 ?>
 </html>

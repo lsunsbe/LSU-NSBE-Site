@@ -78,13 +78,13 @@
     
 
     <?php
-        include("header.php");
+        include("components/header.php");
     ?>
     
 	<div id="menu">
 		<ul>
 			<?php
-                include("navmenu.php");
+                include("components/navmenu.php");
                 writenav("eboard");
             ?>
 		</ul>
@@ -377,7 +377,7 @@ Marvyn Muse is a Petroleum Engineering student from New Orleans, Lousiana and ho
 </div>
 </body>
 <?php
-include("footer.php");
+include("components/footer.php");
 ?>
     
 </html>

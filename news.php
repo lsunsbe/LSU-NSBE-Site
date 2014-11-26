@@ -77,12 +77,12 @@
         
         <div id="container">
 
-            <?php include("header.php"); ?>
+            <?php include("components/header.php"); ?>
 
 	<div id="menu">
         <ul>
             <?php
-                include("navmenu.php");
+                include("components/navmenu.php");
                 writenav("news");
             ?>
         </ul>
@@ -200,9 +200,9 @@
                             And much, much more. Be sure to check it all out! 
                         </p>
 
-                         <a href="https://twitter.com/share" class="twitter-share-button sharebutton" data-url="http://geauxnsbe.org/stories/stwelcome.html" data-text="NSBE Welcome to the Official LSU NSBE Homepage" data-via="NSBE_LSU" data-count="false" >Tweet Out</a> 
+                         <a href="https://twitter.com/share" class="twitter-share-button sharebutton" data-url="http://geauxnsbe.org/stories/stwelcome.html" data-text="NSBE Welcome to the Official LSU NSBE Homepage" data-via="NSBE_LSU" data-count="none"  >Tweet Out</a> 
 
-                       <a href="javascript:popup('http://geauxnsbe.org/stories/stwelcome.html')"> <img class="sharebutton" src="images/facebookshare.png"></a>
+                       <div class="fb-share-button sharebutton" data-href="http://geauxnsbe.org/news/fff" data-layout="button"></div>
 
                     </div>
                 </td>
@@ -230,6 +230,6 @@
 }(document, 'script', 'facebook-jssdk'));</script>
     </body>
 <?php
-include("footer.php");
+include("components/footer.php");
 ?>
 </html>

@@ -11,7 +11,7 @@ $(document).ready(function(){
         $('#emailbox').val = "";
         $.ajax({
             type: "post",
-            url: "emailsubmit.php",
+            url: "email/emailsubmit.php",
             data: {e: $('#emailbox').val()},
             success: function(data){
                 window.alert(data);
