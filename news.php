@@ -14,19 +14,24 @@
     <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!--SEO Meta Tags -->
+
+    <!--VARIABLE 
     <META NAME="Title" CONTENT="LSU NSBE: News">
     <META NAME="Keywords" CONTENT="LSU NSBE, NSBE LSU, LSU, NSBE, Engineers, Engineering, News, Stories, Information, GeauxNSBE">
     <META NAME="Description" CONTENT="All the most recent and up-to-date on all LSU NSBE news, events, and information.">
     <META NAME="Subject" CONTENT="NSBE News">
     <META NAME="Language" CONTENT="English">
     <META NAME="Robots" CONTENT="INDEX,FOLLOW">
-    <!--Facebook Meta Tags -->
+
+
+    
     <meta property="og:title" content="LSU NSBE: News" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="http://geauxnsbe.org/news" />
     <meta property="og:image" content="http://geauxnsbe.org/images/NSBElogo.png">
     <meta property="og:description" content="All the most recent and up-to-date on all LSU NSBE news, events, and information." />
-    <!--Twitter Meta Tags -->
+    -->
+
 
 </head>
     <body>
@@ -180,7 +185,7 @@
             </tr>
                 
                 <!-- NEWS STORY 1--> 
-                
+            
             <tr id="welcome" class="newsstyle2">
                 <td class="date"><p>08/23/2014</p></td>
                 <td>
@@ -211,23 +216,6 @@
         </div>
 
 
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
-                        <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-        <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
     </body>
 <?php
 include("components/footer.php");
