@@ -115,30 +115,41 @@
                 $today = strtotime('now') - 60000;
                 $added = 0;
                 $toAdd = 5; //SET TO DETERMINE HOW MANY EVENTS ARE SHOWN
-                $file = fopen("upcomingevents.csv", "r");
-                while ($cont){
-                    $data = fgetcsv($file);
-                    $eventName = $data[0];
-                    $eventDate = trim($data[1], '"');
-                    if (strtotime($eventDate) > $today){
-                        if ($eventName=="General Body Meeting"){
-                            echo "<tr>
-                                    <td class='event'><b>$eventName</b> :</td>
-                                    <td class='date'>$eventDate </td>
-                                 </tr>";
-                        } else{
-                            echo "<tr>
-                                    <td class='event'>$eventName :</td>
-                                    <td class='date'>$eventDate </td>
-                                 </tr>";
+                date_default_timezone_set('America/Chicago');
+                $servername = "localhost";
+                $username = "production";
+                $password = "cabrini";
+                $dbname = "GeauxNSBE";
+                
+                // Create connection
+                $conn = new mysqli($servername, $username, $password, $dbname);
+                // Check connection
+          
+                
+                $sql = "SELECT * FROM Events WHERE DATE >= CURDATE() LIMIT 4";
+                $result = $conn->query($sql);
+        
+                if ($result->num_rows > 0) {
+                    // output data of each row
+                    while($row = $result->fetch_assoc()) {
+                            $eventName = $row['Name'];
+                            $eventDate = date('F d, Y', strtotime($row['Date']));
+                                if ($eventName=="General Body Meeting"){
+                                    echo "<tr>
+                                            <td class='event'><b>$eventName</b> :</td>
+                                            <td class='date'>$eventDate </td>
+                                         </tr>";
+                                } else{
+                                    echo "<tr>
+                                            <td class='event'>$eventName :</td>
+                                            <td class='date'>$eventDate </td>
+                                         </tr>";
+                                }
                         }
-                        $added++;
                     }
-                    if ($added == $toAdd or feof($file))
-                        $cont = false;
-                }
-                fclose($file);
-            ?>
+                        $conn->close();
+                    ?>
+
         </table>
 		<a href="events.php">More upcoming events...</a>
 	</div>

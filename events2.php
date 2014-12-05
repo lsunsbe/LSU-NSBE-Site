@@ -49,6 +49,8 @@
                 date_default_timezone_set('America/Chicago');
                 $cont = true;
                 $today = strtotime('now') - 60000;
+                $added = 0;
+                $toAdd = 5; //SET TO DETERMINE HOW MANY EVENTS ARE SHOWN
                 date_default_timezone_set('America/Chicago');
                    $servername = "localhost";
                    $username = "production";
