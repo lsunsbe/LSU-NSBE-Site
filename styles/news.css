@@ -1,97 +1,59 @@
-.newsstyle1 {
-    
-    -moz-border-radius: 10px;
-    width: 80%;
+#post_container {
+    width: 100%;
 }
 
-td{
-    
+.post{
+    width: 70%;
+    background-color: gold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
 }
 
-.newsstyle2 {
-    width: 80%;
-    -moz-border-radius: 10px;
-}
-
-#newstable {
-}
-
-.sharebutton{
-    width: 80px;
-    height: 20px;
-    float: right;
-    margin: 10px;
-    border: none;
-}
-
-
-
-.date {
-    background: white;
-    font-size: 25px;
-    color: rgba(155, 155, 101, 0.56);
-    font-family: sans-serif, "Helvetica";
-    font-weight:bolder;
-    margin-left: 12%;
-    
-}
-
-
-.newsstyle1 .date{
-    color: #d3b201;
-}
-
-.newsstyle2 .date{
+.post_title{
+    font-size: 32px;
     color: purple;
 }
 
+.post_title a:link, .post_title a:visited{
+    text-decoration: none;
+    color: purple;
+    font-family: "Oswald";
 
-.newsstyle1 .story{
-    background: rgba(56, 2, 95, 0.37);
 }
 
-.newsstyle2 .story{
-    background: rgba(198, 191, 20, 0.42);
+.post_date{
+    font-size: 18px;
 }
 
-.story {
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    width: 90%;
-    display: inline-block;
-    padding: 20px;
-    
+.post_content{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
-.story p{
-    font-size: 15px;
-    color: rgba(38, 15, 15, 0.99);
-    font-weight: bolder;
+.post_content *{
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* Content element style tags. This defines how the post content will look */
 
-#news3item {
-    display: inline-block;
-}
+.post_content p {
+    word-wrap: break-word;
+    font-size: 18px;
 
-#newstable h3{
-    margin: 10px;
-    font-family: "Bevan";
-    font-size: 27px;
-}
-
-.newsstyle2 h3 {
-    color: #410041;
-}
-
-.newsstyle1 h3{
-    color: #410041;
-}
-
-.conimg{
-   height: 23%;
-    width: 50%;
 }
 
 
+
+.fb-share-button{
+    vertical-align: super;
+}
+
+.twitter-share-button{
+    vertical-align: baseline;
+}

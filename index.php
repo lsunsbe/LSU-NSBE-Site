@@ -157,15 +157,37 @@
 
     <div id="recentnews">
         <h4> Recent News</h4>
-        <div class="story">
-            <p><span id="date">September 12, 2014: </span> <span id="heading">FRC Registration Now Open  </span></p>
-            <p class="content"> Registration for Fall Regional Conference is now open. This year, the conference will be in Baton Rouge, November 14-16, at the Crowne Plaza Executive Center. Early bird rates are as low as.... <a href="news.php#frcregister">Read More...</a> </p> 
-        </div> 
-        <div class="story">
-                <p><span id="date">August 23, 2014: </span> <span id="heading">Kick-Off General Body Meeting  </span></p>
-                <p class="content">NSBE will be having their first General Body Meeting of the year on September 10, 2014 at 8PM in Patrick F. Taylor, Rm. 2222. The meeting will offer an Alumni Panel, Regional and National conference updates, study group... <a href="news.html#genbodykickoff">Read More...</a> </p> </div>
         
-            <div class="morenews"><a href="news.html">More News...</a></div>
+        
+        <?php
+        
+        date_default_timezone_set('America/Chicago');
+
+        $servername = "127.0.0.1";
+        $username = "root";
+        $password = "cabrini93";
+        $dbname = "GeauxNSBE";
+
+        // Create connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+        $result = $conn->query('Select * from Posts order by date desc limit 2 ');
+        while ($row = $result->fetch_assoc()) {
+            $date = date('F d, Y', strtotime($row['date']));
+            $title = $row['title'];
+            $ident = $row['ident'];
+            $description = $row['description'];
+            echo "<div class='story'>
+                <p><span id='date'>$date: </span> <span id='heading'>$title  </span></p>
+                <p class='content'> $description.... <a href='news.php?s=$ident'>Read More...</a> </p>
+            </div>";
+        }
+        
+        ?>
+            <div class="morenews"><a href="news.php">More News...</a></div>
     </div>
 
         <div id="welcome">
