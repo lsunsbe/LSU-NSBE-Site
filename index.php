@@ -37,48 +37,7 @@
 <body>
 
 <!--By using container, we can center all the site content easily-->
-    <div id="floatingsocial">
-        <div class="button" id="facebookbutton">
-            <a href="https://www.facebook.com/GeauxNSBE" target="_blank">
-                <img src="images/Facebook_Logo.jpeg" 
-                alt="" 
-                >
-            </a>
-        </div>
-        
-        <div class="button" id="twitterbutton">
-            <a href="https://www.twitter.com/GeauxNSBE" target="_blank">
-                <img src="images/Twitter_logo_blue.jpg" 
-                alt="" 
-                >
-            </a>
-        </div>
-        
-        <div class="button" id="instagrambutton">
-            <a href="https://www.instagram.com/nsbe_lsu" target="_blank">
-                <img src="images/instagram.ico" 
-                alt="" 
-                >
-            </a>
-        </div>
-        
-        <div class="button" id="r5button">
-            <a href="http://www.nsbe.org/Regions/Region5/default.aspx" target="_blank">
-                <img src="images/roman.png" 
-                alt="NSBE Region 5" 
-                >
-            </a>
-        </div>
-        
-        <div class="button" id="nsbebutton">
-            <a href="http://nsbe.org" target="_blank">
-                <img src="images/NSBElogo.png" 
-                alt="NSBE Official" 
-                >
-            </a>
-        </div>
-        
-    </div>
+<?php include("components/socialmediabuttons.php");?>
 
 <div id="container">
     <?php
@@ -111,9 +70,7 @@
             <?php
                 ini_set('auto_detect_line_endings', true);
                 date_default_timezone_set('America/Chicago');
-                $cont = true;
                 $today = strtotime('now') - 60000;
-                $added = 0;
                 $toAdd = 5; //SET TO DETERMINE HOW MANY EVENTS ARE SHOWN
                 date_default_timezone_set('America/Chicago');
                 $servername = "localhost";
@@ -126,7 +83,7 @@
                 // Check connection
           
                 
-                $sql = "SELECT * FROM Events WHERE DATE >= CURDATE() LIMIT 4";
+                $sql = "SELECT * FROM Events WHERE DATE >= CURDATE() LIMIT $toAdd";
                 $result = $conn->query($sql);
         
                 if ($result->num_rows > 0) {
@@ -163,9 +120,9 @@
         
         date_default_timezone_set('America/Chicago');
 
-        $servername = "127.0.0.1";
-        $username = "root";
-        $password = "cabrini93";
+        $servername = "localhost";
+        $username = "production";
+        $password = "cabrini";
         $dbname = "GeauxNSBE";
 
         // Create connection

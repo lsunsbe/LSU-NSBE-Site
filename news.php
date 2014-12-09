@@ -24,9 +24,9 @@
     if (!empty($_GET['s'])) {
         date_default_timezone_set('America/Chicago');
 
-        $servername = "127.0.0.1";
-        $username = "root";
-        $password = "cabrini93";
+        $servername = "localhost";
+        $username = "production";
+        $password = "cabrini";
         $dbname = "GeauxNSBE";
 
         // Create connection
@@ -35,12 +35,11 @@
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
-        $stmt = $conn->prepare('SELECT * FROM Posts WHERE ident = ?');
-        $stmt->bind_param('s', $_GET['s']);
-
-        $stmt->execute();
-
-        $result = $stmt->get_result();
+        $ident = "";
+        if(!strpos($_GET['s'], " ")){
+            $ident = $_GET['s'];
+        }
+        $result = $conn->query("Select * from Posts Where Ident = '$ident'");
         while ($row = $result->fetch_assoc()) {
             $title = $row['title'];
             $description = $row['description'];
@@ -70,48 +69,7 @@
 <body>
 
 
-<div id="floatingsocial">
-    <div class="button" id="facebookbutton">
-        <a href="https://www.facebook.com/GeauxNSBE" target="_blank">
-            <img src="images/Facebook_Logo.jpeg"
-                 alt=""
-                >
-        </a>
-    </div>
-
-    <div class="button" id="twitterbutton">
-        <a href="https://www.twitter.com/GeauxNSBE" target="_blank">
-            <img src="images/Twitter_logo_blue.jpg"
-                 alt=""
-                >
-        </a>
-    </div>
-
-    <div class="button" id="instagrambutton">
-        <a href="https://www.instagram.com/nsbe_lsu" target="_blank">
-            <img src="images/instagram.ico"
-                 alt=""
-                >
-        </a>
-    </div>
-
-    <div class="button" id="r5button">
-        <a href="http://www.nsbe.org/Regions/Region5/default.aspx" target="_blank">
-            <img src="images/roman.png"
-                 alt="NSBE Region 5"
-                >
-        </a>
-    </div>
-
-    <div class="button" id="nsbebutton">
-        <a href="http://nsbe.org" target="_blank">
-            <img src="images/NSBElogo.png"
-                 alt="NSBE Official"
-                >
-        </a>
-    </div>
-
-</div>
+<?php include("components/socialmediabuttons.php");?>
 
 <div id="container">
 
@@ -129,25 +87,6 @@
     </div>
 
 
-    <!--  News Stories:
-            All stories and dates contained within the table. Each row has 2 cells.
-            First cell contains date. Second cell has the story content.
-            First cell class is named date and contains a <p> element with the date.
-            Second cell class is named story and can hold and elements, followed by:
-                The Facebook iframe, customized appropriatly, with a class tag "sharebutton"
-                the Twitter a, customized apropriatly with a class tag "sharebutton"
-
-            Finally, each row should:
-                1) Alternate class labels between "newsstyle1" and "newsstyle2"
-                2) Be given id tags for URL purposes (no longer need to be ascending. use keyword)
-
-
-    -->
-
-
-
-    <!-- NEWS STORY 1-->
-
     <div id="post_container">
 
         <?php
@@ -158,9 +97,9 @@
         */
         date_default_timezone_set('America/Chicago');
 
-        $servername = "127.0.0.1";
-        $username = "root";
-        $password = "cabrini93";
+        $servername = "localhost";
+        $username = "production";
+        $password = "cabrini";
         $dbname = "GeauxNSBE";
 
         // Create connection
@@ -184,7 +123,7 @@
                     $description = $row['description'];
                     $ident = $row['ident'];
                     $content = str_replace("]", ">", str_replace("[", "<", $row['content']));
-                    $url = "http://localhost/news?s=$ident";
+                    $url = "http://geauxnsbe.org/news?s=$ident";
                     $space = 120 - strlen($url);
                     $tweetDescrtip = substr($title, 0, $space) . "...";
 
@@ -208,12 +147,11 @@
             $conn->close();
         } else {
             //Lookup variable name
-            $stmt = $conn->prepare('SELECT * FROM Posts WHERE ident = ?');
-            $stmt->bind_param('s', $_GET['s']);
-
-            $stmt->execute();
-
-            $result = $stmt->get_result();
+            $ident = "";
+            if(!strpos($_GET['s'], " ")){
+                $ident = $_GET['s'];
+            }
+            $result = $conn->query("Select * from Posts Where Ident = '$ident'");
             while ($row = $result->fetch_assoc()) {
                 $title = $row['title'];
                 $date = strtotime($row['date']);
@@ -261,7 +199,6 @@
 
 
 <?php
-/*include("components/footer.php"); */
 include("components/footer.php");
 ?>
 </html>

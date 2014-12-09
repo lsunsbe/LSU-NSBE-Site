@@ -31,6 +31,7 @@
 </head>
 <body>
 <!--By using container, we can center all the site content easily-->
+<?php include("components/socialmediabuttons.php");?>
 <div id="container">
 <?php include("components/header.php") ?>
     
@@ -50,9 +51,9 @@
                 $cont = true;
                 $today = strtotime('now') - 60000;
                 date_default_timezone_set('America/Chicago');
-                   $servername = "localhost";
-                   $username = "production";
-                   $password = "cabrini";
+                    $servername = "localhost";
+                    $username = "production";
+                    $password = "cabrini";
                    $dbname = "GeauxNSBE";
                    
                    // Create connection

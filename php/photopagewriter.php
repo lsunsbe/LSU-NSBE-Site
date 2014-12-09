@@ -12,6 +12,7 @@ function constructGallery(){
 		$albumCount = 0;
 		$albumCount = count(scanDir("images/gallery/$f")) - 3;
 		$thumbIndex = rand(0, $albumCount -1) + 3;
+        $albumCount = $albumCount + 1; // Reset so that caption displays correct number of photos
 		$thumb = "images/gallery/$f/" . scandir("images/gallery/$f")[$thumbIndex];
 		echo "
 		<div class='album'>

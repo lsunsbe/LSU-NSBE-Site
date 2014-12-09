@@ -48,7 +48,10 @@
 
 }
 
+.post_content img {
+    width: 80%;
 
+}
 
 .fb-share-button{
     vertical-align: super;
@@ -56,4 +59,9 @@
 
 .twitter-share-button{
     vertical-align: baseline;
+}
+
+footer{
+    width: auto;
+    margin: auto;
 }

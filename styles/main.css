@@ -108,6 +108,7 @@ footer{
     height: 80px;
     background: #48247E;
     color: white;
+    clear: both;
 }
 
 .site_footer{

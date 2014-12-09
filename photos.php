@@ -32,6 +32,7 @@
 
 </head>
     <body>
+    <?php include("components/socialmediabuttons.php");?>
     <div id="container">
     <?php include("components/header.php"); ?>
 
@@ -43,7 +44,7 @@
             
 
             <?php
-                include('php/photopageWriter.php'); //include statements for methods
+                include('php/photopagewriter.php'); //include statements for methods
                 $album = $_GET['a'];
                 $picture = $_GET['p'];
                 if (empty($album) and empty($picture)){
