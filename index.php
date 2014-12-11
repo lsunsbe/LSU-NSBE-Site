@@ -73,9 +73,9 @@
                 $today = strtotime('now') - 60000;
                 $toAdd = 5; //SET TO DETERMINE HOW MANY EVENTS ARE SHOWN
                 date_default_timezone_set('America/Chicago');
-                $servername = "localhost";
-                $username = "production";
-                $password = "cabrini";
+                $servername = "127.0.0.1";
+                $username = "root";
+                $password = "cabrini93";
                 $dbname = "GeauxNSBE";
                 
                 // Create connection
@@ -120,9 +120,9 @@
         
         date_default_timezone_set('America/Chicago');
 
-        $servername = "localhost";
-        $username = "production";
-        $password = "cabrini";
+        $servername = "127.0.0.1";
+        $username = "root";
+        $password = "cabrini93";
         $dbname = "GeauxNSBE";
 
         // Create connection
