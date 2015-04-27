@@ -44,6 +44,10 @@ li {
     background-color: rgba(80, 4, 83, 0.74);
 }
 
+#menucol .active{
+    background: mediumpurple;
+}
+
 #description{
     display: inline-block;
     float: right;
@@ -53,9 +57,14 @@ li {
     margin-right: 95px;
 }
 
-.hidden{
+#description div{
     display: none;
 }
+
+#description .active{
+    display: block;
+}
+
 
 #description h3{
     color: #5d0000;
@@ -64,7 +73,7 @@ li {
 }
 
 #menucol {
-    background: #500453;
+    background: #48247E;
     float: left;
     position: absolute;
     width: 15%;

@@ -1,5 +1,5 @@
 html{
-	
+
 }
 
 html, body {width:100%; height:100%;}
@@ -13,10 +13,10 @@ html, body {width:100%; height:100%;}
 h2{
     font-size: 35px;
     color: rgba(224, 219, 83, 0.88);
-    font-family: "Oswald", sans; 
+    font-family: "Oswald", sans;
     font-weight: 800;
-    
-} 
+
+}
 
 a{
     font-family: "Bevan";
@@ -31,13 +31,13 @@ h3{
 
 body {
 
-	background-color: rgba(145, 116, 191, 0.18);
-	text-align: center; 
+    background-color: rgba(145, 116, 191, 0.18);
+    text-align: center;
 }
 
 #container{
-	width:77%;
-	margin:20px auto;
+    width:77%;
+    margin:20px auto;
     margin-top: 0px;
     margin-bottom: 0px;
     background: white;
@@ -69,7 +69,7 @@ p {
     margin-top: 20%;
     position: fixed;
     float: left;
-    vertical-align:middle; 
+    vertical-align:middle;
     border-radius: 10px;
     box-shadow: -3px 2px 13px #888888;
     background: rgba(145, 116, 191, 0.18);
@@ -83,7 +83,6 @@ p {
     margin: auto;
     border-radius: 5px;
     width: 60%;
-    height: 60%;
     margin: 15%;
 }
 
@@ -139,6 +138,7 @@ footer{
 
 .site_footer p{
     font-size: 12px;
+    font-family: cursive;
 }
 
 #aboutlink, #contactlink{

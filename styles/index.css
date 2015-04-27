@@ -36,7 +36,6 @@ td{
 
 #recentnews p{
     font-family: "Droid Sans", sans-serif;
-    font-size: 1vw;
     
     
 }
@@ -79,8 +78,7 @@ h4 {
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
-    align-self: center;
-    height: 30%;
+    height: 10%;
     
 }
 
@@ -183,7 +181,7 @@ hr{
     display: block;
     margin-left: 35%;
     margin-top: 10px;
-    font-size: 6vh;
+    font-size: 2em;
     font-family: "Helvetica";
     font-weight: 600;
     color: rgba(70, 70, 30, 0.94);
@@ -228,10 +226,11 @@ table{
 
 .content{
     margin-top: 0px;
+    font-size: 1em;
 }
 
 .story{
-    height: 35%;
+    height: auto;
 }
 
 #date {
@@ -244,7 +243,7 @@ table{
 #heading {
     font-weight: bolder;
     font-size: 19px;
-    color: color: #450045;
+    color:  #450045;
 }
 
 
@@ -294,6 +293,35 @@ table{
     width: 45%;
     float: left;
     margin-left: 10px;
+}
+
+@media (orientation: portrait) {
+    #frontimage{
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    #announements, #recentnews, #links, #email{
+        clear: both;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    #floatingsocial{
+        display:none;
+    }
+
+    #container, footer{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 

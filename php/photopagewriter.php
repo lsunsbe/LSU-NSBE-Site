@@ -6,6 +6,7 @@ function file_array_filter($element){
 }
 
 function constructGallery(){
+
 	$folders = array_filter(scandir("images/gallery"), "file_array_filter");
 	foreach ($folders as $f) {
 		$albumName = $f;
@@ -13,10 +14,10 @@ function constructGallery(){
 		$albumCount = count(scanDir("images/gallery/$f")) - 3;
 		$thumbIndex = rand(0, $albumCount -1) + 3;
         $albumCount = $albumCount + 1; // Reset so that caption displays correct number of photos
-		$thumb = "images/gallery/$f/" . scandir("images/gallery/$f")[$thumbIndex];
+		$thumb = "/images/gallery/$f/" . scandir("images/gallery/$f")[$thumbIndex];
 		echo "
 		<div class='album'>
-	                <a href='photos?a=$f'> <img class='albumthumb' src='$thumb'> 
+	                <a href='photos/$f'> <img class='albumthumb' src='$thumb'>
 	                <p class='albumtitle'>$albumName</p>
 	                <p class='albumcount'> $albumCount pictures</p>
                     </a>
@@ -24,19 +25,21 @@ function constructGallery(){
 	";
 
 	}
+
 	
 }
 
 function constructAlbumPage($album){
-	$files = array_values(array_filter(scandir("images/gallery/$album"), "file_array_filter"));
+	$a = str_replace('%20', " ", $album);
+	$files = array_values(array_filter(scandir("images/gallery/$a"), "file_array_filter"));
 	$index = 1; //Passing 0 as a url value sets isempty() as true which broke the pic viewer, so we start at 1 and subtract in next method
 	echo "
-    <a href='photos'><div class='backButton'>Back to Gallery</div></a> 
-    <div class='title'>$album</div><hr/>";
+    <a href='/photos'><div class='backButton'>Back to Gallery</div></a>
+    <div class='title'>$a</div><hr/>";
 	foreach ($files as $f) {
-		echo "<a href='photos?a=$album&p=$index'>
+		echo "<a href='/photos/$album/$index'>
 		<div class='pic_thmb_container'>
-	                <img class='pic_thmb' src='images/gallery/$album/$f'>
+	                <img class='pic_thmb' src='/images/gallery/$album/$f'>
 	            </div></a>
 	            ";
         $index++;
@@ -46,10 +49,9 @@ function constructAlbumPage($album){
 }
 
 function constructPhotoPage($album, $photo){
-	$files = array_values(array_filter(scandir("images/gallery/$album"), "file_array_filter"));
-
+	$a = str_replace('%20', " ", $album);
+	$files = array_values(array_filter(scandir("images/gallery/$a"), "file_array_filter"));
 	$image = $files[$photo-1]; //see above for -1 explanation
-
     //if index is one, set prev to length of folder
     //if index is length of folder, set next to 1
 
@@ -67,14 +69,13 @@ function constructPhotoPage($album, $photo){
     }
 
 	echo "
-		<a href='photos?a=$album'><div class='backButton'>Back to Album</div></a> 
-            <img class='picview' src='images/gallery/$album/$image'>
+		<a href='/photos/$album'><div class='backButton'>Back to Album</div></a>
+            <img class='picview' src='/images/gallery/$album/$image'>
             <div class='buttons'>
-                <a href='photos.php?a=$album&p=$prev'><img id='prevbutton' src='images/arrow_left.png'> </a>
-                <a href='photos.php?a=$album&p=$next'><img id='nextbutton'  src='images/arrow_right.png'></a>
+                <a href='/photos/$album/$prev'><img id='prevbutton' src='/images/arrow_left.png'> </a>
+                <a href='/photos/$album/$next'><img id='nextbutton'  src='/images/arrow_right.png'></a>
             </div>
 	";
-
 }
 
 

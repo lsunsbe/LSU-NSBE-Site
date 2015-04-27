@@ -6,14 +6,16 @@ $toMail = false;
 //validate email eddress
 if (preg_match("/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/" ,$emailaddress)){
     $addresses = array();
-    $file = fopen("emails.txt", "r") or die("File open fail");
+    $file = fopen("../mailinglist14.txt", "r") or die("File open fail");
     while (!feof($file)){
         array_push($addresses, preg_replace('/\s+/', ' ', trim(fgets($file))));
     }
     if (array_search($emailaddress, $addresses, true)){
        echo "This email address has been successfully submitted. You will be added to the NSBE Mailing list shortly.";
     } else{
-        file_put_contents("emails.txt", $emailaddress, FILE_APPEND);
+    	echo "s";
+        file_put_contents("../mailinglist14.txt", $emailaddress, FILE_APPEND);
+        echo "s";
         $mail = new PHPMailer();
         //$mail->SMTPDebug  = 2;
         $mail->isSMTP();                                      

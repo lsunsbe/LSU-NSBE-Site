@@ -1,6 +1,6 @@
 <?php
     $inputEmails = json_decode(stripslashes($_POST['input']));
-    $file = fopen("mailinglist14.txt", "r");
+    $file = fopen("../mailinglist14.txt", "r");
     $currentEmails = fgetcsv($file);
     fclose($file);
     if ($_POST['func'] == "add"){
@@ -19,7 +19,7 @@
                 $inval++;
             }
         }
-        $file = fopen("mailinglist14.txt", "w") or die("Hello");
+        $file = fopen("../mailinglist14.txt", "w") or die("Hello");
         fputcsv($file, $currentEmails);
         fclose($file);
         echo $dups." duplicates, ".$added." added, ".$inval." invalid";
@@ -34,7 +34,7 @@
             }
         }
         
-        $file = fopen("mailinglist14.txt", "w") or die("Hello");
+        $file = fopen("../mailinglist14.txt", "w") or die("Hello");
         fputcsv($file, $currentEmails);
         fclose($file);
         echo $removed." removed.";

@@ -16,7 +16,7 @@ function retrieveEmails(){
     var emailString = "";
         $.ajax({
             type: "get",
-            url: "php/mailRetrieve.php",
+            url: "../php/mailRetrieve.php",
             success: function (e){
                 $('#list').text(e);
             }
@@ -28,7 +28,7 @@ $(document).ready(function(){
             function (e) {
                 $.ajax({
                     type: "post",
-                    url: "php/mailpass.php",
+                    url: "../php/mailpass.php",
                     data: {password: $('#pass').val()},
                     success: passwordResponse
                 })
@@ -45,7 +45,7 @@ $(document).ready(function(){
                 var ajaxString = JSON.stringify(emails);
                     $.ajax({
                         type: "post",
-                        url: "php/mailEdit.php",
+                        url: "../php/mailEdit.php",
                         data: {func: "add", input: ajaxString},
                         success: function (data) {
                             window.alert(data);
@@ -65,7 +65,7 @@ $(document).ready(function(){
                 var ajaxString = JSON.stringify(emails);
                     $.ajax({
                         type: "post",
-                        url: "php/mailEdit.php",
+                        url: "../php/mailEdit.php",
                         data: {func: "remove", input: ajaxString},
                         success: function (data) {
                             window.alert(data);
