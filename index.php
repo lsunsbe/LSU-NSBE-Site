@@ -1,8 +1,13 @@
 <?php
 include('config.php');
-$r = $_SERVER['REQUEST_URI'];
-$r = explode('/', $r);
-switch ($r[1]){
+
+function is_legacy_url($url_arg){
+    return preg_match("/(news|photos)\?(\w+=\w+)?(&(\w+=\w+))*/", $url_arg);
+}
+
+$uri = $_SERVER['REQUEST_URI'];
+$uri = explode('/', $uri);
+switch ($uri[1]){
     case "about":
         include('views/purpose.php');
         break;

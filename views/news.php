@@ -19,7 +19,7 @@
     $title = "LSU NSBE: News";
     $description = "All the most recent and up-to-date on all LSU NSBE news, events, and information.";
     $url = 'http://geauxnsbe.org/news';
-    $ident = $r[2];
+    $ident = $uri[2];
     if (!empty($ident)) {
         date_default_timezone_set('America/Chicago');
 

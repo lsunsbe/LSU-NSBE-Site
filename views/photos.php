@@ -44,8 +44,8 @@
             
 
             <?php
-                $album = $r[2];
-                $picture = $r[3];
+                $album = $uri[2];
+                $picture = $uri[3];
                 include('php/photopagewriter.php'); //include statements for methods
                 if (empty($album) and empty($picture)){
                      constructGallery();
