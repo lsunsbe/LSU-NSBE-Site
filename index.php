@@ -58,6 +58,7 @@ switch ($uri[1]){
         include('rider.php');
     default:
         include("views/home.php");
+        //TODO: throw 404
         break;
 }
 ?>

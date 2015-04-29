@@ -6,74 +6,102 @@ function file_array_filter($element){
 }
 
 function constructGallery(){
+    include('config.php');
 
-	$folders = array_filter(scandir("images/gallery"), "file_array_filter");
-	foreach ($folders as $f) {
-		$albumName = $f;
-		$albumCount = 0;
-		$albumCount = count(scanDir("images/gallery/$f")) - 3;
-		$thumbIndex = rand(0, $albumCount -1) + 3;
-        $albumCount = $albumCount + 1; // Reset so that caption displays correct number of photos
-		$thumb = "/images/gallery/$f/" . scandir("images/gallery/$f")[$thumbIndex];
-		echo "
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    $result = $conn->query("Select * from photos");
+    while($row = $result->fetch_assoc()) {
+
+        $albumName = $row['name'];
+        $albumInfo = json_decode($row['gallery'], true);
+        $albumCount = count($albumInfo);
+        $albumThumb = $albumInfo[0]['image'];
+        $albumThumb = str_replace("{staticroot}files/", "site/files/thumb_", $albumThumb);
+
+        echo "
 		<div class='album'>
-	                <a href='photos/$f'> <img class='albumthumb' src='$thumb'>
+	                <a href='photos/$albumName'> <img class='albumthumb' src='/$albumThumb'>
 	                <p class='albumtitle'>$albumName</p>
 	                <p class='albumcount'> $albumCount pictures</p>
                     </a>
 	            </div>
 	";
 
-	}
+    }
 
 	
 }
 
 function constructAlbumPage($album){
+
+
 	$a = str_replace('%20', " ", $album);
-	$files = array_values(array_filter(scandir("images/gallery/$a"), "file_array_filter"));
-	$index = 1; //Passing 0 as a url value sets isempty() as true which broke the pic viewer, so we start at 1 and subtract in next method
+
+    include('config.php');
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    $result = $conn->query('Select * from photos where name ="'.$a.'"');
+    if ($result->num_rows == 0) {
+        //TODO: throw 404
+    }
+    $row = $result->fetch_assoc();
+    $albumInfo = json_decode($row['gallery'], true);
+
+
+
 	echo "
-    <a href='/photos'><div class='backButton'>Back to Gallery</div></a>
-    <div class='title'>$a</div><hr/>";
-	foreach ($files as $f) {
-		echo "<a href='/photos/$album/$index'>
+        <a href='/photos'><div class='backButton'>Back to Gallery</div></a>
+        <div class='title'>$a</div><hr/>";
+
+    for ($i = 0; $i < count($albumInfo); $i+=1) {
+        $picture = $albumInfo[$i]['image'];
+        $imageName = str_replace("{staticroot}files/", "", $picture);
+        $imageThumb = str_replace("{staticroot}files/", "/site/files/thumb_", $picture);
+        echo "<a href='/photos/$a/$i'>
+
 		<div class='pic_thmb_container'>
-	                <img class='pic_thmb' src='/images/gallery/$album/$f'>
+	                <img class='pic_thmb' src='$imageThumb'>
 	            </div></a>
 	            ";
-        $index++;
-	        }
+    }
 
 
 }
 
 function constructPhotoPage($album, $photo){
 	$a = str_replace('%20', " ", $album);
-	$files = array_values(array_filter(scandir("images/gallery/$a"), "file_array_filter"));
-	$image = $files[$photo-1]; //see above for -1 explanation
-    //if index is one, set prev to length of folder
-    //if index is length of folder, set next to 1
+    include('config.php');
 
-    $prev = 0;
-    $next = 0;
-    if ($photo == 1)
-        $prev = count($files);
-    else
-        $prev = $photo - 1;
-
-    if ($photo == count($files)) {
-        $next = 1;
-    } else {
-        $next = $photo + 1;
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    $result = $conn->query('Select * from photos where name ="'.$a.'"');
+    if ($result->num_rows == 0) {
+        //TODO: throw 404
+    }
+    $row = $result->fetch_assoc();
+    $albumInfo = json_decode($row['gallery'], true);
+    if ($photo >= count($albumInfo)){
+        //TODO: throw 404
     }
 
-	echo "
+    $imageResult = $albumInfo[$photo];
+    $imageCamption = $imageResult['caption'];
+    $imageFile = str_replace("{staticroot}files/", '/site/files/', $imageResult['image']);
+
+    echo "
 		<a href='/photos/$album'><div class='backButton'>Back to Album</div></a>
-            <img class='picview' src='/images/gallery/$album/$image'>
+            <img class='picview' src='$imageFile'>
             <div class='buttons'>
-                <a href='/photos/$album/$prev'><img id='prevbutton' src='/images/arrow_left.png'> </a>
-                <a href='/photos/$album/$next'><img id='nextbutton'  src='/images/arrow_right.png'></a>
+                <a href='/photos/$album/0'><img id='prevbutton' src='/images/arrow_left.png'> </a>
+                <a href='/photos/$album/1'><img id='nextbutton'  src='/images/arrow_right.png'></a>
             </div>
 	";
 }

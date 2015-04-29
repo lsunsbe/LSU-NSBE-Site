@@ -41,17 +41,18 @@
         </div>   
 
         <div id="gallerycontainer">
-            
-
             <?php
                 $album = $uri[2];
-                $picture = $uri[3];
+                if (count($uri) == 4) {
+                    $picture = $uri[3];
+                } else
+                    $picture = -1;
                 include('php/photopagewriter.php'); //include statements for methods
-                if (empty($album) and empty($picture)){
+                if (empty($album)){
                      constructGallery();
-                } else if (empty($picture) and !empty($album)){
+                } else if (($picture == -1) and isset($album)){
                     constructAlbumPage($album);
-                } else if (!empty($picture) and !empty($album)){
+                } else if (($picture != -1) and isset($album)){
                     constructPhotoPage($album, $picture);
                 } else{
                     echo "ERROR";
