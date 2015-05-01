@@ -60,8 +60,8 @@
                    if ($conn->connect_error) {
                        die("Connection failed: " . $conn->connect_error);
                    } 
-                   
-                   $sql = "SELECT * FROM Events ORDER BY start_date asc";
+
+                   $sql = "SELECT * FROM Events ORDER BY start_date desc";
                    $result = $conn->query($sql);
                         
                         if ($result->num_rows > 0) {
