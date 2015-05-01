@@ -111,6 +111,8 @@ hr{
     height: 2px;
     background-color: black;
     border: none;
+    display: block;
+    clear: left;
 }
 
 .albumcount{
@@ -174,4 +176,11 @@ hr{
     display: block;
     width: 200%;
 
+}
+
+#description p{
+    display: block;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

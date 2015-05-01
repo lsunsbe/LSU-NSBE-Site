@@ -52,12 +52,17 @@ function constructAlbumPage($album){
     }
     $row = $result->fetch_assoc();
     $albumInfo = json_decode($row['gallery'], true);
+    $description = $row['description'];
+
 
 
 
 	echo "
         <a href='/photos'><div class='backButton'>Back to Gallery</div></a>
-        <div class='title'>$a</div><hr/>";
+        <div class='title'>$a</div>
+        <div id='description'><p>$description</p></div>
+        <hr/>
+        ";
 
     for ($i = 0; $i < count($albumInfo); $i+=1) {
         $picture = $albumInfo[$i]['image'];

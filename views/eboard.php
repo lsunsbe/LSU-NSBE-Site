@@ -61,18 +61,10 @@
             <li class="name" id="nhist" onclick="setUnhidden('procollinit');">Jordan Favret</li>
             
             <li class="name" id="nhist" onclick="setUnhidden('commservchair');">Kailyn Gouch</li>
-         <!--<li class="name" id="nhist" onclick="setUnhidden('progchair');">Seth Brown</li> -->
             <li class="name" id="nhist" onclick="setUnhidden('financechair');">Gary Matthews</li>
             <li class="name" id="nhist" onclick="setUnhidden('nsbesenate');">Marvyn Muse</li>
-    <!--<li class="name" id="nhist" onclick="setUnhidden('conplanchair');">Darria Carter</li>-->
-    <!---<li class="name" id="nmem" onclick="setUnhidden('memchair');">Jordan Biagas</li> -->
              <li class="name" id="nhist" onclick="setUnhidden('parliamen');">Kojo Orgle</li>
              <li class="name" id="npres" onclick="setUnhidden('president');">Vonzell Williams</li>
-    <!--<li class="name" id="nhist" onclick="setUnhidden('socialchair');">Lekan Kassim</li> -->
- <!--<li class="name" id="nhist" onclick="setUnhidden('telecom');">Dexter Hartman</li>-->  
-  <!--
- <li class="name" id="nhist" onclick="setUnhidden('senate');">Chris Reynolds</li>
-         <li class="name" id="nhist" onclick="setUnhidden('chairemer');">Jhamal Davis</li> -->
 
         </ul>
     </div>
