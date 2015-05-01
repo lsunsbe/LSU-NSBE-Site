@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="img/ico" href="../images/favicon.ico">
     <!--CSS Files -->
     <link rel="stylesheet" type="text/css" href="../styles/main.css">
-    <link rel="stylesheet" type="text/css" href="../styles/index.css">
+    <link rel="stylesheet" type="text/css" href="../styles/home.css">
     <link rel="stylesheet" type="text/css" href="../styles/navmenu.css">
     <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
     <!--Fonts -->

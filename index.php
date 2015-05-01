@@ -9,16 +9,16 @@ $uri = $_SERVER['REQUEST_URI'];
 $uri = explode('/', $uri);
 switch ($uri[1]){
     case "about":
-        include('views/purpose.php');
+        include('views/about.php');
         break;
     case "aboutus":
-        include('views/purpose.php');
+        include('views/about.php');
         break;
     case "aboutnsbe":
-        include('views/purpose.php');
+        include('views/about.php');
         break;
     case "purpose":
-        include('views/purpose.php');
+        include('views/about.php');
         break;
     case "events":
         include('views/events.php');
@@ -45,10 +45,10 @@ switch ($uri[1]){
         include("views/home.php");
         break;
     case "mail":
-        include("views/mailinglist14.php");
+        include("views/mail.php");
         break;
    case "mailinglist14":
-        include("views/mailinglist14.php");
+        include("views/mail.php");
         break;
     case "admin":
         header( 'Location: http://localhost/site/index.php/admin/dashboard/' ) ;

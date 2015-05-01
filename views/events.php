@@ -35,12 +35,12 @@
 <?php include("components/socialmediabuttons.php");?>
 <div id="container">
 
-<?php include("/components/header.php") ?>
+<?php include("components/header.php") ?>
     
 	<div id="menu">
         <ul>
             <?php
-                include("/components/navmenu.php");
+                include("components/navmenu.php");
                 writenav("calendar");
             ?>
         </ul>

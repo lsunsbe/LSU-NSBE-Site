@@ -7,7 +7,7 @@
     <!--CSS Files -->
     <link rel="stylesheet" type="text/css" href="../styles/main.css">
     <link rel="stylesheet" type="text/css" href="../styles/navmenu.css">
-    <link rel="stylesheet" type="text/css" href="../styles/purpose.css">
+    <link rel="stylesheet" type="text/css" href="../styles/about.css">
     <!--Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
