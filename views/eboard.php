@@ -101,7 +101,7 @@
         "<div id='bio_seat$i' class='biography_entry'>
             <h2>$name</h2>
             <h3>$position</h3>
-            <img id='biography_img' alt='Picture here.' src='$image'>
+            <img id='biography_img' alt='Picture here.' src='site/$image'>
             <p> $bio </p>
 
             <a  href='$linked'>
