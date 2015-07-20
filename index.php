@@ -54,11 +54,12 @@ switch ($uri[1]){
         header( 'Location: http://localhost/site/index.php/admin/dashboard/' ) ;
         die();
         break;
-    case "rider":
-        include('rider.php');
+    case "404":
+        include('views/404.php');
+        break;
     default:
-        include("views/home.php");
-        //TODO: throw 404
+        http_response_code(404);
+        include("views/404.php");
         break;
 }
 ?>

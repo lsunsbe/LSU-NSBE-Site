@@ -8,10 +8,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="shortcut icon" type="img/ico" href="../images/favicon.ico">
     <!--CSS Files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../styles/main.css">
     <link rel="stylesheet" type="text/css" href="../styles/home.css">
     <link rel="stylesheet" type="text/css" href="../styles/navmenu.css">
     <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+
     <!--Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
@@ -32,6 +37,11 @@
     <meta property="og:description" content="Welcome to the LSU NSBE homepage, source of all your up to date information about what's going on with NSBE." />
 
     <!--Twitter Meta Tags -->
+    <link rel="stylesheet" href="styles/rrssb.css" />
+
+
+
+
 
 </head>
 <body>
@@ -39,7 +49,7 @@
 <!--By using container, we can center all the site content easily-->
 <?php include("components/socialmediabuttons.php");?>
 
-<div id="container">
+<div id="container" class=".container">
     <?php
         include("components/header.php");
     ?>
@@ -52,23 +62,24 @@
     </div>
 
 	<!-- Break to break -->
-    
-    <div class="frontimage" id="frontimage">
-        <?php
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        $result = $conn->query("Select * from FrontPageImages");
-        $imagesString = $result->fetch_assoc()['images'];
-        $imageArray = json_decode($imagesString, true);
-        for ($i = 0; $i < count($imageArray); $i++){
-            $src = str_replace("{staticroot}","site/",$imageArray[$i]["image"] );
-            echo "<div><img src='$src'></div>";
-        }
-    ?>  
+    <div class="row">
+    <div class="col-sm-9 col-md-6 col-lg-7">
+        <div class="frontimage" id="frontimage">
+            <?php
+            $conn = new mysqli($servername, $username, $password, $dbname);
+            $result = $conn->query("Select * from FrontPageImages");
+            $imagesString = $result->fetch_assoc()['images'];
+            $imageArray = json_decode($imagesString, true);
+            for ($i = 0; $i < count($imageArray); $i++){
+                $src = str_replace("{staticroot}","site/",$imageArray[$i]["image"] );
+                echo "<div><img src='$src'></div>";
+            }
+        ?>
+        </div>
     </div>
-    
-    
-	<div id="announements">
-		<h4 >Upcoming Events</h4>
+    <div class="col-sm-3 col-md-6 col-lg-5">
+	    <div id="upcoming_events">
+		<h4 id="upcoming_events_heading">Upcoming Events</h4>
         <table>
             <?php
                 ini_set('auto_detect_line_endings', true);
@@ -93,13 +104,13 @@
                             $eventDate = date('F d, Y', strtotime($row['start_date']));
                                 if ($eventName=="General Body Meeting"){
                                     echo "<tr>
-                                            <td class='event'><b>$eventName</b> :</td>
-                                            <td class='date'>$eventDate </td>
+                                            <td class='event-name'><b>$eventName</b> :</td>
+                                            <td class='event_date'>$eventDate </td>
                                          </tr>";
                                 } else{
                                     echo "<tr>
-                                            <td class='event'>$eventName :</td>
-                                            <td class='date'>$eventDate </td>
+                                            <td class='event-name'>$eventName :</td>
+                                            <td class='event_date'>$eventDate </td>
                                          </tr>";
                                 }
                         }
@@ -112,8 +123,8 @@
 	</div>
 
 
-    <div id="recentnews">
-        <h4> Recent News</h4>
+    <div id="recent-news">
+        <h4 id="recent-news-heading"> Recent News</h4>
         
         
         <?php
@@ -142,20 +153,22 @@
         ?>
             <div class="morenews"><a href="news">More News...</a></div>
     </div>
+        </div>
+    </div>
 
-        <div id="welcome">
+        <div id="prez-welcome">
         
-        <h4 id="welcometitle">President's Welcome</h4>
+        <h4 id="welcome-title">President's Welcome</h4>
         <h5 id="nameplate">Vonzell Williams</h5>
         <img id="image" src="../images/jj.jpg">
-        <p id="welcomecontent">Hello everyone and welcome to the NSBE family. I am Vonzell Williams, the President of the National Society of Black Engineers.
+        <p id="welcome-content">Hello everyone and welcome to the NSBE family. I am Vonzell Williams, the President of the National Society of Black Engineers.
 I am overjoyed to serve as the president this year and am looking forward to getting to know all the new members of our NSBE family. 
 
 We have a lot of great plans for NSBE this semester, including the new Freshman Action Team (F.A.T.). 
 While you are here, feel free to browse around our site. As you can see, our home page is full of the latest news on NSBE and even a link to get involved! If you aren't very familiar with our organization, then you can browse to the "About NSBE" page and learn a little bit more about us. There is so much NSBE has to offer and it doesn't stop here. Before you close your web browser be sure to view our regional and national web pages to learn more about what is going on in NSBE outside of LSU! </p>
     </div>
     <div id="links">
-        <h2 id="linksheading">Links</h2>
+        <h2 id="links-heading">Links</h2>
     <?php
         date_default_timezone_set('America/Chicago');
 
@@ -177,9 +190,10 @@ While you are here, feel free to browse around our site. As you can see, our hom
 
     ?>
     </div>
+
         <div id="email">
-            <h2 id="interestedheading">Want To Get Involved With NSBE?</h2>   
-            <h3>Add your email to the NSBE mailing list:</h3>
+            <h2 id="interested-heading">Want To Get Involved With NSBE?</h2>
+            <h3 id="email-instruction">Add your email to the NSBE mailing list:</h3>
             <form action="" method="post">
                 <input id="emailbox" type="text" name="email" placeholder="Enter email here..." value="">
                 <input id="gobutton" type="submit" name="submitbutton" value="SEND" autocomplete="off">
@@ -203,11 +217,15 @@ While you are here, feel free to browse around our site. As you can see, our hom
     
     
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="../slick/slick.min.js"></script>
 
 <script src="../scripts/index.js"></script>
     <script src="../scripts/index2.js"></script>
-<script type="text/javascript" src="../slick/slick.min.js"></script>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="scripts/rrssb.min.js"></script>
+
+<script src="scripts/bootstrap.min.js"></script>
 </body>
 <?php
 include("components/footer.php");

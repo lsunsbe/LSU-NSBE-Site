@@ -3,7 +3,7 @@
 	background-color: red;
 }
 
-#announements, #recentnews{
+#recent-news {
     float: right;
 	border: 0px solid #000;
 	height: 320px;
@@ -15,7 +15,16 @@
     min-width: 384px;
 }
 
-#announements{
+#upcoming_events {
+    float: right;
+    border: 0px solid #000;
+    height: 320px;
+    width: 50%;
+    border-radius: 10px;
+    background: rgba(152, 114, 190, 0.38);
+    display: block;
+    margin-right: 1%;
+    min-width: 384px;
     height: auto;
     margin-top: 20px;
     padding-bottom: 10px;
@@ -30,21 +39,21 @@ td{
 }
 
 
-#recentnews{
+#recent-news {
     margin-top:8px;
 }
 
-#recentnews p{
+#recent-news p{
     font-family: "Droid Sans", sans-serif;
     
     
 }
 
-#recentnews a{
+#recent-news a{
     text-decoration: none;
 }
 
-#recentnews a:hover{
+#recent-news a:hover{
     cursor: pointer;
 }
 
@@ -104,13 +113,13 @@ h4 {
 }
 
 
-#announements h4{
+#upcoming_events h4{
     color: #450045;
     font-family: "Oswald", sans-serif;
     font-size: 32px;
 }
 
-#recentnews h4{
+#recent-news h4{
     color: #450045;
     font-family: "Oswald", sans-serif;
     font-size: 32px;
@@ -192,7 +201,7 @@ hr{
     background: rgba(98, 31, 98, 0.46);
 }
 
-#interestedheading, #linksheading{
+#interested-heading, #links-heading {
  font-size: 27px;
     width: 95%;
     color: black;
@@ -209,12 +218,12 @@ hr{
     padding: 4px 9px 2px;
 }
 
-.event{
+.event-name {
     text-align: right;
 }
 
 
-.date{
+.event_date {
     text-align: left;
     font-weight: bolder;
 }
@@ -257,7 +266,7 @@ table{
     margin-right: 3%;
 }
 
-#welcome{
+#prez-welcome {
     background: white;
     margin-left: 15px;
     margin-right: 15px;
@@ -269,14 +278,14 @@ table{
     width: 95%;
 }
 
-#welcometitle {
+#welcome-title {
     display: inline-block;
     margin: 10px;
     font-size: 33px;
     color: #450045;
 }
 
-#welcomecontent{
+#welcome-content {
     text-align: left;
 }
 
@@ -294,34 +303,3 @@ table{
     float: left;
     margin-left: 10px;
 }
-
-@media (orientation: portrait) {
-    #frontimage{
-        display: block;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        float: none;
-    }
-
-    #announements, #recentnews, #links, #email{
-        clear: both;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        float: none;
-    }
-
-    #floatingsocial{
-        display:none;
-    }
-
-    #container, footer{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-}
-
-

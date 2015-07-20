@@ -75,6 +75,12 @@ p {
     background: rgba(145, 116, 191, 0.18);
 }
 
+@media (max-width: 1000px) {
+    #floatingsocial{
+        display: none;
+    }
+}
+
 .button{
     background: rgba(223, 168, 51, 0.53);
 }
@@ -103,7 +109,8 @@ p {
 
 footer{
     width: 77%;
-    margin-left: 11.5%;
+    margin-left: auto;
+    margin-right: auto;
     height: 80px;
     background: #48247E;
     color: white;
@@ -111,6 +118,7 @@ footer{
 }
 
 .site_footer{
+    width: 100%;
     display: block;
     clear: right;
     width: 50%;
